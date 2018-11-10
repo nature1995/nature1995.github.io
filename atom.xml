@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>然小狼的博客</title>
+  
+  <subtitle>回到最初的梦想</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://nature1995.club/"/>
+  <updated>2018-11-10T04:09:02.210Z</updated>
+  <id>http://nature1995.club/</id>
+  
+  <author>
+    <name>Ziran Gong</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>开始Hexo之旅</title>
+    <link href="http://nature1995.club/2018/11/09/%E5%BC%80%E5%A7%8BHexo%E4%B9%8B%E6%97%85/"/>
+    <id>http://nature1995.club/2018/11/09/开始Hexo之旅/</id>
+    <published>2018-11-10T04:03:37.000Z</published>
+    <updated>2018-11-10T04:09:02.210Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;今天开始部署属于自己的Hexo博客。&lt;/p&gt;
+
+        
+      
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="http://nature1995.club/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://nature1995.club/2018/11/09/hello-world/"/>
+    <id>http://nature1995.club/2018/11/09/hello-world/</id>
+    <published>2018-11-10T02:45:53.640Z</published>
+    <updated>2018-11-10T02:45:53.640Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Hello World,&lt;/p&gt;
+&lt;p&gt;Welcome to nature’s
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
