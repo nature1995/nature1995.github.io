@@ -1,35 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-    
-    <entry>
-      <title>开始Hexo之旅</title>
-      <link href="/2018/11/09/%E5%BC%80%E5%A7%8BHexo%E4%B9%8B%E6%97%85/"/>
-      <url>/2018/11/09/%E5%BC%80%E5%A7%8BHexo%E4%B9%8B%E6%97%85/</url>
-      
-        <content type="html"><![CDATA[<p>今天开始部署属于自己的Hexo博客。</p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 随笔 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/2018/11/09/hello-world/"/>
-      <url>/2018/11/09/hello-world/</url>
-      
-        <content type="html"><![CDATA[<p>Hello World,</p><p>Welcome to nature’s blog!</p>]]></content>
-      
-      
-      
-    </entry>
-    
-  
-  
+<search>
+  <entry>
+    <title><![CDATA[Markdown语法]]></title>
+    <url>%2F2018%2F11%2F10%2FMarkdown%E8%AF%AD%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[Markdown语法一级标题二级标题五级标题 列表第一项 列表第二项 有序列表第一项 有序列表第二项标题 斜体粗体 引用段落代码块]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[开始Hexo之旅]]></title>
+    <url>%2F2018%2F11%2F09%2F%E5%BC%80%E5%A7%8BHexo%E4%B9%8B%E6%97%85%2F</url>
+    <content type="text"><![CDATA[今天开始部署属于自己的Hexo博客。]]></content>
+      <tags>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2018%2F11%2F09%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Hello World, Welcome to nature’s blog!]]></content>
+  </entry>
 </search>
