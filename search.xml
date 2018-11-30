@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Gitment评论功能接入Jekyll & Hexo教程]]></title>
+    <url>%2F2018%2F11%2F29%2FGitment%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD%E6%8E%A5%E5%85%A5Jekyll_Hexo%E6%95%99%E7%A8%8B%2F</url>
+    <content type="text"><![CDATA[前言之前接入的评论功能，都因为各种原因被放弃了，今天从新计划接入评论功能，所以就在了今天这篇文章。评论模块多说 - 最多用户使用的评论，但遗憾2017年6月将暂定服务；不建议新用户使用，但为旧用户保留，也感谢多说一路的陪伴；网易云跟帖 - 网易提供的评论组件，功能比较简单，性能优秀；管理后台在查询上还不算特别智能，但足够普通用户使用；畅言 - 搜狐提供的评论组件，功能丰富，体验优异；但必须进行域名备案。只要域名备过案就可以通过审核。Disqus - 国外使用较多的评论组件。万里长城永不倒，一枝红杏出墙来，你懂的。以上评论模块应该大家都知道，多说和网易云跟帖没有了，畅言要备案，对于对于挂靠在GitHub的博客非常的不友好，放弃！Disqus，不希望自己的博客，可以不分国界！也放弃！所以，将是我们要介绍的Gitment!Gitment评论模块Gitment is a comment system based on GitHub Issues, which can be used in the frontend without any server-side implementation.Gitment 基于 GitHub Issues 的评论系统。支持在前端直接引入，不需要任何后端代码。可以在页面进行登录、查看、评论、点赞等操作，同时有完整的 Markdown / GFM 和代码高亮支持。尤为适合各种基于 GitHub Pages 的静态博客或项目页面。想了解具体示例，可以点击查看官方Demo Page：Gitment Demo具体的接入我就不在这里说了，本文末有参考链接大家可以去了解学习，主要是说一下其中的坑点。Gitment坑点小结1、owner: ‘Your GitHub ID’owner: &#39;你的 GitHub ID&#39;,可以是你的GitHub用户名，也可以是github id，建议直接用GitHub用户名就可以。2、repo: ‘The repo to store commentsrepo: &#39;存储评论的 github repo&#39;这个是你要存储评论内容的仓库名，可以与博客下的仓库，也可以新建一个仓库专门存储评论内容的。3、Error: Not Found问题owner或者repo配置错误了，注意名字和仓库名字的大小写。4、Error: Comments Not Initialized在注册OAuth Application这个步骤中，给Authorization callback URL指定的地址错了还没有在该页面的Gitment评论区登陆GitHub账号如果还是不行，可以参考另一个情况 Error: Comments Not Initialized · Issue #95 · imsun/gitment5、Error：validation failedissue的标签label有长度限制！labels的最大长度限制是50个字符。id: &#39;页面 ID&#39;, // 可选。默认为 location.href这个id的作用，就是针对一个文章有唯一的标识来判断这篇本章。在issues里面，可以发现是根据网页标题来新建issues的，然后每个issues有两个labels（标签），一个是gitment，另一个就是id。所以明白了原理后，就是因为id太长，导致初始化失败，现在就是要让id保证在50个字符内。对应配置的id为：1id: '&lt;%= page.title %&gt;'如果用网页标题也不能保证在50个字符！最后，我用文章的时间，这样长度是保证在50个字符内，完美解决！（避免了文章每次更新标题或路径时，会重新创建一个issue评论的问题。）1id: '&lt;%= page.date %&gt;'6、gitment的汉化只需到模板里将原来定义CSS和JS的那两行改成：12&lt;link rel="stylesheet" href="https://billts.site/extra_css/gitment.css"&gt;&lt;script src="https://billts.site/js/gitment.js"&gt;&lt;/script&gt;即可。来源：https://github.com/imsun/gitment/issues/1047、所有文章一键初始化评论配置正确的文章，第一次显示，提示还没有初始化：文章作者需要登陆GitHub授权后，会显示初始化按钮(注意，不要多点按钮，否则issues出现多条一样的)：点击初始化按钮后，如果正常就会出现：关于自动初始化所有文章的功能，到本文编写时，还没有一个完善的解决方法，就是用脚本来执行自动化，有需要的可以详细了解：https://github.com/imsun/gitment/issues/58、请保持克制，切勿滥用。作者提醒使用本项目的用户，请保持克制，切勿滥用。详见 Gitment：使用 GitHub Issues 搭建评论系统9、订阅issueissue订阅，有新评论时就可以通过邮件提醒，这个功能是把双刃剑，因为有些垃圾订阅邮件骚扰，大家看着用吧。总结Gitment目前来说，已经解决了一个博客简单的评论功能，点赞 / 有完整的 Markdown / GFM 和代码高亮支持!通过Gitment至少可以证明一点，生产力的发展有无限可能，环境的限制，会有的各种奇异的想法，或者奇异的东西出现，Gitment就是一个完美的证明，充分解决了一个简单博客的评论功能。另一方面，与国内的生活要求希望大家能够遵守规则，让GitHub和Gitment在我们生活中快乐成长！]]></content>
+      <categories>
+        <category>Jekyll</category>
+      </categories>
+      <tags>
+        <tag>Gitment</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Jupyter Lab Config on Raspberry Pi]]></title>
     <url>%2F2018%2F11%2F29%2Fjupyter-lab-config-raspi%2F</url>
     <content type="text"><![CDATA[To activate this environment, use$ conda activate base $ conda activate tensorflow 树莓派： source activate tensorflowTo deactivate an active environment, use$ conda deactivate 树莓派： source deactivate tensorflowconda install jupyter notebookconda install jupyterlabjupyter notebook –ip=0.0.0.0 –no-browser –allow-rootjupyter lab –ip=0.0.0.0 –no-browser –allow-root不输出日志 jupyter lab –ip=0.0.0.0 –no-browser –allow-root &gt;/dev/null 2&gt;&amp;1 &amp;jupyter lab &gt;/dev/null 2&gt;&amp;1 &amp;]]></content>
@@ -44,16 +55,6 @@
       </categories>
       <tags>
         <tag>Virtualization</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Gitment评论功能接入Jekyll & Hexo教程]]></title>
-    <url>%2F2018%2F11%2F29%2FGitment%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD%E6%8E%A5%E5%85%A5Jekyll_Hexo%E6%95%99%E7%A8%8B%2F</url>
-    <content type="text"><![CDATA[前言之前接入的评论功能，都因为各种原因被放弃了，今天从新计划接入评论功能，所以就在了今天这篇文章。评论模块多说 - 最多用户使用的评论，但遗憾2017年6月将暂定服务；不建议新用户使用，但为旧用户保留，也感谢多说一路的陪伴；网易云跟帖 - 网易提供的评论组件，功能比较简单，性能优秀；管理后台在查询上还不算特别智能，但足够普通用户使用；畅言 - 搜狐提供的评论组件，功能丰富，体验优异；但必须进行域名备案。只要域名备过案就可以通过审核。Disqus - 国外使用较多的评论组件。万里长城永不倒，一枝红杏出墙来，你懂的。以上评论模块应该大家都知道，多说和网易云跟帖没有了，畅言要备案，对于对于挂靠在GitHub的博客非常的不友好，放弃！Disqus，不希望自己的博客，可以不分国界！也放弃！所以，将是我们要介绍的Gitment!Gitment评论模块Gitment is a comment system based on GitHub Issues, which can be used in the frontend without any server-side implementation.Gitment 基于 GitHub Issues 的评论系统。支持在前端直接引入，不需要任何后端代码。可以在页面进行登录、查看、评论、点赞等操作，同时有完整的 Markdown / GFM 和代码高亮支持。尤为适合各种基于 GitHub Pages 的静态博客或项目页面。想了解具体示例，可以点击查看官方Demo Page：Gitment Demo具体的接入我就不在这里说了，本文末有参考链接大家可以去了解学习，主要是说一下其中的坑点。Gitment坑点小结1、owner: ‘Your GitHub ID’owner: &#39;你的 GitHub ID&#39;,可以是你的GitHub用户名，也可以是github id，建议直接用GitHub用户名就可以。2、repo: ‘The repo to store commentsrepo: &#39;存储评论的 github repo&#39;这个是你要存储评论内容的仓库名，可以与博客下的仓库，也可以新建一个仓库专门存储评论内容的。3、Error: Not Found问题owner或者repo配置错误了，注意名字和仓库名字的大小写。4、Error: Comments Not Initialized在注册OAuth Application这个步骤中，给Authorization callback URL指定的地址错了还没有在该页面的Gitment评论区登陆GitHub账号如果还是不行，可以参考另一个情况 Error: Comments Not Initialized · Issue #95 · imsun/gitment5、Error：validation failedissue的标签label有长度限制！labels的最大长度限制是50个字符。id: &#39;页面 ID&#39;, // 可选。默认为 location.href这个id的作用，就是针对一个文章有唯一的标识来判断这篇本章。在issues里面，可以发现是根据网页标题来新建issues的，然后每个issues有两个labels（标签），一个是gitment，另一个就是id。所以明白了原理后，就是因为id太长，导致初始化失败，现在就是要让id保证在50个字符内。对应配置的id为：1id: '&lt;%= page.title %&gt;'如果用网页标题也不能保证在50个字符！最后，我用文章的时间，这样长度是保证在50个字符内，完美解决！（避免了文章每次更新标题或路径时，会重新创建一个issue评论的问题。）1id: '&lt;%= page.date %&gt;'6、gitment的汉化只需到模板里将原来定义CSS和JS的那两行改成：12&lt;link rel="stylesheet" href="https://billts.site/extra_css/gitment.css"&gt;&lt;script src="https://billts.site/js/gitment.js"&gt;&lt;/script&gt;即可。来源：https://github.com/imsun/gitment/issues/1047、所有文章一键初始化评论配置正确的文章，第一次显示，提示还没有初始化：文章作者需要登陆GitHub授权后，会显示初始化按钮(注意，不要多点按钮，否则issues出现多条一样的)：点击初始化按钮后，如果正常就会出现：关于自动初始化所有文章的功能，到本文编写时，还没有一个完善的解决方法，就是用脚本来执行自动化，有需要的可以详细了解：https://github.com/imsun/gitment/issues/58、请保持克制，切勿滥用。作者提醒使用本项目的用户，请保持克制，切勿滥用。详见 Gitment：使用 GitHub Issues 搭建评论系统9、订阅issueissue订阅，有新评论时就可以通过邮件提醒，这个功能是把双刃剑，因为有些垃圾订阅邮件骚扰，大家看着用吧。总结Gitment目前来说，已经解决了一个博客简单的评论功能，点赞 / 有完整的 Markdown / GFM 和代码高亮支持!通过Gitment至少可以证明一点，生产力的发展有无限可能，环境的限制，会有的各种奇异的想法，或者奇异的东西出现，Gitment就是一个完美的证明，充分解决了一个简单博客的评论功能。另一方面，与国内的生活要求希望大家能够遵守规则，让GitHub和Gitment在我们生活中快乐成长！]]></content>
-      <tags>
-        <tag>Gitment</tag>
-        <tag>Jekyll</tag>
-        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
