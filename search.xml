@@ -1,6 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Jupyter Lab Config on Raspberry Pi]]></title>
+    <url>%2F2018%2F11%2F29%2Fjupyter-lab-config-raspi%2F</url>
+    <content type="text"><![CDATA[To activate this environment, use$ conda activate base $ conda activate tensorflow 树莓派： source activate tensorflowTo deactivate an active environment, use$ conda deactivate 树莓派： source deactivate tensorflowconda install jupyter notebookconda install jupyterlabjupyter notebook –ip=0.0.0.0 –no-browser –allow-rootjupyter lab –ip=0.0.0.0 –no-browser –allow-root不输出日志 jupyter lab –ip=0.0.0.0 –no-browser –allow-root &gt;/dev/null 2&gt;&amp;1 &amp;jupyter lab &gt;/dev/null 2&gt;&amp;1 &amp;]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>Raspberry Pi</tag>
+        <tag>Jupyter</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Keras：安装graphviz和pydot后出现RuntimeError：无法导入pydot]]></title>
+    <url>%2F2018%2F11%2F29%2FKeras%E5%AE%89%E8%A3%85graphviz%E5%92%8Cpydot%E5%90%8E%E5%87%BA%E7%8E%B0RuntimeError%E6%97%A0%E6%B3%95%E5%AF%BC%E5%85%A5pydot%2F</url>
+    <content type="text"><![CDATA[首先Conda安装graphviz：12pip install graphviz pip install pydot其次在运行的.py文件前面加入如下内容:1import os os.environ["PATH"] += os.pathsep + 'C:\\Users\\10057491\\AppData\\Local\\Continuum\\anaconda3\\envs\\tensorflow\\Library\\bin\\graphviz']]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>Anaconda</tag>
+        <tag>Keras</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Centos 配置mailx使用外部smtp发送邮件]]></title>
+    <url>%2F2018%2F11%2F29%2FCentos-%E9%85%8D%E7%BD%AEmailx%E4%BD%BF%E7%94%A8%E5%A4%96%E9%83%A8smtp%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6%2F</url>
+    <content type="text"><![CDATA[Centos 配置mailx使用外部smtp发送邮件安装mailx1yum install mailx配置mailx推荐163邮箱，当然，QQ邮箱也是可以的，PS：记得要进邮箱打开SMTP1vi /etc/mail.rc //如果不存在，则编辑/etc/nail.rc123456# 在文件的末尾加入下面代码，相应帐号密码填写自己的帐号密码set from="xxx@163.com"set smtp=smtp.163.comset smtp-auth-user=xxxset smtp-auth-password=邮箱密码set smtp-auth=login使用mailx发送邮件发件人名称可不添加，第二步已配置过假设邮件内容存储于mesg文件中，那么可以用如下2个方法：12mailx -s "发件人名称 邮件标题" xxx@163.com &lt; mesgcat mesg | mailx -s "发件人名称 邮件标题" xxx@163.com多个收件人之间用逗号分隔：1cat mesg | mailx -s "发件人名称 邮件标题" xxx@163.com,xxx2@163.com,xxx3@163.com也可以直接从命令行输入邮件内容：12mailx -s "发件人名称 邮件标题" xxx@163.com ##输入完后回车按Ctrl+D提交发送echo hello word | mailx -v -s " title" xxx3@163.comNOTE:记得要进邮箱打开SMTP配置好后，记住查看是否打开代理（例如翻墙VPN）,代理可能会导致Telnet不通25端口]]></content>
+      <categories>
+        <category>服务器</category>
+      </categories>
+      <tags>
+        <tag>Centos</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[VNC和远程桌面的区别]]></title>
+    <url>%2F2018%2F11%2F29%2FVNC%E5%92%8C%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2%E7%9A%84%E5%8C%BA%E5%88%AB%2F</url>
+    <content type="text"><![CDATA[VNC和远程桌面的区别我们可以通过VNC(Virtual Network Computing)和远程桌面来连接到远程的计算机上，但是两者是有一定的区别的。VNCVNC使用的是RFB协议来做屏幕分享和远程操作的软件，由著名的AT&amp;T欧洲研究实验室开发。使用时需要客户端软件和服务器软件配合使用。远程桌面远程桌面使用RDP(Remote Desktop Protocol)远程桌面协议，大部分Windows都默认支持此协议，可以远程接入操作桌面。RFB和RDP区别RFB是在服务器端将窗口在显存中画好之后将图像传给客户端，客户端只充当一个图像解码显示的角色； RDP则将画图的工作交给了客户端，服务器需要了解客户端显示能力的具体情况，以便作出相应调整。RFB主要传图像，RDP主要传指令。就一般应用而言，RFB数据量太大，RDP对客户端要求较高，因此RFB适用于瘦客户端，RDP适用于低速网络。]]></content>
+      <categories>
+        <category>Knowledge</category>
+      </categories>
+      <tags>
+        <tag>Virtualization</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Gitment评论功能接入Jekyll & Hexo教程]]></title>
+    <url>%2F2018%2F11%2F29%2FGitment%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD%E6%8E%A5%E5%85%A5Jekyll_Hexo%E6%95%99%E7%A8%8B%2F</url>
+    <content type="text"><![CDATA[前言之前接入的评论功能，都因为各种原因被放弃了，今天从新计划接入评论功能，所以就在了今天这篇文章。评论模块多说 - 最多用户使用的评论，但遗憾2017年6月将暂定服务；不建议新用户使用，但为旧用户保留，也感谢多说一路的陪伴；网易云跟帖 - 网易提供的评论组件，功能比较简单，性能优秀；管理后台在查询上还不算特别智能，但足够普通用户使用；畅言 - 搜狐提供的评论组件，功能丰富，体验优异；但必须进行域名备案。只要域名备过案就可以通过审核。Disqus - 国外使用较多的评论组件。万里长城永不倒，一枝红杏出墙来，你懂的。以上评论模块应该大家都知道，多说和网易云跟帖没有了，畅言要备案，对于对于挂靠在GitHub的博客非常的不友好，放弃！Disqus，不希望自己的博客，可以不分国界！也放弃！所以，将是我们要介绍的Gitment!Gitment评论模块Gitment is a comment system based on GitHub Issues, which can be used in the frontend without any server-side implementation.Gitment 基于 GitHub Issues 的评论系统。支持在前端直接引入，不需要任何后端代码。可以在页面进行登录、查看、评论、点赞等操作，同时有完整的 Markdown / GFM 和代码高亮支持。尤为适合各种基于 GitHub Pages 的静态博客或项目页面。想了解具体示例，可以点击查看官方Demo Page：Gitment Demo具体的接入我就不在这里说了，本文末有参考链接大家可以去了解学习，主要是说一下其中的坑点。Gitment坑点小结1、owner: ‘Your GitHub ID’owner: &#39;你的 GitHub ID&#39;,可以是你的GitHub用户名，也可以是github id，建议直接用GitHub用户名就可以。2、repo: ‘The repo to store commentsrepo: &#39;存储评论的 github repo&#39;这个是你要存储评论内容的仓库名，可以与博客下的仓库，也可以新建一个仓库专门存储评论内容的。3、Error: Not Found问题owner或者repo配置错误了，注意名字和仓库名字的大小写。4、Error: Comments Not Initialized在注册OAuth Application这个步骤中，给Authorization callback URL指定的地址错了还没有在该页面的Gitment评论区登陆GitHub账号如果还是不行，可以参考另一个情况 Error: Comments Not Initialized · Issue #95 · imsun/gitment5、Error：validation failedissue的标签label有长度限制！labels的最大长度限制是50个字符。id: &#39;页面 ID&#39;, // 可选。默认为 location.href这个id的作用，就是针对一个文章有唯一的标识来判断这篇本章。在issues里面，可以发现是根据网页标题来新建issues的，然后每个issues有两个labels（标签），一个是gitment，另一个就是id。所以明白了原理后，就是因为id太长，导致初始化失败，现在就是要让id保证在50个字符内。对应配置的id为：1id: '&lt;%= page.title %&gt;'如果用网页标题也不能保证在50个字符！最后，我用文章的时间，这样长度是保证在50个字符内，完美解决！（避免了文章每次更新标题或路径时，会重新创建一个issue评论的问题。）1id: '&lt;%= page.date %&gt;'6、gitment的汉化只需到模板里将原来定义CSS和JS的那两行改成：12&lt;link rel="stylesheet" href="https://billts.site/extra_css/gitment.css"&gt;&lt;script src="https://billts.site/js/gitment.js"&gt;&lt;/script&gt;即可。来源：https://github.com/imsun/gitment/issues/1047、所有文章一键初始化评论配置正确的文章，第一次显示，提示还没有初始化：文章作者需要登陆GitHub授权后，会显示初始化按钮(注意，不要多点按钮，否则issues出现多条一样的)：点击初始化按钮后，如果正常就会出现：关于自动初始化所有文章的功能，到本文编写时，还没有一个完善的解决方法，就是用脚本来执行自动化，有需要的可以详细了解：https://github.com/imsun/gitment/issues/58、请保持克制，切勿滥用。作者提醒使用本项目的用户，请保持克制，切勿滥用。详见 Gitment：使用 GitHub Issues 搭建评论系统9、订阅issueissue订阅，有新评论时就可以通过邮件提醒，这个功能是把双刃剑，因为有些垃圾订阅邮件骚扰，大家看着用吧。总结Gitment目前来说，已经解决了一个博客简单的评论功能，点赞 / 有完整的 Markdown / GFM 和代码高亮支持!通过Gitment至少可以证明一点，生产力的发展有无限可能，环境的限制，会有的各种奇异的想法，或者奇异的东西出现，Gitment就是一个完美的证明，充分解决了一个简单博客的评论功能。另一方面，与国内的生活要求希望大家能够遵守规则，让GitHub和Gitment在我们生活中快乐成长！]]></content>
+      <tags>
+        <tag>Gitment</tag>
+        <tag>Jekyll</tag>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[为什么北美东部冬季经常有暴风雪，而中国冷而少雪？]]></title>
     <url>%2F2018%2F11%2F15%2F%E4%B8%BA%E4%BB%80%E4%B9%88%E5%8C%97%E7%BE%8E%E4%B8%9C%E9%83%A8%E5%86%AC%E5%AD%A3%E7%BB%8F%E5%B8%B8%E6%9C%89%E6%9A%B4%E9%A3%8E%E9%9B%AA%EF%BC%8C%E8%80%8C%E4%B8%AD%E5%9B%BD%E5%86%B7%E8%80%8C%E5%B0%91%E9%9B%AA%EF%BC%9F%2F</url>
     <content type="text"><![CDATA[学术预警！长文预警！多图预警！北美冬季的气候处于西风带的控制之下，西风带形成了一条很长的高空急流(Jet stream)。这条急流夏天的时候在加拿大北部地区，对美国的气候不造成明显影响，而冬天的时候，急流从美国中间穿过，形成了整个冬季的冷暖气团对峙局面。高空急流形成的原因，高中地理都学过，我就不解释了。美国冬季典型的天气分布是这样的，以今年更为明显。今年冬天整个西部温暖如春，比平均温度高15~25华氏度，东部冰天雪地，比平均温度低15~25华氏度。这条高空急流从太平洋吹过来，在美国西海岸遇到了高山，被推到了高纬度，在华盛顿州的迎风坡造成了大量降水，又一路绕过落基山脉，来到了大平原。大平原地区没有任何山脉的阻挡，急流可以一路南下直到德克萨斯州，最南的时候可以到达佛罗里达州北部。这条急流所在的区域一般约等于0度等温线，所以冬天的时候来冷空气，佛罗里达州北部可能都会产生霜冻灾害。为什么无法再往南推进了，因为墨西哥湾的暖气团太强大了，所以佛罗里达州的南部城市比如迈阿密，从来没有经历过霜冻灾害。拿答主写答案的当前时间为例，北边再冷的时候，佛罗里达州南部都是暖和的，佛罗里达三面环海，完全受到墨西哥湾暖流的控制。（图中深蓝色是0度等温线）与此同时，一场暴风雪正在酝酿中现在的降水不强大，因为没遇到什么水汽。两天后（2015/02/25）当这股降水被吹到北卡罗来纳州，遇到北大西洋暖流带来的的暖气团时，冷暖空气交汇，将会给当地造成暴雪。5~8英寸约等于12到20厘米深的积雪。这对于中国而言，绝对是大暴雪了，美国人民表示见得多了，什么样的大雪没见过？今年一月底东北部的那场大雪，比这个高到不知道哪里去了。好了话说回来。这条高空急流是会经常随意摆动的，当加拿大的极地冷空气势力强的时候，就被推得更南下，当墨西哥湾暖气团势力强的时候，就会被往北推。由于美国东部地形比较平坦，所以高空急流的位移幅度非常大。南则兵临佛罗里达，北则退到缅因州。所以凡是高空急流扫过的地方，都会形成冷锋或暖锋，带来丰富的降水。今年冬天太冷了，所以佛罗里达州雨也下的多了，正常年份是，佛罗里达类似于国内的海南岛，因为冷空气够不着，所以没法形成降水，冬季很干燥。但是美国东海岸越往北，冬季的降水比例越大。以我居住的波士顿为例，一年四季的降水分配情况基本上是平均的，三四月份和十一十二月份降水较多，因为那个时段冷暖交替，被高空急流扫过的频率比较高。今年下雪下疯了，人行道上堆起来的雪太高了，我得跳起来才能看见马路对面……对比一下和波士顿同纬度的中国城市沈阳。在气温上来对比，沈阳冬天比波士顿冷，夏天比波士顿热，气温年较差比较大，因为中国东部的气候比较大陆性，美国东部的气候受到哈得孙湾和五大湖等水体的影响比较海洋性。有趣的是，美国东部的气候在冬天比中国东部要极端的多。看看一月极端最高温度，波士顿是22度，沈阳是8度，波士顿的日极端比日平均高温要高20度，而沈阳只有13度。波士顿的极端低温也比平均低温要低20度，沈阳小一点，17度。生活在中国北方的人都知道，只要河一结冰，开春之前都是不会化的，所以可以放心的冰上走，而美国东北部的河流一般不会整个封冻，冷几天就冻上了，暖几天就化了，除非遇到今年这种特别冷的年份，不敢在冰上走。中国东部的冬天是稳定的，比如沈阳的一月，每天都是最低零下十几度，最高零下几度，但波士顿的一月，有时候最低零下十几度，有时候最低甚至有零上五六度。之所以产生这么大的变化幅度，因为高空急流的位置不同。当高空急流位于南方时，美国东北部就会受到加拿大的极地高压的影响，而高空急流暂时减弱，墨西哥湾暖流占优势时，美国东北部就会受到大西洋的低气压影响。如果这时候突然来了冷空气，就会形成暴风雪。相比，因为中国近海没有暖流，所以中国的东北部几乎一直在西伯利亚-蒙古高压的控制之下，气温稳定而冷，不会出现极端的变化。没有冷暖气团的相遇，就不会形成多少降水，这就是为什么中国北方的冬天干而冷。在中国南方，因为纬度比较低，太阳辐射强，晴天容易升温，遇到冷空气的时候一般就会形成冷锋下雨或者下雪，冬季比较湿冷。但是再怎么湿冷，由于控制中国南方的暖气团势力远远不如墨西哥湾的暖气团强，所以不会形成明显的降水，下雨也只是下小雨，不会出现像夏天一样的暴雨。在中国的东部，冬天影响天气的几乎只有一个变量，那就是有没有冷空气来。如果没有冷空气来，尤其是在黄河以南，天气会随着晴天越来越暖和，直到来一个冷空气大降温，几天的暖和又回到解放前，气温的变化一般是这样的。冷空气来大降温，几天出太阳越来越暖和，直到又来一个冷空气。秋天的时候冷空气的降温更快，太阳晒暖和的速度赶不上，所以越来越冷；春天的时候太阳晒得更快，来一个冷空气倒春寒一下。而美国东部冬天的天气有两个变量影响，不仅要考虑从背面袭来的冷空气，还要考虑从南面袭来的暖空气。这两方打斗不停，所经之处下雨下雪，类似梅雨的形成原因。冷空气控制下冷几天，暖空气控制下暖和几天，反复无常，毫无规律可循。所有直角的地方，基本上都得下雨下雪。暖空气来了就暖锋下雨，冷空气来了就冷锋下雪。在美国东部，尤其是东北部生活的时候你会发现一个现象，就是阴天往往比晴天暖和。因为晴天的时候基本代表高空急流在你南边，高气压控制，冷；阴天的时候基本代表高空急流在你北边，低气压控制，暖。还有一个现象就是，早上比傍晚暖和，或者第二天早上比前一天傍晚暖和。发生这种事的时候，那就是高空急流在移动，扫过你的所在地了。美国东部的冬天气温可以说是完全不受太阳辐射影响，连晒几天太阳并不会明显增温，连下几天雨也不一定会降温。气温完全取决于你的所在地当前是受到什么气团的控制，而气团被高空急流所分割开，所以美国的天气预报别的先不说，先在地图上画一条线，告诉你明天高空急流在哪里，你自己看吧，你在它北边你就冷，你在它南边你就暖和，你被它压着你就很可能下雨下雪。如果是这种情况，那么就是西海岸冷，东海岸暖和，高空急流从南方绕过去，反正一般不会从美国中部山最高的地方穿过去。雷达蓝色的是下雪，绿色的是下雨，这就是一场横扫中部的暴风雪。今年为什么东北部下雪那么多，因为今年的高空急流长期保持这种形状。从西海岸北部穿过，给加拿大西海岸带来充沛降水，然后从中部杀下来，再从沿海走上去。由于盛行西风，当冷空气穿过的时候遇到五大湖的水汽，再遇到北大西洋暖流，在新英格兰地区带来百年一遇的连续的暴风雪。不仅下雪，因为对流太强烈，还会打雷，冬天北方打雷这在中国是无法想象的！最后还得吐槽一句啊，美国的天气预报信息太全面了，The Weather Channel可以显示每时每刻当前全国的气温降水风速分布图等等，中国天气网就没这功能，要看雷达图也只能看一小块局部的，更别说全国当前气温分布图了。中央气象台还得提高姿势水平啊，不要动不动一下雪了就弄个大新闻，跑得比香港记者还快。]]></content>
