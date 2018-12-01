@@ -17,27 +17,6 @@
     </url>
 
     <url>
-        <loc>http://nature1995.club/tags/Gitment/</loc>
-        <lastmod>2018-11-30T01:17:16.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://nature1995.club/tags/Jekyll/</loc>
-        <lastmod>2018-11-30T01:17:16.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://nature1995.club/tags/Hexo/</loc>
-        <lastmod>2018-11-30T01:17:16.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://nature1995.club/tags/Anaconda/</loc>
         <lastmod>2018-11-30T04:24:08.026Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -59,13 +38,6 @@
     </url>
 
     <url>
-        <loc>http://nature1995.club/tags/Raspberry-Pi/</loc>
-        <lastmod>2018-11-30T04:25:09.133Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://nature1995.club/tags/Jupyter/</loc>
         <lastmod>2018-11-30T04:25:09.133Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -74,7 +46,49 @@
 
     <url>
         <loc>http://nature1995.club/tags/Centos/</loc>
-        <lastmod>2018-11-30T04:34:21.144Z</lastmod>
+        <lastmod>2018-11-30T04:41:26.290Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://nature1995.club/tags/Gitment/</loc>
+        <lastmod>2018-11-30T04:41:27.532Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://nature1995.club/tags/Software/</loc>
+        <lastmod>2018-12-01T19:25:11.896Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://nature1995.club/tags/Django/</loc>
+        <lastmod>2018-12-01T20:17:40.902Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://nature1995.club/tags/STM32/</loc>
+        <lastmod>2018-12-01T20:19:05.179Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://nature1995.club/tags/Raspberry-Pi/</loc>
+        <lastmod>2018-12-01T20:19:49.526Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://nature1995.club/tags/Hardware/</loc>
+        <lastmod>2018-12-01T20:19:49.526Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

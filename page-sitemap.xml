@@ -8,22 +8,22 @@
     </url>
     
     <url>
-        <loc>http://nature1995.club/about/</loc>
-        <lastmod>2018-11-30T04:12:46.067Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
         <loc>http://nature1995.club/tags/</loc>
-        <lastmod>2018-11-10T04:21:53.956Z</lastmod>
+        <lastmod>2018-11-30T05:10:40.204Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>http://nature1995.club/categories/</loc>
-        <lastmod>2018-11-10T04:21:53.116Z</lastmod>
+        <lastmod>2018-11-30T05:09:57.739Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>http://nature1995.club/about/</loc>
+        <lastmod>2018-11-30T05:09:43.149Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
