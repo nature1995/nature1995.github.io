@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://nature1995.club/"/>
-  <updated>2018-12-01T20:17:40.902Z</updated>
+  <updated>2018-12-04T01:58:15.561Z</updated>
   <id>http://nature1995.club/</id>
   
   <author>
@@ -17,31 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Django博客开发：通过django-allauth实现第三方账号登录教程</title>
-    <link href="http://nature1995.club/2018/12/01/Django%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91%EF%BC%9A%E9%80%9A%E8%BF%87django-allauth%E5%AE%9E%E7%8E%B0%E7%AC%AC%E4%B8%89%E6%96%B9%E8%B4%A6%E5%8F%B7%E7%99%BB%E5%BD%95%E6%95%99%E7%A8%8B/"/>
-    <id>http://nature1995.club/2018/12/01/Django博客开发：通过django-allauth实现第三方账号登录教程/</id>
-    <published>2018-12-01T19:42:45.106Z</published>
-    <updated>2018-12-01T20:17:40.902Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;因为需要加入博客的用户登录、注册系统，为了让网站支持第三方登录，所以只用使用&lt;strong&gt;django-allauth&lt;/strong&gt;，根据其官方文档这里：&lt;strong&gt;&lt;a href=&quot;https://link.jianshu.com?t=https://django-allauth.readthedocs.io/en/latest/index.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://django-allauth.readthedocs.io/en/latest/index.html&lt;/a&gt;&lt;/strong&gt;），同时支持本地和第三方账号（Github，百度、微博、微信等等。。），集成了邮箱验证、密码修改、本地账号关联（多个）第三方账号等各种功能，真是厉害了。&lt;/p&gt;&lt;h2 id=&quot;开发环境：python-3-6、django-2-1-3&quot;&gt;&lt;a href=&quot;#开发环境：python-3-6、django-2-1-3&quot; class=&quot;headerlink&quot; title=&quot;开发环境：python 3.6、django 2.1.3&quot;&gt;&lt;/a&gt;开发环境：python 3.6、django 2.1.3&lt;/h2&gt;&lt;h2 id=&quot;准备工作：&quot;&gt;&lt;a href=&quot;#准备工作：&quot; class=&quot;headerlink&quot; title=&quot;准备工作：&quot;&gt;&lt;/a&gt;准备工作：&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;安装&lt;/strong&gt;&lt;/p&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;pip install django-allauth&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-      <category term="教程" scheme="http://nature1995.club/categories/%E6%95%99%E7%A8%8B/"/>
-    
-    
-      <category term="Django" scheme="http://nature1995.club/tags/Django/"/>
-    
-  </entry>
-  
-  <entry>
     <title>基于人工智能的树莓派人脸识别系统(Intelligent Facial Recognition System)</title>
     <link href="http://nature1995.club/2018/12/01/%E5%9F%BA%E4%BA%8E%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E6%A0%91%E8%8E%93%E6%B4%BE%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB%E7%B3%BB%E7%BB%9F(Intelligent%20Facial%20Recognition%20System)/"/>
     <id>http://nature1995.club/2018/12/01/基于人工智能的树莓派人脸识别系统(Intelligent Facial Recognition System)/</id>
     <published>2018-12-01T19:35:30.000Z</published>
-    <updated>2018-12-01T20:19:49.526Z</updated>
+    <updated>2018-12-04T01:58:15.561Z</updated>
     
     <summary type="html">
     
@@ -61,11 +41,51 @@
   </entry>
   
   <entry>
+    <title>Django博客开发：通过django-allauth实现第三方账号登录教程</title>
+    <link href="http://nature1995.club/2018/12/01/Django%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91%EF%BC%9A%E9%80%9A%E8%BF%87django-allauth%E5%AE%9E%E7%8E%B0%E7%AC%AC%E4%B8%89%E6%96%B9%E8%B4%A6%E5%8F%B7%E7%99%BB%E5%BD%95%E6%95%99%E7%A8%8B/"/>
+    <id>http://nature1995.club/2018/12/01/Django博客开发：通过django-allauth实现第三方账号登录教程/</id>
+    <published>2018-12-01T19:20:32.000Z</published>
+    <updated>2018-12-04T01:58:30.062Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;因为需要加入博客的用户登录、注册系统，为了让网站支持第三方登录，所以只用使用&lt;strong&gt;django-allauth&lt;/strong&gt;，根据其官方文档这里：&lt;strong&gt;&lt;a href=&quot;https://link.jianshu.com?t=https://django-allauth.readthedocs.io/en/latest/index.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://django-allauth.readthedocs.io/en/latest/index.html&lt;/a&gt;&lt;/strong&gt;），同时支持本地和第三方账号（Github，百度、微博、微信等等。。），集成了邮箱验证、密码修改、本地账号关联（多个）第三方账号等各种功能，真是厉害了。&lt;/p&gt;&lt;h2 id=&quot;开发环境：python-3-6、django-2-1-3&quot;&gt;&lt;a href=&quot;#开发环境：python-3-6、django-2-1-3&quot; class=&quot;headerlink&quot; title=&quot;开发环境：python 3.6、django 2.1.3&quot;&gt;&lt;/a&gt;开发环境：python 3.6、django 2.1.3&lt;/h2&gt;&lt;h2 id=&quot;准备工作：&quot;&gt;&lt;a href=&quot;#准备工作：&quot; class=&quot;headerlink&quot; title=&quot;准备工作：&quot;&gt;&lt;/a&gt;准备工作：&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;安装&lt;/strong&gt;&lt;/p&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;pip install django-allauth&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="教程" scheme="http://nature1995.club/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="Django" scheme="http://nature1995.club/tags/Django/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Sublime-text3-3176版本激活</title>
+    <link href="http://nature1995.club/2018/12/01/Sublime-text3-3176%E7%89%88%E6%9C%AC%E6%BF%80%E6%B4%BB/"/>
+    <id>http://nature1995.club/2018/12/01/Sublime-text3-3176版本激活/</id>
+    <published>2018-12-01T19:18:32.000Z</published>
+    <updated>2018-12-04T01:58:23.992Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://i.loli.net/2018/12/02/5c02df25e5ec3.png&quot; alt=&quot;1201142054.png&quot;&gt;&lt;/p&gt;&lt;h3 id=&quot;步骤一：&quot;&gt;&lt;a href=&quot;#步骤一：&quot; class=&quot;headerlink&quot; title=&quot;步骤一：&quot;&gt;&lt;/a&gt;步骤一：&lt;/h3&gt;&lt;p&gt;更改hosts：sudo vim /private/etc/hosts&lt;br&gt;&lt;/p&gt;&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;127&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.1&lt;/span&gt;       &lt;span class=&quot;selector-tag&quot;&gt;www&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.sublimetext&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.com&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;127&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.1&lt;/span&gt;       &lt;span class=&quot;selector-tag&quot;&gt;license&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.sublimehq&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.com&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="教程" scheme="http://nature1995.club/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="Software" scheme="http://nature1995.club/tags/Software/"/>
+    
+  </entry>
+  
+  <entry>
     <title>蓝桥杯嵌入式与开发组——历年比赛试题与源码</title>
     <link href="http://nature1995.club/2018/12/01/%E8%93%9D%E6%A1%A5%E6%9D%AF%E5%B5%8C%E5%85%A5%E5%BC%8F%E4%B8%8E%E5%BC%80%E5%8F%91%E7%BB%84%E2%80%94%E2%80%94%E5%8E%86%E5%B9%B4%E6%AF%94%E8%B5%9B%E8%AF%95%E9%A2%98%E4%B8%8E%E6%BA%90%E7%A0%81/"/>
     <id>http://nature1995.club/2018/12/01/蓝桥杯嵌入式与开发组——历年比赛试题与源码/</id>
-    <published>2018-12-01T19:26:30.010Z</published>
-    <updated>2018-12-02T17:32:11.470Z</updated>
+    <published>2018-12-01T19:18:32.000Z</published>
+    <updated>2018-12-04T01:58:59.543Z</updated>
     
     <summary type="html">
     
@@ -87,26 +107,6 @@
       <category term="Hardware" scheme="http://nature1995.club/tags/Hardware/"/>
     
       <category term="STM32" scheme="http://nature1995.club/tags/STM32/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Sublime-text3-3176版本激活</title>
-    <link href="http://nature1995.club/2018/12/01/Sublime-text3-3176%E7%89%88%E6%9C%AC%E6%BF%80%E6%B4%BB/"/>
-    <id>http://nature1995.club/2018/12/01/Sublime-text3-3176版本激活/</id>
-    <published>2018-12-01T19:17:07.493Z</published>
-    <updated>2018-12-01T19:25:11.896Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;https://i.loli.net/2018/12/02/5c02df25e5ec3.png&quot; alt=&quot;1201142054.png&quot;&gt;&lt;/p&gt;&lt;h3 id=&quot;步骤一：&quot;&gt;&lt;a href=&quot;#步骤一：&quot; class=&quot;headerlink&quot; title=&quot;步骤一：&quot;&gt;&lt;/a&gt;步骤一：&lt;/h3&gt;&lt;p&gt;更改hosts：sudo vim /private/etc/hosts&lt;br&gt;&lt;/p&gt;&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;127&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.1&lt;/span&gt;       &lt;span class=&quot;selector-tag&quot;&gt;www&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.sublimetext&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.com&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;127&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.1&lt;/span&gt;       &lt;span class=&quot;selector-tag&quot;&gt;license&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.sublimehq&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.com&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="教程" scheme="http://nature1995.club/categories/%E6%95%99%E7%A8%8B/"/>
-    
-    
-      <category term="Software" scheme="http://nature1995.club/tags/Software/"/>
     
   </entry>
   
@@ -187,6 +187,26 @@
   </entry>
   
   <entry>
+    <title>Centos 配置mailx使用外部smtp发送邮件</title>
+    <link href="http://nature1995.club/2018/11/29/Centos-%E9%85%8D%E7%BD%AEmailx%E4%BD%BF%E7%94%A8%E5%A4%96%E9%83%A8smtp%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6/"/>
+    <id>http://nature1995.club/2018/11/29/Centos-配置mailx使用外部smtp发送邮件/</id>
+    <published>2018-11-30T01:32:59.000Z</published>
+    <updated>2018-11-30T04:41:26.290Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Centos-配置mailx使用外部smtp发送邮件&quot;&gt;&lt;a href=&quot;#Centos-配置mailx使用外部smtp发送邮件&quot; class=&quot;headerlink&quot; title=&quot;Centos 配置mailx使用外部smtp发送邮件&quot;&gt;&lt;/a&gt;Centos 配置mailx使用外部smtp发送邮件&lt;/h2&gt;&lt;h3 id=&quot;安装mailx&quot;&gt;&lt;a href=&quot;#安装mailx&quot; class=&quot;headerlink&quot; title=&quot;安装mailx&quot;&gt;&lt;/a&gt;安装mailx&lt;/h3&gt;&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;yum install mailx&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&quot;配置mailx&quot;&gt;&lt;a href=&quot;#配置mailx&quot; class=&quot;headerlink&quot; title=&quot;配置mailx&quot;&gt;&lt;/a&gt;配置mailx&lt;/h3&gt;&lt;p&gt;推荐163邮箱，当然，QQ邮箱也是可以的，PS：记得要进邮箱打开SMTP&lt;/p&gt;&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;vi /etc/mail.rc //如果不存在，则编辑/etc/nail.rc&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 在文件的末尾加入下面代码，相应帐号密码填写自己的帐号密码&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;set &lt;span class=&quot;keyword&quot;&gt;from&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;xxx@163.com&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;set smtp=smtp&lt;span class=&quot;number&quot;&gt;.163&lt;/span&gt;.com&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;set smtp-auth-user=xxx&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;set smtp-auth-password=邮箱密码&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;set smtp-auth=login&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="服务器" scheme="http://nature1995.club/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+    
+      <category term="Centos" scheme="http://nature1995.club/tags/Centos/"/>
+    
+  </entry>
+  
+  <entry>
     <title>VNC和远程桌面的区别</title>
     <link href="http://nature1995.club/2018/11/29/VNC%E5%92%8C%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
     <id>http://nature1995.club/2018/11/29/VNC和远程桌面的区别/</id>
@@ -209,26 +229,6 @@
     
     
       <category term="Virtualization" scheme="http://nature1995.club/tags/Virtualization/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Centos 配置mailx使用外部smtp发送邮件</title>
-    <link href="http://nature1995.club/2018/11/29/Centos-%E9%85%8D%E7%BD%AEmailx%E4%BD%BF%E7%94%A8%E5%A4%96%E9%83%A8smtp%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6/"/>
-    <id>http://nature1995.club/2018/11/29/Centos-配置mailx使用外部smtp发送邮件/</id>
-    <published>2018-11-30T01:32:59.000Z</published>
-    <updated>2018-11-30T04:41:26.290Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Centos-配置mailx使用外部smtp发送邮件&quot;&gt;&lt;a href=&quot;#Centos-配置mailx使用外部smtp发送邮件&quot; class=&quot;headerlink&quot; title=&quot;Centos 配置mailx使用外部smtp发送邮件&quot;&gt;&lt;/a&gt;Centos 配置mailx使用外部smtp发送邮件&lt;/h2&gt;&lt;h3 id=&quot;安装mailx&quot;&gt;&lt;a href=&quot;#安装mailx&quot; class=&quot;headerlink&quot; title=&quot;安装mailx&quot;&gt;&lt;/a&gt;安装mailx&lt;/h3&gt;&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;yum install mailx&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&quot;配置mailx&quot;&gt;&lt;a href=&quot;#配置mailx&quot; class=&quot;headerlink&quot; title=&quot;配置mailx&quot;&gt;&lt;/a&gt;配置mailx&lt;/h3&gt;&lt;p&gt;推荐163邮箱，当然，QQ邮箱也是可以的，PS：记得要进邮箱打开SMTP&lt;/p&gt;&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;vi /etc/mail.rc //如果不存在，则编辑/etc/nail.rc&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 在文件的末尾加入下面代码，相应帐号密码填写自己的帐号密码&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;set &lt;span class=&quot;keyword&quot;&gt;from&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;xxx@163.com&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;set smtp=smtp&lt;span class=&quot;number&quot;&gt;.163&lt;/span&gt;.com&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;set smtp-auth-user=xxx&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;set smtp-auth-password=邮箱密码&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;set smtp-auth=login&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-      <category term="服务器" scheme="http://nature1995.club/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    
-    
-      <category term="Centos" scheme="http://nature1995.club/tags/Centos/"/>
     
   </entry>
   
