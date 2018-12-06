@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://nature1995.club/"/>
-  <updated>2018-12-04T01:58:15.561Z</updated>
+  <updated>2018-12-06T04:10:58.166Z</updated>
   <id>http://nature1995.club/</id>
   
   <author>
@@ -15,6 +15,52 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Centos更新源yum问题解决方法</title>
+    <link href="http://nature1995.club/2018/12/05/Centos%E9%87%8D%E6%96%B0%E5%AE%89%E8%A3%85yum%E7%9A%84base-repo%E6%BA%90/"/>
+    <id>http://nature1995.club/2018/12/05/Centos重新安装yum的base-repo源/</id>
+    <published>2018-12-05T18:32:00.000Z</published>
+    <updated>2018-12-06T04:10:58.166Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;好久不更新自己的服务器或者误删除了更新源，偶然返现自己的Centos的系统yum源出现问题了，如何才能修复？&lt;/p&gt;&lt;h3 id=&quot;方式一：使用国内的阿里云镜像&quot;&gt;&lt;a href=&quot;#方式一：使用国内的阿里云镜像&quot; class=&quot;headerlink&quot; title=&quot;方式一：使用国内的阿里云镜像&quot;&gt;&lt;/a&gt;方式一：使用国内的阿里云镜像&lt;/h3&gt;&lt;p&gt;（1）把/etc/yum.repos.d/下面所有的源给删除掉了&lt;/p&gt;&lt;p&gt;（2）选择自己系统合适的镜像下载&lt;br&gt;&lt;/p&gt;&lt;figure class=&quot;highlight dts&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;# CentOS 5&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;wget -O &lt;span class=&quot;meta-keyword&quot;&gt;/etc/&lt;/span&gt;yum.repos.d/CentOS-Base.repo http:&lt;span class=&quot;comment&quot;&gt;//mirrors.aliyun.com/repo/Centos-5.repo&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;# CentOS 6&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;wget -O &lt;span class=&quot;meta-keyword&quot;&gt;/etc/&lt;/span&gt;yum.repos.d/CentOS-Base.repo http:&lt;span class=&quot;comment&quot;&gt;//mirrors.aliyun.com/repo/Centos-6.repo&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;# CentOS 7&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;wget -O &lt;span class=&quot;meta-keyword&quot;&gt;/etc/&lt;/span&gt;yum.repos.d/CentOS-Base.repo http:&lt;span class=&quot;comment&quot;&gt;//mirrors.aliyun.com/repo/Centos-7.repo&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;注意如果没有安装wget，可以从下面的网址中先手动下载，然后上传到linux上安装：&lt;a href=&quot;http://www.rpmfind.net/linux/rpm2html/search.php?query=wget&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://www.rpmfind.net/linux/rpm2html/search.php?query=wget&lt;/a&gt;&lt;/p&gt;&lt;p&gt;（3）执行命令，重新生成cache&lt;br&gt;&lt;/p&gt;&lt;figure class=&quot;highlight ada&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;yum clean &lt;span class=&quot;keyword&quot;&gt;all&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum makecache&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="服务器" scheme="http://nature1995.club/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+    
+      <category term="CentOS" scheme="http://nature1995.club/tags/CentOS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MAC在同一程序切换窗口</title>
+    <link href="http://nature1995.club/2018/12/04/MAC%E5%9C%A8%E5%90%8C%E4%B8%80%E7%A8%8B%E5%BA%8F%E5%88%87%E6%8D%A2%E7%AA%97%E5%8F%A3/"/>
+    <id>http://nature1995.club/2018/12/04/MAC在同一程序切换窗口/</id>
+    <published>2018-12-04T19:32:00.000Z</published>
+    <updated>2018-12-06T04:08:09.285Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;&lt;p&gt;在MAC下切换窗口是command+tab键，这个是多程序之间切换。那么在同一程序下，比如多个独立浏览器之间或者word之间切换呢？&lt;/p&gt;&lt;/blockquote&gt;&lt;h3 id=&quot;同一程序切换窗口：&quot;&gt;&lt;a href=&quot;#同一程序切换窗口：&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="教程" scheme="http://nature1995.club/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="Mac" scheme="http://nature1995.club/tags/Mac/"/>
+    
+  </entry>
   
   <entry>
     <title>基于人工智能的树莓派人脸识别系统(Intelligent Facial Recognition System)</title>
@@ -34,9 +80,9 @@
       <category term="GitHub" scheme="http://nature1995.club/categories/%E6%BA%90%E7%A0%81/GitHub/"/>
     
     
-      <category term="Raspberry Pi" scheme="http://nature1995.club/tags/Raspberry-Pi/"/>
-    
       <category term="Hardware" scheme="http://nature1995.club/tags/Hardware/"/>
+    
+      <category term="Raspberry Pi" scheme="http://nature1995.club/tags/Raspberry-Pi/"/>
     
   </entry>
   
@@ -57,26 +103,6 @@
     
     
       <category term="Django" scheme="http://nature1995.club/tags/Django/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Sublime-text3-3176版本激活</title>
-    <link href="http://nature1995.club/2018/12/01/Sublime-text3-3176%E7%89%88%E6%9C%AC%E6%BF%80%E6%B4%BB/"/>
-    <id>http://nature1995.club/2018/12/01/Sublime-text3-3176版本激活/</id>
-    <published>2018-12-01T19:18:32.000Z</published>
-    <updated>2018-12-04T01:58:23.992Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;https://i.loli.net/2018/12/02/5c02df25e5ec3.png&quot; alt=&quot;1201142054.png&quot;&gt;&lt;/p&gt;&lt;h3 id=&quot;步骤一：&quot;&gt;&lt;a href=&quot;#步骤一：&quot; class=&quot;headerlink&quot; title=&quot;步骤一：&quot;&gt;&lt;/a&gt;步骤一：&lt;/h3&gt;&lt;p&gt;更改hosts：sudo vim /private/etc/hosts&lt;br&gt;&lt;/p&gt;&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;127&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.1&lt;/span&gt;       &lt;span class=&quot;selector-tag&quot;&gt;www&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.sublimetext&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.com&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;127&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.1&lt;/span&gt;       &lt;span class=&quot;selector-tag&quot;&gt;license&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.sublimehq&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.com&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="教程" scheme="http://nature1995.club/categories/%E6%95%99%E7%A8%8B/"/>
-    
-    
-      <category term="Software" scheme="http://nature1995.club/tags/Software/"/>
     
   </entry>
   
@@ -107,6 +133,26 @@
       <category term="Hardware" scheme="http://nature1995.club/tags/Hardware/"/>
     
       <category term="STM32" scheme="http://nature1995.club/tags/STM32/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Sublime-text3-3176版本激活</title>
+    <link href="http://nature1995.club/2018/12/01/Sublime-text3-3176%E7%89%88%E6%9C%AC%E6%BF%80%E6%B4%BB/"/>
+    <id>http://nature1995.club/2018/12/01/Sublime-text3-3176版本激活/</id>
+    <published>2018-12-01T19:18:32.000Z</published>
+    <updated>2018-12-04T01:58:23.992Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://i.loli.net/2018/12/02/5c02df25e5ec3.png&quot; alt=&quot;1201142054.png&quot;&gt;&lt;/p&gt;&lt;h3 id=&quot;步骤一：&quot;&gt;&lt;a href=&quot;#步骤一：&quot; class=&quot;headerlink&quot; title=&quot;步骤一：&quot;&gt;&lt;/a&gt;步骤一：&lt;/h3&gt;&lt;p&gt;更改hosts：sudo vim /private/etc/hosts&lt;br&gt;&lt;/p&gt;&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;127&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.1&lt;/span&gt;       &lt;span class=&quot;selector-tag&quot;&gt;www&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.sublimetext&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.com&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;127&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.1&lt;/span&gt;       &lt;span class=&quot;selector-tag&quot;&gt;license&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.sublimehq&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.com&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="教程" scheme="http://nature1995.club/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="Software" scheme="http://nature1995.club/tags/Software/"/>
     
   </entry>
   
@@ -187,26 +233,6 @@
   </entry>
   
   <entry>
-    <title>Centos 配置mailx使用外部smtp发送邮件</title>
-    <link href="http://nature1995.club/2018/11/29/Centos-%E9%85%8D%E7%BD%AEmailx%E4%BD%BF%E7%94%A8%E5%A4%96%E9%83%A8smtp%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6/"/>
-    <id>http://nature1995.club/2018/11/29/Centos-配置mailx使用外部smtp发送邮件/</id>
-    <published>2018-11-30T01:32:59.000Z</published>
-    <updated>2018-11-30T04:41:26.290Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Centos-配置mailx使用外部smtp发送邮件&quot;&gt;&lt;a href=&quot;#Centos-配置mailx使用外部smtp发送邮件&quot; class=&quot;headerlink&quot; title=&quot;Centos 配置mailx使用外部smtp发送邮件&quot;&gt;&lt;/a&gt;Centos 配置mailx使用外部smtp发送邮件&lt;/h2&gt;&lt;h3 id=&quot;安装mailx&quot;&gt;&lt;a href=&quot;#安装mailx&quot; class=&quot;headerlink&quot; title=&quot;安装mailx&quot;&gt;&lt;/a&gt;安装mailx&lt;/h3&gt;&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;yum install mailx&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&quot;配置mailx&quot;&gt;&lt;a href=&quot;#配置mailx&quot; class=&quot;headerlink&quot; title=&quot;配置mailx&quot;&gt;&lt;/a&gt;配置mailx&lt;/h3&gt;&lt;p&gt;推荐163邮箱，当然，QQ邮箱也是可以的，PS：记得要进邮箱打开SMTP&lt;/p&gt;&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;vi /etc/mail.rc //如果不存在，则编辑/etc/nail.rc&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 在文件的末尾加入下面代码，相应帐号密码填写自己的帐号密码&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;set &lt;span class=&quot;keyword&quot;&gt;from&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;xxx@163.com&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;set smtp=smtp&lt;span class=&quot;number&quot;&gt;.163&lt;/span&gt;.com&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;set smtp-auth-user=xxx&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;set smtp-auth-password=邮箱密码&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;set smtp-auth=login&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-      <category term="服务器" scheme="http://nature1995.club/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    
-    
-      <category term="Centos" scheme="http://nature1995.club/tags/Centos/"/>
-    
-  </entry>
-  
-  <entry>
     <title>VNC和远程桌面的区别</title>
     <link href="http://nature1995.club/2018/11/29/VNC%E5%92%8C%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
     <id>http://nature1995.club/2018/11/29/VNC和远程桌面的区别/</id>
@@ -229,6 +255,26 @@
     
     
       <category term="Virtualization" scheme="http://nature1995.club/tags/Virtualization/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Centos 配置mailx使用外部smtp发送邮件</title>
+    <link href="http://nature1995.club/2018/11/29/Centos-%E9%85%8D%E7%BD%AEmailx%E4%BD%BF%E7%94%A8%E5%A4%96%E9%83%A8smtp%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6/"/>
+    <id>http://nature1995.club/2018/11/29/Centos-配置mailx使用外部smtp发送邮件/</id>
+    <published>2018-11-30T01:32:59.000Z</published>
+    <updated>2018-11-30T04:41:26.290Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Centos-配置mailx使用外部smtp发送邮件&quot;&gt;&lt;a href=&quot;#Centos-配置mailx使用外部smtp发送邮件&quot; class=&quot;headerlink&quot; title=&quot;Centos 配置mailx使用外部smtp发送邮件&quot;&gt;&lt;/a&gt;Centos 配置mailx使用外部smtp发送邮件&lt;/h2&gt;&lt;h3 id=&quot;安装mailx&quot;&gt;&lt;a href=&quot;#安装mailx&quot; class=&quot;headerlink&quot; title=&quot;安装mailx&quot;&gt;&lt;/a&gt;安装mailx&lt;/h3&gt;&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;yum install mailx&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&quot;配置mailx&quot;&gt;&lt;a href=&quot;#配置mailx&quot; class=&quot;headerlink&quot; title=&quot;配置mailx&quot;&gt;&lt;/a&gt;配置mailx&lt;/h3&gt;&lt;p&gt;推荐163邮箱，当然，QQ邮箱也是可以的，PS：记得要进邮箱打开SMTP&lt;/p&gt;&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;vi /etc/mail.rc //如果不存在，则编辑/etc/nail.rc&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 在文件的末尾加入下面代码，相应帐号密码填写自己的帐号密码&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;set &lt;span class=&quot;keyword&quot;&gt;from&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;xxx@163.com&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;set smtp=smtp&lt;span class=&quot;number&quot;&gt;.163&lt;/span&gt;.com&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;set smtp-auth-user=xxx&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;set smtp-auth-password=邮箱密码&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;set smtp-auth=login&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="服务器" scheme="http://nature1995.club/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+    
+      <category term="Centos" scheme="http://nature1995.club/tags/Centos/"/>
     
   </entry>
   
