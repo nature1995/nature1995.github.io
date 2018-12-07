@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://nature1995.club/"/>
-  <updated>2018-12-06T04:10:58.166Z</updated>
+  <updated>2018-12-07T23:17:19.152Z</updated>
   <id>http://nature1995.club/</id>
   
   <author>
@@ -17,11 +17,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Centos7服务器安装Anaconda</title>
+    <link href="http://nature1995.club/2018/12/07/Centos7%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E8%A3%85Anaconda/"/>
+    <id>http://nature1995.club/2018/12/07/Centos7服务器安装Anaconda/</id>
+    <published>2018-12-07T18:32:00.000Z</published>
+    <updated>2018-12-07T23:17:19.152Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Anaconda3下载&quot;&gt;&lt;a href=&quot;#Anaconda3下载&quot; class=&quot;headerlink&quot; title=&quot;Anaconda3下载&quot;&gt;&lt;/a&gt;Anaconda3下载&lt;/h1&gt;&lt;p&gt;从Anaconda官网下载linux版本：&lt;a href=&quot;https://www.anaconda.com/download/#linux&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.anaconda.com/download/#linux&lt;/a&gt;&lt;/p&gt;&lt;h1 id=&quot;Anaconda3安装&quot;&gt;&lt;a href=&quot;#Anaconda3安装&quot; class=&quot;headerlink&quot; title=&quot;Anaconda3安装&quot;&gt;&lt;/a&gt;Anaconda3安装&lt;/h1&gt;&lt;p&gt;将下载好的文件Anaconda3-5.0.1-Linux-x86_64.sh执行如下命令：&lt;br&gt;&lt;/p&gt;&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;# &lt;span class=&quot;selector-tag&quot;&gt;bash&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;Anaconda3-5&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.1-Linux-x86_64&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.sh&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="服务器" scheme="http://nature1995.club/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+    
+      <category term="Centos" scheme="http://nature1995.club/tags/Centos/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Centos更新源yum问题解决方法</title>
     <link href="http://nature1995.club/2018/12/05/Centos%E9%87%8D%E6%96%B0%E5%AE%89%E8%A3%85yum%E7%9A%84base-repo%E6%BA%90/"/>
     <id>http://nature1995.club/2018/12/05/Centos重新安装yum的base-repo源/</id>
     <published>2018-12-05T18:32:00.000Z</published>
-    <updated>2018-12-06T04:10:58.166Z</updated>
+    <updated>2018-12-07T23:10:57.052Z</updated>
     
     <summary type="html">
     
@@ -32,7 +52,7 @@
       <category term="服务器" scheme="http://nature1995.club/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
     
-      <category term="CentOS" scheme="http://nature1995.club/tags/CentOS/"/>
+      <category term="Centos" scheme="http://nature1995.club/tags/Centos/"/>
     
   </entry>
   
@@ -67,11 +87,11 @@
     <link href="http://nature1995.club/2018/12/01/%E5%9F%BA%E4%BA%8E%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E6%A0%91%E8%8E%93%E6%B4%BE%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB%E7%B3%BB%E7%BB%9F(Intelligent%20Facial%20Recognition%20System)/"/>
     <id>http://nature1995.club/2018/12/01/基于人工智能的树莓派人脸识别系统(Intelligent Facial Recognition System)/</id>
     <published>2018-12-01T19:35:30.000Z</published>
-    <updated>2018-12-04T01:58:15.561Z</updated>
+    <updated>2018-12-07T23:19:33.974Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;This is a project of the face recognizer with Movidius on RaspberryPi 3B+ platform. The project also uses Django and Django REST framework which providing the web platform. The project would like to build a safety and intelligent face recognition system in AI era.&lt;/p&gt;&lt;p&gt;If you appreciate the content 📖, support projects visibility, give 👍| ⭐| 👏&lt;/p&gt;&lt;p&gt;GitHub: &lt;a href=&quot;https://github.com/nature1995/Face_Recognition_System&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/nature1995/Face_Recognition_System&lt;/a&gt;&lt;/p&gt;&lt;h1 id=&quot;Compatibility&quot;&gt;&lt;a href=&quot;#Compatibility&quot; class=&quot;headerlink&quot; title=&quot;Compatibility&quot;&gt;&lt;/a&gt;Compatibility&lt;/h1&gt;&lt;p&gt;The code is tested using Tensorflow r1.7 and Movidius NCSDK2 under Debin 2018-06-27（Kernel version:4.14） with django 2.1.1 and Python 3.5.&lt;/p&gt;&lt;h1 id=&quot;Real-Product-Images&quot;&gt;&lt;a href=&quot;#Real-Product-Images&quot; class=&quot;headerlink&quot; title=&quot;Real Product Images&quot;&gt;&lt;/a&gt;Real Product Images&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;https://github.com/nature1995/Face_Recognition_System/raw/master/image/2.jpg&quot; alt=&quot;image&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://github.com/nature1995/Face_Recognition_System/raw/master/image/1.jpg&quot; alt=&quot;image&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://github.com/nature1995/Face_Recognition_System/raw/master/image/3.jpg&quot; alt=&quot;image&quot;&gt;&lt;br&gt;
+      &lt;p&gt;This is a project of the face recognizer with Movidius on RaspberryPi 3B+ platform. The project also uses Django and Django REST framework which providing the web platform. The project would like to build a safety and intelligent face recognition system in AI era.&lt;/p&gt;&lt;p&gt;If you appreciate the content 📖, support projects visibility, give 👍| ⭐| 👏&lt;/p&gt;&lt;p&gt;GitHub: &lt;a href=&quot;https://github.com/nature1995/Face_Recognition_System&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/nature1995/Face_Recognition_System&lt;/a&gt;&lt;/p&gt;&lt;h1 id=&quot;Compatibility&quot;&gt;&lt;a href=&quot;#Compatibility&quot; class=&quot;headerlink&quot; title=&quot;Compatibility&quot;&gt;&lt;/a&gt;Compatibility&lt;/h1&gt;&lt;p&gt;The code is tested using Tensorflow r1.7 and Movidius NCSDK2 under Debin 2018-06-27（Kernel version:4.14） with django 2.1.1 and Python 3.5.&lt;/p&gt;&lt;h1 id=&quot;Real-Product-Images&quot;&gt;&lt;a href=&quot;#Real-Product-Images&quot; class=&quot;headerlink&quot; title=&quot;Real Product Images&quot;&gt;&lt;/a&gt;Real Product Images&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;https://github.com/nature1995/Face_Recognition_System/raw/master/image/2.jpg&quot; alt=&quot;image&quot;&gt;&lt;br&gt;
     
     </summary>
     
@@ -107,6 +127,26 @@
   </entry>
   
   <entry>
+    <title>Sublime-text3-3176版本激活</title>
+    <link href="http://nature1995.club/2018/12/01/Sublime-text3-3176%E7%89%88%E6%9C%AC%E6%BF%80%E6%B4%BB/"/>
+    <id>http://nature1995.club/2018/12/01/Sublime-text3-3176版本激活/</id>
+    <published>2018-12-01T19:18:32.000Z</published>
+    <updated>2018-12-04T01:58:23.992Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://i.loli.net/2018/12/02/5c02df25e5ec3.png&quot; alt=&quot;1201142054.png&quot;&gt;&lt;/p&gt;&lt;h3 id=&quot;步骤一：&quot;&gt;&lt;a href=&quot;#步骤一：&quot; class=&quot;headerlink&quot; title=&quot;步骤一：&quot;&gt;&lt;/a&gt;步骤一：&lt;/h3&gt;&lt;p&gt;更改hosts：sudo vim /private/etc/hosts&lt;br&gt;&lt;/p&gt;&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;127&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.1&lt;/span&gt;       &lt;span class=&quot;selector-tag&quot;&gt;www&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.sublimetext&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.com&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;127&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.1&lt;/span&gt;       &lt;span class=&quot;selector-tag&quot;&gt;license&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.sublimehq&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.com&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="教程" scheme="http://nature1995.club/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="Software" scheme="http://nature1995.club/tags/Software/"/>
+    
+  </entry>
+  
+  <entry>
     <title>蓝桥杯嵌入式与开发组——历年比赛试题与源码</title>
     <link href="http://nature1995.club/2018/12/01/%E8%93%9D%E6%A1%A5%E6%9D%AF%E5%B5%8C%E5%85%A5%E5%BC%8F%E4%B8%8E%E5%BC%80%E5%8F%91%E7%BB%84%E2%80%94%E2%80%94%E5%8E%86%E5%B9%B4%E6%AF%94%E8%B5%9B%E8%AF%95%E9%A2%98%E4%B8%8E%E6%BA%90%E7%A0%81/"/>
     <id>http://nature1995.club/2018/12/01/蓝桥杯嵌入式与开发组——历年比赛试题与源码/</id>
@@ -133,26 +173,6 @@
       <category term="Hardware" scheme="http://nature1995.club/tags/Hardware/"/>
     
       <category term="STM32" scheme="http://nature1995.club/tags/STM32/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Sublime-text3-3176版本激活</title>
-    <link href="http://nature1995.club/2018/12/01/Sublime-text3-3176%E7%89%88%E6%9C%AC%E6%BF%80%E6%B4%BB/"/>
-    <id>http://nature1995.club/2018/12/01/Sublime-text3-3176版本激活/</id>
-    <published>2018-12-01T19:18:32.000Z</published>
-    <updated>2018-12-04T01:58:23.992Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;https://i.loli.net/2018/12/02/5c02df25e5ec3.png&quot; alt=&quot;1201142054.png&quot;&gt;&lt;/p&gt;&lt;h3 id=&quot;步骤一：&quot;&gt;&lt;a href=&quot;#步骤一：&quot; class=&quot;headerlink&quot; title=&quot;步骤一：&quot;&gt;&lt;/a&gt;步骤一：&lt;/h3&gt;&lt;p&gt;更改hosts：sudo vim /private/etc/hosts&lt;br&gt;&lt;/p&gt;&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;127&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.1&lt;/span&gt;       &lt;span class=&quot;selector-tag&quot;&gt;www&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.sublimetext&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.com&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;127&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.1&lt;/span&gt;       &lt;span class=&quot;selector-tag&quot;&gt;license&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.sublimehq&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.com&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="教程" scheme="http://nature1995.club/categories/%E6%95%99%E7%A8%8B/"/>
-    
-    
-      <category term="Software" scheme="http://nature1995.club/tags/Software/"/>
     
   </entry>
   

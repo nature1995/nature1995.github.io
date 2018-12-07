@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Centos7服务器安装Anaconda]]></title>
+    <url>%2F2018%2F12%2F07%2FCentos7%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E8%A3%85Anaconda%2F</url>
+    <content type="text"><![CDATA[Anaconda3下载从Anaconda官网下载linux版本：https://www.anaconda.com/download/#linuxAnaconda3安装将下载好的文件Anaconda3-5.0.1-Linux-x86_64.sh执行如下命令：1# bash Anaconda3-5.0.1-Linux-x86_64.sh安装过程中修改Anaconda3的安装路径为/opt/modules/anaconda3:12345678910111213Do you accept the license terms? [yes|no]Please answer 'yes' or 'no':'&gt;&gt;&gt; yes Anaconda3 will now be installed into this location:/root/anaconda3 - Press ENTER to confirm the location - Press CTRL-C to abort the installation - Or specify a different location below[/root/anaconda3] &gt;&gt;&gt; /opt/modules/anaconda3PREFIX=/opt/modules/anaconda3等待安装完成提示信息，询问是否要将Anaconda3添加到PATH环境变量中，直接回车(选择no):12345678910installation finished.Do you wish the installer to prepend the Anaconda3 install locationto PATH in your /root/.bashrc ? [yes|no][no] &gt;&gt;&gt; You may wish to edit your .bashrc to prepend the Anaconda3 install location to PATH:export PATH=/opt/modules/anaconda3/bin:$PATHThank you for installing Anaconda3!手动将export PATH=/opt/modules/anaconda3/bin:$PATH添加到/etc/profile中, 最后source /etc/profile使环境变量生效:1# source /etc/profileTensorflow安装建立Tensorflow运行环境Tensorflow目前Python3版本最高支持到Python3.5，所以选择Python 3.5, 只需要执行conda create -n tensorflow python=3.5指令:12345678## Python 2.7# conda create -n tensorflow python=2.7 ## Python 3.5 # conda create -n tensorflow python=3.5 ## Python 3.6 # conda create -n tensorflow python=3.6在Anaconda3中创建Tensorflow虚拟环境:123456789101112131415161718192021222324252627282930313233343536373839404142434445464748Fetching package metadata ...........Solving package specifications: .Package plan for installation in environment /opt/modules/anaconda3/envs/tensorflow:The following NEW packages will be INSTALLED: ca-certificates: 2017.08.26-h1d4fec5_0 certifi: 2017.11.5-py35h9749603_0 libedit: 3.1-heed3624_0 libffi: 3.2.1-hd88cf55_4 libgcc-ng: 7.2.0-h7cc24e2_2 libstdcxx-ng: 7.2.0-h7a57d05_2 ncurses: 6.0-h9df7e31_2 openssl: 1.0.2m-h26d622b_1 pip: 9.0.1-py35h7e7da9d_4 python: 3.5.4-h417fded_24 readline: 7.0-ha6073c6_4 setuptools: 36.5.0-py35ha8c1747_0 sqlite: 3.20.1-hb898158_2 tk: 8.6.7-hc745277_3 wheel: 0.30.0-py35hd3883cf_1 xz: 5.2.3-h55aa19d_2 zlib: 1.2.11-ha838bed_2 Proceed ([y]/n)? libffi-3.2.1-h 100% |##################################################################| Time: 0:00:00 137.60 kB/sncurses-6.0-h9 100% |##################################################################| Time: 0:00:01 622.10 kB/sopenssl-1.0.2m 100% |##################################################################| Time: 0:00:03 1.06 MB/stk-8.6.7-hc745 100% |##################################################################| Time: 0:00:02 1.13 MB/sxz-5.2.3-h55aa 100% |##################################################################| Time: 0:00:00 1.28 MB/szlib-1.2.11-ha 100% |##################################################################| Time: 0:00:00 1.59 MB/sreadline-7.0-h 100% |##################################################################| Time: 0:00:00 1.27 MB/ssqlite-3.20.1- 100% |##################################################################| Time: 0:00:01 1.41 MB/spython-3.5.4-h 100% |##################################################################| Time: 0:00:07 3.87 MB/scertifi-2017.1 100% |##################################################################| Time: 0:00:00 6.01 MB/ssetuptools-36. 100% |##################################################################| Time: 0:00:00 6.55 MB/swheel-0.30.0-p 100% |##################################################################| Time: 0:00:00 6.82 MB/spip-9.0.1-py35 100% |##################################################################| Time: 0:00:00 6.78 MB/s## To activate this environment, use:# &gt; source activate tensorflow## To deactivate an active environment, use:# &gt; source deactivate#为了简便也可以直接指定版本python=3.5, 且克隆anaconda所有的Python包:1conda create -n tensorflow python=3.5 anacondaconda环境管理列出所有的环境1conda info --envs创建一个指定Python版本且包含anaconda所有Python包的新环境1# conda create -n py36 python=3.6 anaconda克隆一个环境创建一个和root环境一样的副本:1conda create -n py36 --clone root删除一个环境1# conda remove -n py36 --all在conda环境下安装tensorflow（pip安装方式）激活conda环境(tensorflow)1# source activate tensorflow根据tensorflow的版本设置环境变量（以CPU版本为例）Tensorflow的源码地址: https://github.com/tensorflow/tensorflow，如下三种环境Python2.7, Python3.4, Python3.5，选择一种(Python3.5)运行:123456## Linux 64-bit, CPU only, Python 2.7 (tensorflow)$ export TF_BINARY_URL=https://ci.tensorflow.org/view/tf-nightly/job/tf-nightly-linux/TF_BUILD_IS_OPT=OPT,TF_BUILD_IS_PIP=PIP,TF_BUILD_PYTHON_VERSION=PYTHON2,label=cpu-slave/lastSuccessfulBuild/artifact/pip_test/whl/tf_nightly-1.head-cp27-none-linux_x86_64.whl ## Linux 64-bit, CPU only, Python 3.4 (tensorflow)$ export TF_BINARY_URL=https://ci.tensorflow.org/view/tf-nightly/job/tf-nightly-linux/TF_BUILD_IS_OPT=OPT,TF_BUILD_IS_PIP=PIP,TF_BUILD_PYTHON_VERSION=PYTHON3,label=cpu-slave/lastSuccessfulBuild/artifact/pip_test/whl/tf_nightly-1.head-cp34-cp34m-linux_x86_64.whl## Linux 64-bit, CPU only, Python 3.5 (tensorflow)$ export TF_BINARY_URL=https://ci.tensorflow.org/view/tf-nightly/job/tf-nightly-linux/TF_BUILD_IS_OPT=OPT,TF_BUILD_IS_PIP=PIP,TF_BUILD_PYTHON_VERSION=PYTHON3.5,label=cpu-slave/lastSuccessfulBuild/artifact/pip_test/whl/tf_nightly-1.head-cp35-cp35m-linux_x86_64.whl使用pip命令安装tensorflow选择一种安装环境(Python 3):12345## Python 2 (tensorflow)# pip install --ignore-installed --upgrade $TF_BINARY_URL ## Python 3 (tensorflow)# pip install --ignore-installed --upgrade $TF_BINARY_URL使用conda命令安装tensorflowUsing conda参照如下网址:A community maintained conda package is available from conda-forge.https://github.com/conda-forge/tensorflow-feedstockOnly the CPU version of TensorFlow is available at the moment and can be installed in the conda environment for Python 2 or Python 3.12$ source activate tensorflow (tensorflow)#Linux/Mac OS X, Python 2.7/3.4/3.5, CPU only:1(tensorflow)# conda install -c conda-forge tensorflow参考资料【1】https://blog.csdn.net/liuguangrong/article/details/78737419]]></content>
+      <categories>
+        <category>服务器</category>
+      </categories>
+      <tags>
+        <tag>Centos</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Centos更新源yum问题解决方法]]></title>
     <url>%2F2018%2F12%2F05%2FCentos%E9%87%8D%E6%96%B0%E5%AE%89%E8%A3%85yum%E7%9A%84base-repo%E6%BA%90%2F</url>
     <content type="text"><![CDATA[好久不更新自己的服务器或者误删除了更新源，偶然返现自己的Centos的系统yum源出现问题了，如何才能修复？方式一：使用国内的阿里云镜像（1）把/etc/yum.repos.d/下面所有的源给删除掉了（2）选择自己系统合适的镜像下载123456# CentOS 5wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-5.repo# CentOS 6wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-6.repo# CentOS 7wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo注意如果没有安装wget，可以从下面的网址中先手动下载，然后上传到linux上安装：http://www.rpmfind.net/linux/rpm2html/search.php?query=wget（3）执行命令，重新生成cache12yum clean allyum makecache方式二：使用官网的镜像（1）把/etc/yum.repos.d/下面所有的源给删除掉了（2）执行下面的命令，重新生成镜像12//执行这个命令之后rpm -Uvh --force http://mirror.centos.org/centos-7/7/os/x86_64/Packages/centos-release-7-4.1708.el7.centos.x86_64.rpm（3）查看/etc/yum.repos.d/下面目录，就会发现镜像已经安装完毕：1234567-rw-r--r--. 1 root root 1664 8月 30 23:53 CentOS-Base.repo-rw-r--r--. 1 root root 1309 8月 30 23:53 CentOS-CR.repo-rw-r--r--. 1 root root 649 8月 30 23:53 CentOS-Debuginfo.repo-rw-r--r--. 1 root root 314 8月 30 23:53 CentOS-fasttrack.repo-rw-r--r--. 1 root root 630 8月 30 23:53 CentOS-Media.repo-rw-r--r--. 1 root root 1331 8月 30 23:53 CentOS-Sources.repo-rw-r--r--. 1 root root 3830 8月 30 23:53 CentOS-Vault.repo（4）生成缓存12yum clean allyum makecache必要时可以执行yum update更新当前系统的安装包为新的手动下载命令，例子:12345#安装vim组件yum install -y vim #卸载vim组件yum remove vim推荐使用方式一。]]></content>
@@ -8,7 +19,7 @@
         <category>服务器</category>
       </categories>
       <tags>
-        <tag>CentOS</tag>
+        <tag>Centos</tag>
       </tags>
   </entry>
   <entry>
@@ -47,6 +58,17 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[Sublime-text3-3176版本激活]]></title>
+    <url>%2F2018%2F12%2F01%2FSublime-text3-3176%E7%89%88%E6%9C%AC%E6%BF%80%E6%B4%BB%2F</url>
+    <content type="text"><![CDATA[步骤一：更改hosts：sudo vim /private/etc/hosts12127.0.0.1 www.sublimetext.com127.0.0.1 license.sublimehq.com步骤二：在Sublime里面Help–&gt;License里面输入下面激活码：12345678910111213----- BEGIN LICENSE -----sgbteamSingle User LicenseEA7E-11532598891CBB9 F1513E4F 1A3405C1 A865D53F115F202E 7B91AB2D 0D2A40ED 352B269B76E84F0B CD69BFC7 59F2DFEF E267328F215652A3 E88F9D8F 4C38E3BA 5B2DAAE4969624E7 DC9CD4D5 717FB40C 1B9738CF20B3C4F1 E917B5B3 87C38D9C ACCE7DD85F7EF854 86B9743C FADC04AA FB0DA5C0F913BE58 42FEA319 F954EFDD AE881E0B------ END LICENSE ------]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>Software</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[蓝桥杯嵌入式与开发组——历年比赛试题与源码]]></title>
     <url>%2F2018%2F12%2F01%2F%E8%93%9D%E6%A1%A5%E6%9D%AF%E5%B5%8C%E5%85%A5%E5%BC%8F%E4%B8%8E%E5%BC%80%E5%8F%91%E7%BB%84%E2%80%94%E2%80%94%E5%8E%86%E5%B9%B4%E6%AF%94%E8%B5%9B%E8%AF%95%E9%A2%98%E4%B8%8E%E6%BA%90%E7%A0%81%2F</url>
     <content type="text"><![CDATA[蓝桥杯历年比赛试题与源码（嵌入式与开发组）If you appreciate the content 📖, support projects visibility, give 👍| ⭐| 👏Github: https://github.com/nature1995/lanqiao-competition-code第九届决赛模拟题第九届省赛模拟题第八届决赛-频率控制器的功能设计与实现第八届省赛-模拟升降控制器控制器第七届决赛-温湿度监控设备第七届省赛-模拟液位检测告警系统 第二版第六届决赛-电压测量与互补 PWM 信号输出第六届省赛-电压测量监控设备第五届省赛-双通道方波频率检测与倍频输出第四届省赛-双路输出控制器]]></content>
@@ -57,17 +79,6 @@
       <tags>
         <tag>Hardware</tag>
         <tag>STM32</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Sublime-text3-3176版本激活]]></title>
-    <url>%2F2018%2F12%2F01%2FSublime-text3-3176%E7%89%88%E6%9C%AC%E6%BF%80%E6%B4%BB%2F</url>
-    <content type="text"><![CDATA[步骤一：更改hosts：sudo vim /private/etc/hosts12127.0.0.1 www.sublimetext.com127.0.0.1 license.sublimehq.com步骤二：在Sublime里面Help–&gt;License里面输入下面激活码：12345678910111213----- BEGIN LICENSE -----sgbteamSingle User LicenseEA7E-11532598891CBB9 F1513E4F 1A3405C1 A865D53F115F202E 7B91AB2D 0D2A40ED 352B269B76E84F0B CD69BFC7 59F2DFEF E267328F215652A3 E88F9D8F 4C38E3BA 5B2DAAE4969624E7 DC9CD4D5 717FB40C 1B9738CF20B3C4F1 E917B5B3 87C38D9C ACCE7DD85F7EF854 86B9743C FADC04AA FB0DA5C0F913BE58 42FEA319 F954EFDD AE881E0B------ END LICENSE ------]]></content>
-      <categories>
-        <category>教程</category>
-      </categories>
-      <tags>
-        <tag>Software</tag>
       </tags>
   </entry>
   <entry>
