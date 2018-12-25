@@ -333,26 +333,6 @@
   </entry>
   
   <entry>
-    <title>Centos 配置mailx使用外部smtp发送邮件</title>
-    <link href="http://nature1995.club/2018/11/29/Centos-%E9%85%8D%E7%BD%AEmailx%E4%BD%BF%E7%94%A8%E5%A4%96%E9%83%A8smtp%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6/"/>
-    <id>http://nature1995.club/2018/11/29/Centos-配置mailx使用外部smtp发送邮件/</id>
-    <published>2018-11-30T01:32:59.000Z</published>
-    <updated>2018-11-30T04:41:26.290Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Centos-配置mailx使用外部smtp发送邮件&quot;&gt;&lt;a href=&quot;#Centos-配置mailx使用外部smtp发送邮件&quot; class=&quot;headerlink&quot; title=&quot;Centos 配置mailx使用外部smtp发送邮件&quot;&gt;&lt;/a&gt;Centos 配置mailx使用外部smtp发送邮件&lt;/h2&gt;&lt;h3 id=&quot;安装mailx&quot;&gt;&lt;a href=&quot;#安装mailx&quot; class=&quot;headerlink&quot; title=&quot;安装mailx&quot;&gt;&lt;/a&gt;安装mailx&lt;/h3&gt;&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;yum install mailx&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&quot;配置mailx&quot;&gt;&lt;a href=&quot;#配置mailx&quot; class=&quot;headerlink&quot; title=&quot;配置mailx&quot;&gt;&lt;/a&gt;配置mailx&lt;/h3&gt;&lt;p&gt;推荐163邮箱，当然，QQ邮箱也是可以的，PS：记得要进邮箱打开SMTP&lt;/p&gt;&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;vi /etc/mail.rc //如果不存在，则编辑/etc/nail.rc&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 在文件的末尾加入下面代码，相应帐号密码填写自己的帐号密码&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;set &lt;span class=&quot;keyword&quot;&gt;from&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;xxx@163.com&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;set smtp=smtp&lt;span class=&quot;number&quot;&gt;.163&lt;/span&gt;.com&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;set smtp-auth-user=xxx&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;set smtp-auth-password=邮箱密码&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;set smtp-auth=login&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-      <category term="服务器" scheme="http://nature1995.club/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    
-    
-      <category term="Centos" scheme="http://nature1995.club/tags/Centos/"/>
-    
-  </entry>
-  
-  <entry>
     <title>VNC和远程桌面的区别</title>
     <link href="http://nature1995.club/2018/11/29/VNC%E5%92%8C%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
     <id>http://nature1995.club/2018/11/29/VNC和远程桌面的区别/</id>
@@ -375,6 +355,26 @@
     
     
       <category term="Virtualization" scheme="http://nature1995.club/tags/Virtualization/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Centos 配置mailx使用外部smtp发送邮件</title>
+    <link href="http://nature1995.club/2018/11/29/Centos-%E9%85%8D%E7%BD%AEmailx%E4%BD%BF%E7%94%A8%E5%A4%96%E9%83%A8smtp%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6/"/>
+    <id>http://nature1995.club/2018/11/29/Centos-配置mailx使用外部smtp发送邮件/</id>
+    <published>2018-11-30T01:32:59.000Z</published>
+    <updated>2018-11-30T04:41:26.290Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Centos-配置mailx使用外部smtp发送邮件&quot;&gt;&lt;a href=&quot;#Centos-配置mailx使用外部smtp发送邮件&quot; class=&quot;headerlink&quot; title=&quot;Centos 配置mailx使用外部smtp发送邮件&quot;&gt;&lt;/a&gt;Centos 配置mailx使用外部smtp发送邮件&lt;/h2&gt;&lt;h3 id=&quot;安装mailx&quot;&gt;&lt;a href=&quot;#安装mailx&quot; class=&quot;headerlink&quot; title=&quot;安装mailx&quot;&gt;&lt;/a&gt;安装mailx&lt;/h3&gt;&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;yum install mailx&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&quot;配置mailx&quot;&gt;&lt;a href=&quot;#配置mailx&quot; class=&quot;headerlink&quot; title=&quot;配置mailx&quot;&gt;&lt;/a&gt;配置mailx&lt;/h3&gt;&lt;p&gt;推荐163邮箱，当然，QQ邮箱也是可以的，PS：记得要进邮箱打开SMTP&lt;/p&gt;&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;vi /etc/mail.rc //如果不存在，则编辑/etc/nail.rc&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 在文件的末尾加入下面代码，相应帐号密码填写自己的帐号密码&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;set &lt;span class=&quot;keyword&quot;&gt;from&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;xxx@163.com&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;set smtp=smtp&lt;span class=&quot;number&quot;&gt;.163&lt;/span&gt;.com&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;set smtp-auth-user=xxx&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;set smtp-auth-password=邮箱密码&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;set smtp-auth=login&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="服务器" scheme="http://nature1995.club/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+    
+      <category term="Centos" scheme="http://nature1995.club/tags/Centos/"/>
     
   </entry>
   
