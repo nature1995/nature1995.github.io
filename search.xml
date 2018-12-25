@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[树莓派Raspberry Pi 3搭建PLEX多媒体服务器]]></title>
     <url>%2F2018%2F12%2F12%2F%E6%A0%91%E8%8E%93%E6%B4%BERaspberry%20Pi%203%E6%90%AD%E5%BB%BAPLEX%E5%A4%9A%E5%AA%92%E4%BD%93%E6%9C%8D%E5%8A%A1%E5%99%A8%2F</url>
-    <content type="text"><![CDATA[先看效果图支持账户远程访问和本地访问，断电重启自动恢复功能。教程一、在树莓派下安装PLEX媒体服务器1.在终端，将你的树莓派更新至最新123sudo apt updatesudo apt upgradesudo apt dist-upgrade2.重启树莓派1sudo reboot3.添加https存储库的功能，如果你已安装了，系统会报告“现在的版本已经是最新版”1sudo apt install apt-transport-https4.添加Plex Media Server存储库1echo "deb https://dev2day.de/pms/ jessie main" | sudo tee /etc/apt/sources.list.d/pms.list5.为存储库添加GPG密钥1234cd /tmpwget https://dev2day.de/pms/dev2day-pms.gpg.key ls （#查看是否已经下载好dev2day-pms.gpg.key文件）sudo apt-key add dev2day-pms.gpg.key6.回到根目录1cd7.更新源1sudo apt update8.安装Plex媒体服务器1sudo apt install plexmediaserver-installer注意：如果无法找到安装包，请重启树莓派，并执行update命令9.创建默认配置文件，以便Plex知道要在哪个用户下操作1sudo nano /etc/default/plexmediaserver.prev将里面的的1PLEX_MEDIA_SERVER_USER=plex修改为1PLEX_MEDIA_SERVER_USER=pi重启PLEX服务,看到如下界面说明已经安装成功12systemctl restart plexmediaserversystemctl status plexmediaserver11.重启树莓派(可选)1sudo reboot二、安装USB外挂硬盘，实现电影资源存放1.检查插入的USB硬盘已安装到哪里1sudo cat /proc/mounts2.安装NTFS驱动器1sudo apt-get install ntfs-3g3.查询已插入硬盘的UUID1ls -l /dev/disk/by-uuid4.现在我们创建一个新的目录来挂载USB1sudo mkdir /media/usb15.接下来我们查询硬盘的UID和GID12id -g piid -u pi6.我们需要对fstab文件进行编辑。这是启动时调用的文件，用于设置驱动器1sudo nano /etc/fstab7.将以下代码的UUID、UID和GID更改为你查询到的填入1UUID=你的UUID /media/usb1 auto nofail,uid=输入你的UID,gid=输入你的UID,noatime 0 08.卸载之前挂载好的USB硬盘1sudo umount /dev/sda19.重新挂载USB硬盘1sudo mount -a10.重启树莓派，完成全部安装1sudo reb参考：https://www.vediotalk.com/?p=215]]></content>
+    <content type="text"><![CDATA[先看效果图支持账户远程访问和本地访问，断电重启自动恢复功能。教程一、在树莓派下安装PLEX媒体服务器1.在终端，将你的树莓派更新至最新123sudo apt updatesudo apt upgradesudo apt dist-upgrade2.重启树莓派1sudo reboot3.添加https存储库的功能，如果你已安装了，系统会报告“现在的版本已经是最新版”1sudo apt install apt-transport-https4.添加Plex Media Server存储库1echo "deb https://dev2day.de/pms/ jessie main" | sudo tee /etc/apt/sources.list.d/pms.list5.为存储库添加GPG密钥1234cd /tmpwget https://dev2day.de/pms/dev2day-pms.gpg.key ls （#查看是否已经下载好dev2day-pms.gpg.key文件）sudo apt-key add dev2day-pms.gpg.key6.回到根目录1cd7.更新源1sudo apt update8.安装Plex媒体服务器1sudo apt install plexmediaserver-installer注意：如果无法找到安装包，请重启树莓派，并执行update命令9.创建默认配置文件，以便Plex知道要在哪个用户下操作1sudo nano /etc/default/plexmediaserver.prev将里面的的1PLEX_MEDIA_SERVER_USER=plex修改为1PLEX_MEDIA_SERVER_USER=pi10.重启PLEX服务,看到如下界面说明已经安装成功12systemctl restart plexmediaserversystemctl status plexmediaserver11.重启树莓派(可选)1sudo reboot二、安装USB外挂硬盘，实现电影资源存放1.检查插入的USB硬盘已安装到哪里1sudo cat /proc/mounts2.安装NTFS驱动器1sudo apt-get install ntfs-3g3.查询已插入硬盘的UUID1ls -l /dev/disk/by-uuid4.现在我们创建一个新的目录来挂载USB1sudo mkdir /media/usb15.接下来我们查询硬盘的UID和GID12id -g piid -u pi6.我们需要对fstab文件进行编辑。这是启动时调用的文件，用于设置驱动器1sudo nano /etc/fstab7.将以下代码的UUID、UID和GID更改为你查询到的填入1UUID=你的UUID /media/usb1 auto nofail,uid=输入你的UID,gid=输入你的UID,noatime 0 08.卸载之前挂载好的USB硬盘1sudo umount /dev/sda19.重新挂载USB硬盘1sudo mount -a10.重启树莓派，完成全部安装1sudo reb参考：https://www.vediotalk.com/?p=215]]></content>
       <categories>
         <category>教程</category>
       </categories>
@@ -102,6 +102,17 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[Sublime-text3-3176版本激活]]></title>
+    <url>%2F2018%2F12%2F01%2FSublime-text3-3176%E7%89%88%E6%9C%AC%E6%BF%80%E6%B4%BB%2F</url>
+    <content type="text"><![CDATA[步骤一：更改hosts：sudo vim /private/etc/hosts12127.0.0.1 www.sublimetext.com127.0.0.1 license.sublimehq.com步骤二：在Sublime里面Help–&gt;License里面输入下面激活码：12345678910111213----- BEGIN LICENSE -----sgbteamSingle User LicenseEA7E-11532598891CBB9 F1513E4F 1A3405C1 A865D53F115F202E 7B91AB2D 0D2A40ED 352B269B76E84F0B CD69BFC7 59F2DFEF E267328F215652A3 E88F9D8F 4C38E3BA 5B2DAAE4969624E7 DC9CD4D5 717FB40C 1B9738CF20B3C4F1 E917B5B3 87C38D9C ACCE7DD85F7EF854 86B9743C FADC04AA FB0DA5C0F913BE58 42FEA319 F954EFDD AE881E0B------ END LICENSE ------]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>Software</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[蓝桥杯嵌入式与开发组——历年比赛试题与源码]]></title>
     <url>%2F2018%2F12%2F01%2F%E8%93%9D%E6%A1%A5%E6%9D%AF%E5%B5%8C%E5%85%A5%E5%BC%8F%E4%B8%8E%E5%BC%80%E5%8F%91%E7%BB%84%E2%80%94%E2%80%94%E5%8E%86%E5%B9%B4%E6%AF%94%E8%B5%9B%E8%AF%95%E9%A2%98%E4%B8%8E%E6%BA%90%E7%A0%81%2F</url>
     <content type="text"><![CDATA[蓝桥杯历年比赛试题与源码（嵌入式与开发组）If you appreciate the content 📖, support projects visibility, give 👍| ⭐| 👏Github: https://github.com/nature1995/lanqiao-competition-code第九届决赛模拟题第九届省赛模拟题第八届决赛-频率控制器的功能设计与实现第八届省赛-模拟升降控制器控制器第七届决赛-温湿度监控设备第七届省赛-模拟液位检测告警系统 第二版第六届决赛-电压测量与互补 PWM 信号输出第六届省赛-电压测量监控设备第五届省赛-双通道方波频率检测与倍频输出第四届省赛-双路输出控制器]]></content>
@@ -112,17 +123,6 @@
       <tags>
         <tag>Hardware</tag>
         <tag>STM32</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Sublime-text3-3176版本激活]]></title>
-    <url>%2F2018%2F12%2F01%2FSublime-text3-3176%E7%89%88%E6%9C%AC%E6%BF%80%E6%B4%BB%2F</url>
-    <content type="text"><![CDATA[步骤一：更改hosts：sudo vim /private/etc/hosts12127.0.0.1 www.sublimetext.com127.0.0.1 license.sublimehq.com步骤二：在Sublime里面Help–&gt;License里面输入下面激活码：12345678910111213----- BEGIN LICENSE -----sgbteamSingle User LicenseEA7E-11532598891CBB9 F1513E4F 1A3405C1 A865D53F115F202E 7B91AB2D 0D2A40ED 352B269B76E84F0B CD69BFC7 59F2DFEF E267328F215652A3 E88F9D8F 4C38E3BA 5B2DAAE4969624E7 DC9CD4D5 717FB40C 1B9738CF20B3C4F1 E917B5B3 87C38D9C ACCE7DD85F7EF854 86B9743C FADC04AA FB0DA5C0F913BE58 42FEA319 F954EFDD AE881E0B------ END LICENSE ------]]></content>
-      <categories>
-        <category>教程</category>
-      </categories>
-      <tags>
-        <tag>Software</tag>
       </tags>
   </entry>
   <entry>
