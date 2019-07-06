@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://nature1995.club/"/>
-  <updated>2019-03-16T18:55:14.000Z</updated>
+  <updated>2019-07-06T14:03:37.143Z</updated>
   <id>http://nature1995.club/</id>
   
   <author>
@@ -15,6 +15,50 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Mac iTerm 2 + oh-my-zsh + agnoster教程（好用的终端神器）</title>
+    <link href="http://nature1995.club/2019/07/07/Mac%20iTerm%202%20+%20oh-my-zsh%20+%20agnoster%E6%95%99%E7%A8%8B%EF%BC%88%E5%A5%BD%E7%94%A8%E7%9A%84%E7%BB%88%E7%AB%AF%E7%A5%9E%E5%99%A8%EF%BC%89/"/>
+    <id>http://nature1995.club/2019/07/07/Mac iTerm 2 + oh-my-zsh + agnoster教程（好用的终端神器）/</id>
+    <published>2019-07-06T22:10:00.000Z</published>
+    <updated>2019-07-06T14:03:37.143Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Mac-Appium详细安装教程&quot;&gt;&lt;a href=&quot;#Mac-Appium详细安装教程&quot; class=&quot;headerlink&quot; title=&quot;Mac Appium详细安装教程&quot;&gt;&lt;/a&gt;Mac Appium详细安装教程&lt;/h2&gt;&lt;p&gt;一个好看的终端，先上效果图。&lt;br&gt;&lt;img src=&quot;https://s2.ax1x.com/2019/07/06/Z0r0Yj.png&quot; alt=&quot;Z0r0Yj.png&quot;&gt;&lt;/p&gt;&lt;h4 id=&quot;下载-iTerm-2&quot;&gt;&lt;a href=&quot;#下载-iTerm-2&quot; class=&quot;headerlink&quot; title=&quot;下载 iTerm 2&quot;&gt;&lt;/a&gt;下载 iTerm 2&lt;/h4&gt;&lt;p&gt;&lt;a href=&quot;https://www.iterm2.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.iterm2.com/&lt;/a&gt;&lt;/p&gt;&lt;h4 id=&quot;安装-oh-my-zsh-官网&quot;&gt;&lt;a href=&quot;#安装-oh-my-zsh-官网&quot; class=&quot;headerlink&quot; title=&quot;安装 oh-my-zsh  官网&quot;&gt;&lt;/a&gt;安装 oh-my-zsh 官网&lt;/h4&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sh -c &lt;span class=&quot;string&quot;&gt;&quot;&lt;span class=&quot;variable&quot;&gt;$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&lt;/span&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="教程" scheme="http://nature1995.club/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="Mac" scheme="http://nature1995.club/tags/Mac/"/>
+    
+      <category term="Shell" scheme="http://nature1995.club/tags/Shell/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mac Appium详细安装教程</title>
+    <link href="http://nature1995.club/2019/07/07/Mac%20Appium%E8%AF%A6%E7%BB%86%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/"/>
+    <id>http://nature1995.club/2019/07/07/Mac Appium详细安装教程/</id>
+    <published>2019-07-06T19:10:00.000Z</published>
+    <updated>2019-07-06T13:47:53.353Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Mac-Appium详细安装教程&quot;&gt;&lt;a href=&quot;#Mac-Appium详细安装教程&quot; class=&quot;headerlink&quot; title=&quot;Mac Appium详细安装教程&quot;&gt;&lt;/a&gt;Mac Appium详细安装教程&lt;/h2&gt;&lt;h3 id=&quot;1-直接安装：&quot;&gt;&lt;a href=&quot;#1-直接安装：&quot; class=&quot;headerlink&quot; title=&quot;1. 直接安装：&quot;&gt;&lt;/a&gt;1. 直接安装：&lt;/h3&gt;&lt;p&gt;Appium官网下载：&lt;a href=&quot;https://bitbucket.org/appium/appium.app/downloads/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://bitbucket.org/appium/appium.app/downloads/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;这里mac系统升级到 Sierra后，无法安装不被认可的软件，必须恢复“任何来源”，运行命令 sudo spctl –master-disable，成功后如图所示：&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://s2.ax1x.com/2019/07/06/Z0B2vV.png&quot; alt=&quot;Z0B2vV.png&quot;&gt;&lt;/p&gt;&lt;p&gt;注意⚠️：&lt;br&gt;如果允许appium-doctor遇到问题，由于Appium无法探测到Mac OS 10.11以上的版本，解决办法如下所示：&lt;br&gt;&lt;/p&gt;&lt;figure class=&quot;highlight gradle&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;grep&lt;/span&gt; -rl &lt;span class=&quot;string&quot;&gt;&quot;Could not detect Mac OS X Version from sw_vers output:&quot;&lt;/span&gt; &lt;span class=&quot;regexp&quot;&gt;/Applications/&lt;/span&gt;Appium.app&lt;span class=&quot;regexp&quot;&gt;/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="教程" scheme="http://nature1995.club/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="Mac" scheme="http://nature1995.club/tags/Mac/"/>
+    
+      <category term="Appium" scheme="http://nature1995.club/tags/Appium/"/>
+    
+  </entry>
   
   <entry>
     <title>Google-API构建Web实时语音转文字情感分析</title>
@@ -251,6 +295,26 @@
   </entry>
   
   <entry>
+    <title>Sublime-text3-3176版本激活</title>
+    <link href="http://nature1995.club/2018/12/02/Sublime-text3-3176%E7%89%88%E6%9C%AC%E6%BF%80%E6%B4%BB/"/>
+    <id>http://nature1995.club/2018/12/02/Sublime-text3-3176版本激活/</id>
+    <published>2018-12-01T19:18:32.000Z</published>
+    <updated>2018-12-04T01:58:24.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://i.loli.net/2018/12/02/5c02df25e5ec3.png&quot; alt=&quot;1201142054.png&quot;&gt;&lt;/p&gt;&lt;h3 id=&quot;步骤一：&quot;&gt;&lt;a href=&quot;#步骤一：&quot; class=&quot;headerlink&quot; title=&quot;步骤一：&quot;&gt;&lt;/a&gt;步骤一：&lt;/h3&gt;&lt;p&gt;更改hosts：sudo vim /private/etc/hosts&lt;br&gt;&lt;/p&gt;&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;127&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.1&lt;/span&gt;       &lt;span class=&quot;selector-tag&quot;&gt;www&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.sublimetext&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.com&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;127&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.1&lt;/span&gt;       &lt;span class=&quot;selector-tag&quot;&gt;license&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.sublimehq&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.com&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="教程" scheme="http://nature1995.club/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="Software" scheme="http://nature1995.club/tags/Software/"/>
+    
+  </entry>
+  
+  <entry>
     <title>蓝桥杯嵌入式与开发组——历年比赛试题与源码</title>
     <link href="http://nature1995.club/2018/12/02/%E8%93%9D%E6%A1%A5%E6%9D%AF%E5%B5%8C%E5%85%A5%E5%BC%8F%E4%B8%8E%E5%BC%80%E5%8F%91%E7%BB%84%E2%80%94%E2%80%94%E5%8E%86%E5%B9%B4%E6%AF%94%E8%B5%9B%E8%AF%95%E9%A2%98%E4%B8%8E%E6%BA%90%E7%A0%81/"/>
     <id>http://nature1995.club/2018/12/02/蓝桥杯嵌入式与开发组——历年比赛试题与源码/</id>
@@ -277,26 +341,6 @@
       <category term="Hardware" scheme="http://nature1995.club/tags/Hardware/"/>
     
       <category term="STM32" scheme="http://nature1995.club/tags/STM32/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Sublime-text3-3176版本激活</title>
-    <link href="http://nature1995.club/2018/12/02/Sublime-text3-3176%E7%89%88%E6%9C%AC%E6%BF%80%E6%B4%BB/"/>
-    <id>http://nature1995.club/2018/12/02/Sublime-text3-3176版本激活/</id>
-    <published>2018-12-01T19:18:32.000Z</published>
-    <updated>2018-12-04T01:58:24.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;https://i.loli.net/2018/12/02/5c02df25e5ec3.png&quot; alt=&quot;1201142054.png&quot;&gt;&lt;/p&gt;&lt;h3 id=&quot;步骤一：&quot;&gt;&lt;a href=&quot;#步骤一：&quot; class=&quot;headerlink&quot; title=&quot;步骤一：&quot;&gt;&lt;/a&gt;步骤一：&lt;/h3&gt;&lt;p&gt;更改hosts：sudo vim /private/etc/hosts&lt;br&gt;&lt;/p&gt;&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;127&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.1&lt;/span&gt;       &lt;span class=&quot;selector-tag&quot;&gt;www&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.sublimetext&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.com&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;127&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.1&lt;/span&gt;       &lt;span class=&quot;selector-tag&quot;&gt;license&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.sublimehq&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.com&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="教程" scheme="http://nature1995.club/categories/%E6%95%99%E7%A8%8B/"/>
-    
-    
-      <category term="Software" scheme="http://nature1995.club/tags/Software/"/>
     
   </entry>
   
@@ -377,6 +421,26 @@
   </entry>
   
   <entry>
+    <title>Centos 配置mailx使用外部smtp发送邮件</title>
+    <link href="http://nature1995.club/2018/11/30/Centos-%E9%85%8D%E7%BD%AEmailx%E4%BD%BF%E7%94%A8%E5%A4%96%E9%83%A8smtp%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6/"/>
+    <id>http://nature1995.club/2018/11/30/Centos-配置mailx使用外部smtp发送邮件/</id>
+    <published>2018-11-30T01:32:59.000Z</published>
+    <updated>2018-11-30T04:41:28.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Centos-配置mailx使用外部smtp发送邮件&quot;&gt;&lt;a href=&quot;#Centos-配置mailx使用外部smtp发送邮件&quot; class=&quot;headerlink&quot; title=&quot;Centos 配置mailx使用外部smtp发送邮件&quot;&gt;&lt;/a&gt;Centos 配置mailx使用外部smtp发送邮件&lt;/h2&gt;&lt;h3 id=&quot;安装mailx&quot;&gt;&lt;a href=&quot;#安装mailx&quot; class=&quot;headerlink&quot; title=&quot;安装mailx&quot;&gt;&lt;/a&gt;安装mailx&lt;/h3&gt;&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;yum install mailx&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&quot;配置mailx&quot;&gt;&lt;a href=&quot;#配置mailx&quot; class=&quot;headerlink&quot; title=&quot;配置mailx&quot;&gt;&lt;/a&gt;配置mailx&lt;/h3&gt;&lt;p&gt;推荐163邮箱，当然，QQ邮箱也是可以的，PS：记得要进邮箱打开SMTP&lt;/p&gt;&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;vi /etc/mail.rc //如果不存在，则编辑/etc/nail.rc&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 在文件的末尾加入下面代码，相应帐号密码填写自己的帐号密码&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;set &lt;span class=&quot;keyword&quot;&gt;from&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;xxx@163.com&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;set smtp=smtp&lt;span class=&quot;number&quot;&gt;.163&lt;/span&gt;.com&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;set smtp-auth-user=xxx&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;set smtp-auth-password=邮箱密码&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;set smtp-auth=login&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="服务器" scheme="http://nature1995.club/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+    
+      <category term="Centos" scheme="http://nature1995.club/tags/Centos/"/>
+    
+  </entry>
+  
+  <entry>
     <title>VNC和远程桌面的区别</title>
     <link href="http://nature1995.club/2018/11/30/VNC%E5%92%8C%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
     <id>http://nature1995.club/2018/11/30/VNC和远程桌面的区别/</id>
@@ -399,66 +463,6 @@
     
     
       <category term="Virtualization" scheme="http://nature1995.club/tags/Virtualization/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Centos 配置mailx使用外部smtp发送邮件</title>
-    <link href="http://nature1995.club/2018/11/30/Centos-%E9%85%8D%E7%BD%AEmailx%E4%BD%BF%E7%94%A8%E5%A4%96%E9%83%A8smtp%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6/"/>
-    <id>http://nature1995.club/2018/11/30/Centos-配置mailx使用外部smtp发送邮件/</id>
-    <published>2018-11-30T01:32:59.000Z</published>
-    <updated>2018-11-30T04:41:28.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Centos-配置mailx使用外部smtp发送邮件&quot;&gt;&lt;a href=&quot;#Centos-配置mailx使用外部smtp发送邮件&quot; class=&quot;headerlink&quot; title=&quot;Centos 配置mailx使用外部smtp发送邮件&quot;&gt;&lt;/a&gt;Centos 配置mailx使用外部smtp发送邮件&lt;/h2&gt;&lt;h3 id=&quot;安装mailx&quot;&gt;&lt;a href=&quot;#安装mailx&quot; class=&quot;headerlink&quot; title=&quot;安装mailx&quot;&gt;&lt;/a&gt;安装mailx&lt;/h3&gt;&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;yum install mailx&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&quot;配置mailx&quot;&gt;&lt;a href=&quot;#配置mailx&quot; class=&quot;headerlink&quot; title=&quot;配置mailx&quot;&gt;&lt;/a&gt;配置mailx&lt;/h3&gt;&lt;p&gt;推荐163邮箱，当然，QQ邮箱也是可以的，PS：记得要进邮箱打开SMTP&lt;/p&gt;&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;vi /etc/mail.rc //如果不存在，则编辑/etc/nail.rc&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 在文件的末尾加入下面代码，相应帐号密码填写自己的帐号密码&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;set &lt;span class=&quot;keyword&quot;&gt;from&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;xxx@163.com&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;set smtp=smtp&lt;span class=&quot;number&quot;&gt;.163&lt;/span&gt;.com&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;set smtp-auth-user=xxx&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;set smtp-auth-password=邮箱密码&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;set smtp-auth=login&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-      <category term="服务器" scheme="http://nature1995.club/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    
-    
-      <category term="Centos" scheme="http://nature1995.club/tags/Centos/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>为什么北美东部冬季经常有暴风雪，而中国冷而少雪？</title>
-    <link href="http://nature1995.club/2018/11/16/%E4%B8%BA%E4%BB%80%E4%B9%88%E5%8C%97%E7%BE%8E%E4%B8%9C%E9%83%A8%E5%86%AC%E5%AD%A3%E7%BB%8F%E5%B8%B8%E6%9C%89%E6%9A%B4%E9%A3%8E%E9%9B%AA%EF%BC%8C%E8%80%8C%E4%B8%AD%E5%9B%BD%E5%86%B7%E8%80%8C%E5%B0%91%E9%9B%AA%EF%BC%9F/"/>
-    <id>http://nature1995.club/2018/11/16/为什么北美东部冬季经常有暴风雪，而中国冷而少雪？/</id>
-    <published>2018-11-16T00:48:33.000Z</published>
-    <updated>2018-12-25T01:32:38.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;学术预警！长文预警！多图预警！&quot;&gt;&lt;a href=&quot;#学术预警！长文预警！多图预警！&quot; class=&quot;headerlink&quot; title=&quot;学术预警！长文预警！多图预警！&quot;&gt;&lt;/a&gt;学术预警！长文预警！多图预警！&lt;/h3&gt;&lt;p&gt;北美冬季的气候处于西风带的控制之下，西风带形成了一条很长的高空急流(Jet stream)。这条急流夏天的时候在加拿大北部地区，对美国的气候不造成明显影响，而冬天的时候，急流从美国中间穿过，形成了整个冬季的冷暖气团对峙局面。高空急流形成的原因，高中地理都学过，我就不解释了。&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2018/12/25/5c218825d4bd0.jpg&quot; alt=&quot;2018.11.16-01.jpg&quot;&gt;&lt;/p&gt;&lt;p&gt;美国冬季典型的天气分布是这样的，以今年更为明显。今年冬天整个西部温暖如春，比平均温度高15~25华氏度，东部冰天雪地，比平均温度低15~25华氏度。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Diary" scheme="http://nature1995.club/categories/Diary/"/>
-    
-    
-      <category term="随笔" scheme="http://nature1995.club/tags/%E9%9A%8F%E7%AC%94/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>寒假计划NASA之旅</title>
-    <link href="http://nature1995.club/2018/11/11/%E5%AF%92%E5%81%87%E8%AE%A1%E5%88%92NASA%E4%B9%8B%E6%97%85/"/>
-    <id>http://nature1995.club/2018/11/11/寒假计划NASA之旅/</id>
-    <published>2018-11-11T01:32:59.000Z</published>
-    <updated>2018-12-25T01:29:24.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;休斯顿（Houston）&quot;&gt;&lt;a href=&quot;#休斯顿（Houston）&quot; class=&quot;headerlink&quot; title=&quot;休斯顿（Houston）&quot;&gt;&lt;/a&gt;休斯顿（Houston）&lt;/h4&gt;&lt;p&gt;德州最大城市，美国第四大城市。提及休斯顿，人们最耳熟能详的莫过于姚明曾效力的NBA火箭队了。然而，在这里，并非只有篮球爱好者才能寻迹自己的梦想，包容、多元的休斯顿也为艺术家们提供了丰富多彩的舞台。&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2018/12/25/5c2187db218d9.jpeg&quot; alt=&quot;houston1.jpeg&quot;&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Diary" scheme="http://nature1995.club/categories/Diary/"/>
-    
-    
-      <category term="游记" scheme="http://nature1995.club/tags/%E6%B8%B8%E8%AE%B0/"/>
     
   </entry>
   
