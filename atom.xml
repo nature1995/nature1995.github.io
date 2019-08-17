@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://nature1995.club/"/>
-  <updated>2019-07-06T14:03:37.143Z</updated>
+  <updated>2019-08-17T00:43:01.589Z</updated>
   <id>http://nature1995.club/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>基于Django和TencentOS tiny的IoT智能灯系统设计</title>
+    <link href="http://nature1995.club/2019/08/17/%E5%9F%BA%E4%BA%8EDjango%E5%92%8CTencentOS%20tiny%E7%9A%84IoT%E6%99%BA%E8%83%BD%E7%81%AF%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/"/>
+    <id>http://nature1995.club/2019/08/17/基于Django和TencentOS tiny的IoT智能灯系统设计/</id>
+    <published>2019-08-17T12:32:00.000Z</published>
+    <updated>2019-08-17T00:43:01.589Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;内容：&quot;&gt;&lt;a href=&quot;#内容：&quot; class=&quot;headerlink&quot; title=&quot;内容：&quot;&gt;&lt;/a&gt;内容：&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;硬件简介&lt;/li&gt;&lt;li&gt;软件简介&lt;/li&gt;&lt;li&gt;系统功能概述&lt;/li&gt;&lt;li&gt;Demo&lt;/li&gt;&lt;li&gt;TODO&lt;/li&gt;&lt;li&gt;使用感想&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;如今，工业，农业，生活里面的很多设备已经接入物联网，这些设备通过同一的平台进行管理。但是，每家厂商都自己接入自己的物联网设备，造成了设备与平台的割裂。所以打通设备与云平台成为非常重要的一环。而腾讯云物联网开发平台正是为次孕育而生，为整个行业推出一套解决方案。本文主要依据开发文档，一步步实现基于Django web控制智能灯软硬件系统。&lt;br&gt;本设计包括3部分组成，用户可以通过web界面进与IoT设备进行简单操作。包括Django web平台，腾讯云平台，IoT设备，其系统架构图如下：&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://ask.qcloudimg.com/draft/1351100/17a9c4cwbl.png&quot; alt=&quot;系统架构图&quot;&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="IOT" scheme="http://nature1995.club/categories/IOT/"/>
+    
+    
+      <category term="物联网，云API" scheme="http://nature1995.club/tags/%E7%89%A9%E8%81%94%E7%BD%91%EF%BC%8C%E4%BA%91API/"/>
+    
+  </entry>
   
   <entry>
     <title>Mac iTerm 2 + oh-my-zsh + agnoster教程（好用的终端神器）</title>
@@ -437,32 +457,6 @@
     
     
       <category term="Centos" scheme="http://nature1995.club/tags/Centos/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>VNC和远程桌面的区别</title>
-    <link href="http://nature1995.club/2018/11/30/VNC%E5%92%8C%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
-    <id>http://nature1995.club/2018/11/30/VNC和远程桌面的区别/</id>
-    <published>2018-11-30T01:32:59.000Z</published>
-    <updated>2018-11-30T04:24:10.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;VNC和远程桌面的区别&quot;&gt;&lt;a href=&quot;#VNC和远程桌面的区别&quot; class=&quot;headerlink&quot; title=&quot;VNC和远程桌面的区别&quot;&gt;&lt;/a&gt;VNC和远程桌面的区别&lt;/h3&gt;&lt;p&gt;我们可以通过VNC(Virtual Network
-        
-      
-    
-    </summary>
-    
-      <category term="Knowledge" scheme="http://nature1995.club/categories/Knowledge/"/>
-    
-    
-      <category term="Virtualization" scheme="http://nature1995.club/tags/Virtualization/"/>
     
   </entry>
   

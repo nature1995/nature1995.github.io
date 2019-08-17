@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[基于Django和TencentOS tiny的IoT智能灯系统设计]]></title>
+    <url>%2F2019%2F08%2F17%2F%E5%9F%BA%E4%BA%8EDjango%E5%92%8CTencentOS%20tiny%E7%9A%84IoT%E6%99%BA%E8%83%BD%E7%81%AF%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%2F</url>
+    <content type="text"><![CDATA[内容：硬件简介软件简介系统功能概述DemoTODO使用感想如今，工业，农业，生活里面的很多设备已经接入物联网，这些设备通过同一的平台进行管理。但是，每家厂商都自己接入自己的物联网设备，造成了设备与平台的割裂。所以打通设备与云平台成为非常重要的一环。而腾讯云物联网开发平台正是为次孕育而生，为整个行业推出一套解决方案。本文主要依据开发文档，一步步实现基于Django web控制智能灯软硬件系统。本设计包括3部分组成，用户可以通过web界面进与IoT设备进行简单操作。包括Django web平台，腾讯云平台，IoT设备，其系统架构图如下：硬件简介用过STM32板子的同学对于开发这个肯定不陌生，但是对于只用过树莓派的同学，还是有很大区别的。这个板子长这个样子，看上去跟普通的板子没啥区别，但是盒子里面的东西，以及外设的设置都比较良心。列出以下几点：是烧录工具，贴心的4连杜邦线，直接插入即可。妈妈再也不用担心因为插错而烧坏板子！串口直接采用usb串口，无需购买额外ttl转串口工具。板载电池，更适合物联网需求。各种外设，需要的都在，最关键的是支持各种联网外设，符合各种传输需求。软件简介内核开发环境：Keil5 推荐IARgcc云平台API数据查询接口设备管理接口软件开发：DjangoDjango REST framework系统功能概述内核功能修改添加智能灯设备初始化与控制，自定义修改OLED显示内容云平台配置云平台提供相应的模版，可以配置需要的状态以及字段，通过上下行数据进行同步。并且可以通过手动去测试api，上手十分方便。web服务开发通过Django搭建基于web服务，通过REST framework存储状态。前端处理用户的控制以及状态、地图的显示。后端处理请求结果，状态同步等工作。数据同步借助controller进行硬件、平台和数据库之间状态的转移与同步。并完成发送命令到云平台，进行下发控制。用户根据web界面进行控制操作，并将状态同步到数据库中。控制界面图如下所示：Demo时间有限，所以录了一个小视频。链接地址（Youtube）：https://www.youtube.com/watch?v=ctormFkCIqU后续改进TODO由于只开发了2天，所以有多功能每加，列举了之后会加入的想法和功能：根据光照强度调节定时开关灯微信接入，远程控制试用感受本次内测由于外设没有那么多，只能够用到现成的资源，修改少部分内核，大部分实现功能在web上面。我之前使用过STM32F103，对于Keil的使用以及配置没有什么太多的问题，如果需要更深修改内核，只需要参考芯片手册即可。所以包括硬件连接，已有内核上代码修改都感觉手难度比较容易。对于腾讯云平台的体验还是不错的，但是网络环境的影响还是稍有些延迟。总体上对于腾讯云平台的调试工具基于好评，支持自动生成代码。生产环境安全性很重要，但对于调试认证过期问题，希望腾讯云平台可以改进、优化调试认证流程。最后，希望这个开发版可以开发出更多好的应用，希望自己的实践可以为之后的人提供一些思路。联系方式邮箱：gzr2008@vip.qq.com个人主页 WEB PAGE: http://www.ranxiaolang.com | 博客 BLOG: https://nature1995.club]]></content>
+      <categories>
+        <category>IOT</category>
+      </categories>
+      <tags>
+        <tag>物联网，云API</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Mac iTerm 2 + oh-my-zsh + agnoster教程（好用的终端神器）]]></title>
     <url>%2F2019%2F07%2F07%2FMac%20iTerm%202%20%2B%20oh-my-zsh%20%2B%20agnoster%E6%95%99%E7%A8%8B%EF%BC%88%E5%A5%BD%E7%94%A8%E7%9A%84%E7%BB%88%E7%AB%AF%E7%A5%9E%E5%99%A8%EF%BC%89%2F</url>
     <content type="text"><![CDATA[Mac Appium详细安装教程一个好看的终端，先上效果图。下载 iTerm 2https://www.iterm2.com/安装 oh-my-zsh 官网1sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"更换默认的 shell终端执行命令chsh -s /bin/zsh更换zsh之后默认启动执行脚本变为了~/.zshrc如果你之前使用的.bash_profile需要：修改~/.zshrc文件，在其中添加：source ~/.bash_profile 和 source ~/.bashrc更换 agnoster 主题打开.zshrc文件open ~/.zshrc修改ZSH_THEME=&quot;agnoster&quot;保存重新打开 iTerm 2下载 Powerline fonts 字体 官网克隆git clone https://github.com/powerline/fonts.git --depth=1安装cd fonts./install.sh清理cd ..rm -rf fonts修改 iTerm 2 配置进入 Preferences… Profiles Text Font 选择 Powerline 字体修改 Solarized 配色方案去掉前面的用户名称打开agnoster.zsh-theme文件1open ~/.oh-my-zsh/themes/agnoster.zsh-theme注释 prompt_context1234567891011build_prompt() &#123; RETVAL=$? prompt_status prompt_virtualenv# prompt_context prompt_dir prompt_git prompt_bzr prompt_hg prompt_end&#125;保存重新打开 iTerm 2]]></content>
