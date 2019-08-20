@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://nature1995.club/"/>
-  <updated>2019-08-17T00:43:01.589Z</updated>
+  <updated>2019-08-20T03:29:47.544Z</updated>
   <id>http://nature1995.club/</id>
   
   <author>
@@ -21,11 +21,11 @@
     <link href="http://nature1995.club/2019/08/17/%E5%9F%BA%E4%BA%8EDjango%E5%92%8CTencentOS%20tiny%E7%9A%84IoT%E6%99%BA%E8%83%BD%E7%81%AF%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/"/>
     <id>http://nature1995.club/2019/08/17/基于Django和TencentOS tiny的IoT智能灯系统设计/</id>
     <published>2019-08-17T12:32:00.000Z</published>
-    <updated>2019-08-17T00:43:01.589Z</updated>
+    <updated>2019-08-20T03:29:47.544Z</updated>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;内容：&quot;&gt;&lt;a href=&quot;#内容：&quot; class=&quot;headerlink&quot; title=&quot;内容：&quot;&gt;&lt;/a&gt;内容：&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;硬件简介&lt;/li&gt;&lt;li&gt;软件简介&lt;/li&gt;&lt;li&gt;系统功能概述&lt;/li&gt;&lt;li&gt;Demo&lt;/li&gt;&lt;li&gt;TODO&lt;/li&gt;&lt;li&gt;使用感想&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;如今，工业，农业，生活里面的很多设备已经接入物联网，这些设备通过同一的平台进行管理。但是，每家厂商都自己接入自己的物联网设备，造成了设备与平台的割裂。所以打通设备与云平台成为非常重要的一环。而腾讯云物联网开发平台正是为次孕育而生，为整个行业推出一套解决方案。本文主要依据开发文档，一步步实现基于Django web控制智能灯软硬件系统。&lt;br&gt;本设计包括3部分组成，用户可以通过web界面进与IoT设备进行简单操作。包括Django web平台，腾讯云平台，IoT设备，其系统架构图如下：&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://ask.qcloudimg.com/draft/1351100/17a9c4cwbl.png&quot; alt=&quot;系统架构图&quot;&gt;&lt;br&gt;
+      &lt;p&gt;如今，工业，农业，生活里面的很多设备已经接入物联网，这些设备通过同一的平台进行管理。但是，每家厂商都自己接入自己的物联网设备，造成了设备与平台的割裂。所以打通设备与云平台成为非常重要的一环。而腾讯云物联网开发平台正是为次孕育而生，为整个行业推出一套解决方案。本文主要依据开发文档，一步步实现基于Django web控制智能灯软硬件系统。&lt;br&gt;本设计包括3部分组成，用户可以通过web界面进与IoT设备进行简单操作。包括Django web平台，腾讯云平台，IoT设备，其系统架构图如下：&lt;br&gt;
     
     </summary>
     
@@ -41,11 +41,11 @@
     <link href="http://nature1995.club/2019/07/07/Mac%20iTerm%202%20+%20oh-my-zsh%20+%20agnoster%E6%95%99%E7%A8%8B%EF%BC%88%E5%A5%BD%E7%94%A8%E7%9A%84%E7%BB%88%E7%AB%AF%E7%A5%9E%E5%99%A8%EF%BC%89/"/>
     <id>http://nature1995.club/2019/07/07/Mac iTerm 2 + oh-my-zsh + agnoster教程（好用的终端神器）/</id>
     <published>2019-07-06T22:10:00.000Z</published>
-    <updated>2019-07-06T14:03:37.143Z</updated>
+    <updated>2019-08-20T03:25:02.290Z</updated>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;Mac-Appium详细安装教程&quot;&gt;&lt;a href=&quot;#Mac-Appium详细安装教程&quot; class=&quot;headerlink&quot; title=&quot;Mac Appium详细安装教程&quot;&gt;&lt;/a&gt;Mac Appium详细安装教程&lt;/h2&gt;&lt;p&gt;一个好看的终端，先上效果图。&lt;br&gt;&lt;img src=&quot;https://s2.ax1x.com/2019/07/06/Z0r0Yj.png&quot; alt=&quot;Z0r0Yj.png&quot;&gt;&lt;/p&gt;&lt;h4 id=&quot;下载-iTerm-2&quot;&gt;&lt;a href=&quot;#下载-iTerm-2&quot; class=&quot;headerlink&quot; title=&quot;下载 iTerm 2&quot;&gt;&lt;/a&gt;下载 iTerm 2&lt;/h4&gt;&lt;p&gt;&lt;a href=&quot;https://www.iterm2.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.iterm2.com/&lt;/a&gt;&lt;/p&gt;&lt;h4 id=&quot;安装-oh-my-zsh-官网&quot;&gt;&lt;a href=&quot;#安装-oh-my-zsh-官网&quot; class=&quot;headerlink&quot; title=&quot;安装 oh-my-zsh  官网&quot;&gt;&lt;/a&gt;安装 oh-my-zsh 官网&lt;/h4&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sh -c &lt;span class=&quot;string&quot;&gt;&quot;&lt;span class=&quot;variable&quot;&gt;$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&lt;/span&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+      &lt;h2 id=&quot;Mac-Appium详细安装教程&quot;&gt;&lt;a href=&quot;#Mac-Appium详细安装教程&quot; class=&quot;headerlink&quot; title=&quot;Mac Appium详细安装教程&quot;&gt;&lt;/a&gt;Mac Appium详细安装教程&lt;/h2&gt;&lt;p&gt;一个好看的终端，先上效果图。&lt;br&gt;
     
     </summary>
     
@@ -63,11 +63,11 @@
     <link href="http://nature1995.club/2019/07/07/Mac%20Appium%E8%AF%A6%E7%BB%86%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/"/>
     <id>http://nature1995.club/2019/07/07/Mac Appium详细安装教程/</id>
     <published>2019-07-06T19:10:00.000Z</published>
-    <updated>2019-07-06T13:47:53.353Z</updated>
+    <updated>2019-08-20T03:25:19.796Z</updated>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;Mac-Appium详细安装教程&quot;&gt;&lt;a href=&quot;#Mac-Appium详细安装教程&quot; class=&quot;headerlink&quot; title=&quot;Mac Appium详细安装教程&quot;&gt;&lt;/a&gt;Mac Appium详细安装教程&lt;/h2&gt;&lt;h3 id=&quot;1-直接安装：&quot;&gt;&lt;a href=&quot;#1-直接安装：&quot; class=&quot;headerlink&quot; title=&quot;1. 直接安装：&quot;&gt;&lt;/a&gt;1. 直接安装：&lt;/h3&gt;&lt;p&gt;Appium官网下载：&lt;a href=&quot;https://bitbucket.org/appium/appium.app/downloads/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://bitbucket.org/appium/appium.app/downloads/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;这里mac系统升级到 Sierra后，无法安装不被认可的软件，必须恢复“任何来源”，运行命令 sudo spctl –master-disable，成功后如图所示：&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://s2.ax1x.com/2019/07/06/Z0B2vV.png&quot; alt=&quot;Z0B2vV.png&quot;&gt;&lt;/p&gt;&lt;p&gt;注意⚠️：&lt;br&gt;如果允许appium-doctor遇到问题，由于Appium无法探测到Mac OS 10.11以上的版本，解决办法如下所示：&lt;br&gt;&lt;/p&gt;&lt;figure class=&quot;highlight gradle&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;grep&lt;/span&gt; -rl &lt;span class=&quot;string&quot;&gt;&quot;Could not detect Mac OS X Version from sw_vers output:&quot;&lt;/span&gt; &lt;span class=&quot;regexp&quot;&gt;/Applications/&lt;/span&gt;Appium.app&lt;span class=&quot;regexp&quot;&gt;/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;/p&gt;
+      &lt;h2 id=&quot;Mac-Appium详细安装教程&quot;&gt;&lt;a href=&quot;#Mac-Appium详细安装教程&quot; class=&quot;headerlink&quot; title=&quot;Mac Appium详细安装教程&quot;&gt;&lt;/a&gt;Mac Appium详细安装教程&lt;/h2&gt;&lt;h3 id=&quot;1-直接安装：&quot;&gt;&lt;a href=&quot;#1-直接安装：&quot; class=&quot;headerlink&quot; title=&quot;1. 直接安装：&quot;&gt;&lt;/a&gt;1. 直接安装：&lt;/h3&gt;&lt;p&gt;Appium官网下载：&lt;a href=&quot;https://bitbucket.org/appium/appium.app/downloads/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://bitbucket.org/appium/appium.app/downloads/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;这里mac系统升级到 Sierra后，无法安装不被认可的软件，必须恢复“任何来源”，运行命令 sudo spctl –master-disable，成功后如图所示：&lt;br&gt;
     
     </summary>
     
@@ -149,11 +149,11 @@
     <link href="http://nature1995.club/2018/12/12/5G%E6%A0%B8%E5%BF%83%E7%BD%91%E6%9E%B6%E6%9E%84%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/"/>
     <id>http://nature1995.club/2018/12/12/5G核心网架构基础概念/</id>
     <published>2018-12-11T20:25:00.000Z</published>
-    <updated>2018-12-14T18:14:16.000Z</updated>
+    <updated>2019-08-20T03:25:59.373Z</updated>
     
     <summary type="html">
     
-      &lt;blockquote&gt;&lt;p&gt;5G无线接入网络架构，主要包括 5G 接入网和 5G 核心网，其中 NG-RAN 代表 5G 接入网，5GC 代表 5G 核心网。&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2018/12/12/5c100a118e98c.jpg&quot; alt=&quot;1.jpg&quot;&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;5G核心网主要包括哪些呢?先说一下关键的 AMF，SMF，UPF。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2018/12/12/5c100a11f1b20.jpg&quot; alt=&quot;2.jpg&quot;&gt;&lt;/p&gt;&lt;p&gt;AMF：全称 Access and Mobility Management Function，接入和移动管理功能，终端接入权限和切换等由它来负责。&lt;br&gt;SMF：全称 Session Management Function，会话管理功能，提供服务连续性，服务的不间断用户体验，包括IP地址和/或锚点变化的情况。&lt;br&gt;UPF：全称 User Plane Function，用户面管理功能，与UPF关联的PDU会话可以由(R)AN节点通过(R)AN和UPF之间的N3接口服务的区域，而无需在其间添加新的UPF或移除/重新 - 分配UPF。&lt;br&gt;
+      &lt;blockquote&gt;&lt;p&gt;5G无线接入网络架构，主要包括 5G 接入网和 5G 核心网，其中 NG-RAN 代表 5G 接入网，5GC 代表 5G 核心网。&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2018/12/12/5c100a118e98c.jpg&quot; alt=&quot;1.jpg&quot;&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;5G核心网主要包括哪些呢?先说一下关键的 AMF，SMF，UPF。&lt;/strong&gt;&lt;br&gt;
     
     </summary>
     
@@ -189,11 +189,11 @@
     <link href="http://nature1995.club/2018/12/12/Mac%E6%9C%80%E5%A5%BD%E7%9A%84%E7%B3%BB%E7%BB%9F%E7%9B%91%E6%8E%A7%E5%B7%A5%E5%85%B7-iStat%20Menus%206%E6%9C%80%E6%96%B0%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80%E5%8F%8A%E6%B3%A8%E5%86%8C%E7%A0%81/"/>
     <id>http://nature1995.club/2018/12/12/Mac最好的系统监控工具-iStat Menus 6最新下载地址及注册码/</id>
     <published>2018-12-11T18:32:00.000Z</published>
-    <updated>2018-12-14T18:13:02.000Z</updated>
+    <updated>2019-08-20T03:26:12.688Z</updated>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;一、Mac最好的系统状态监控工具-iStat-Menus-6-简介&quot;&gt;&lt;a href=&quot;#一、Mac最好的系统状态监控工具-iStat-Menus-6-简介&quot; class=&quot;headerlink&quot; title=&quot;一、Mac最好的系统状态监控工具 : iStat Menus 6 简介&quot;&gt;&lt;/a&gt;一、Mac最好的系统状态监控工具 : iStat Menus 6 简介&lt;/h2&gt;&lt;p&gt;这是Mac平台最好的系统状态监控工具，主要是监控系统运行状态的，功能很强大，装机必备。这款软件让您可以从菜单栏中监控您的系统，包括8个额外的菜单，让您监视您的系统的每个方面。&lt;/p&gt;&lt;h2 id=&quot;二、Mac最好的系统状态监控工具-iStat-Menus-6-截图&quot;&gt;&lt;a href=&quot;#二、Mac最好的系统状态监控工具-iStat-Menus-6-截图&quot; class=&quot;headerlink&quot; title=&quot;二、Mac最好的系统状态监控工具 : iStat Menus 6 截图&quot;&gt;&lt;/a&gt;二、Mac最好的系统状态监控工具 : iStat Menus 6 截图&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2018/12/11/5c0f428884fb9.png&quot; alt=&quot;Mac mini 1&quot;&gt;&lt;br&gt;
+      &lt;h2 id=&quot;一、Mac最好的系统状态监控工具-iStat-Menus-6-简介&quot;&gt;&lt;a href=&quot;#一、Mac最好的系统状态监控工具-iStat-Menus-6-简介&quot; class=&quot;headerlink&quot; title=&quot;一、Mac最好的系统状态监控工具 : iStat Menus 6 简介&quot;&gt;&lt;/a&gt;一、Mac最好的系统状态监控工具 : iStat Menus 6 简介&lt;/h2&gt;&lt;p&gt;这是Mac平台最好的系统状态监控工具，主要是监控系统运行状态的，功能很强大，装机必备。这款软件让您可以从菜单栏中监控您的系统，包括8个额外的菜单，让您监视您的系统的每个方面。&lt;/p&gt;&lt;h2 id=&quot;二、Mac最好的系统状态监控工具-iStat-Menus-6-截图&quot;&gt;&lt;a href=&quot;#二、Mac最好的系统状态监控工具-iStat-Menus-6-截图&quot; class=&quot;headerlink&quot; title=&quot;二、Mac最好的系统状态监控工具 : iStat Menus 6 截图&quot;&gt;&lt;/a&gt;二、Mac最好的系统状态监控工具 : iStat Menus 6 截图&lt;/h2&gt;
     
     </summary>
     
@@ -441,22 +441,28 @@
   </entry>
   
   <entry>
-    <title>Centos 配置mailx使用外部smtp发送邮件</title>
-    <link href="http://nature1995.club/2018/11/30/Centos-%E9%85%8D%E7%BD%AEmailx%E4%BD%BF%E7%94%A8%E5%A4%96%E9%83%A8smtp%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6/"/>
-    <id>http://nature1995.club/2018/11/30/Centos-配置mailx使用外部smtp发送邮件/</id>
+    <title>VNC和远程桌面的区别</title>
+    <link href="http://nature1995.club/2018/11/30/VNC%E5%92%8C%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
+    <id>http://nature1995.club/2018/11/30/VNC和远程桌面的区别/</id>
     <published>2018-11-30T01:32:59.000Z</published>
-    <updated>2018-11-30T04:41:28.000Z</updated>
+    <updated>2018-11-30T04:24:10.000Z</updated>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;Centos-配置mailx使用外部smtp发送邮件&quot;&gt;&lt;a href=&quot;#Centos-配置mailx使用外部smtp发送邮件&quot; class=&quot;headerlink&quot; title=&quot;Centos 配置mailx使用外部smtp发送邮件&quot;&gt;&lt;/a&gt;Centos 配置mailx使用外部smtp发送邮件&lt;/h2&gt;&lt;h3 id=&quot;安装mailx&quot;&gt;&lt;a href=&quot;#安装mailx&quot; class=&quot;headerlink&quot; title=&quot;安装mailx&quot;&gt;&lt;/a&gt;安装mailx&lt;/h3&gt;&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;yum install mailx&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&quot;配置mailx&quot;&gt;&lt;a href=&quot;#配置mailx&quot; class=&quot;headerlink&quot; title=&quot;配置mailx&quot;&gt;&lt;/a&gt;配置mailx&lt;/h3&gt;&lt;p&gt;推荐163邮箱，当然，QQ邮箱也是可以的，PS：记得要进邮箱打开SMTP&lt;/p&gt;&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;vi /etc/mail.rc //如果不存在，则编辑/etc/nail.rc&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 在文件的末尾加入下面代码，相应帐号密码填写自己的帐号密码&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;set &lt;span class=&quot;keyword&quot;&gt;from&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;xxx@163.com&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;set smtp=smtp&lt;span class=&quot;number&quot;&gt;.163&lt;/span&gt;.com&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;set smtp-auth-user=xxx&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;set smtp-auth-password=邮箱密码&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;set smtp-auth=login&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+      
+      
+        
+        
+          &lt;h3 id=&quot;VNC和远程桌面的区别&quot;&gt;&lt;a href=&quot;#VNC和远程桌面的区别&quot; class=&quot;headerlink&quot; title=&quot;VNC和远程桌面的区别&quot;&gt;&lt;/a&gt;VNC和远程桌面的区别&lt;/h3&gt;&lt;p&gt;我们可以通过VNC(Virtual Network
+        
+      
     
     </summary>
     
-      <category term="服务器" scheme="http://nature1995.club/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+      <category term="Knowledge" scheme="http://nature1995.club/categories/Knowledge/"/>
     
     
-      <category term="Centos" scheme="http://nature1995.club/tags/Centos/"/>
+      <category term="Virtualization" scheme="http://nature1995.club/tags/Virtualization/"/>
     
   </entry>
   

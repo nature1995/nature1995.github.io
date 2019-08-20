@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[基于Django和TencentOS tiny的IoT智能灯系统设计]]></title>
     <url>%2F2019%2F08%2F17%2F%E5%9F%BA%E4%BA%8EDjango%E5%92%8CTencentOS%20tiny%E7%9A%84IoT%E6%99%BA%E8%83%BD%E7%81%AF%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%2F</url>
-    <content type="text"><![CDATA[内容：硬件简介软件简介系统功能概述DemoTODO使用感想如今，工业，农业，生活里面的很多设备已经接入物联网，这些设备通过同一的平台进行管理。但是，每家厂商都自己接入自己的物联网设备，造成了设备与平台的割裂。所以打通设备与云平台成为非常重要的一环。而腾讯云物联网开发平台正是为次孕育而生，为整个行业推出一套解决方案。本文主要依据开发文档，一步步实现基于Django web控制智能灯软硬件系统。本设计包括3部分组成，用户可以通过web界面进与IoT设备进行简单操作。包括Django web平台，腾讯云平台，IoT设备，其系统架构图如下：硬件简介用过STM32板子的同学对于开发这个肯定不陌生，但是对于只用过树莓派的同学，还是有很大区别的。这个板子长这个样子，看上去跟普通的板子没啥区别，但是盒子里面的东西，以及外设的设置都比较良心。列出以下几点：是烧录工具，贴心的4连杜邦线，直接插入即可。妈妈再也不用担心因为插错而烧坏板子！串口直接采用usb串口，无需购买额外ttl转串口工具。板载电池，更适合物联网需求。各种外设，需要的都在，最关键的是支持各种联网外设，符合各种传输需求。软件简介内核开发环境：Keil5 推荐IARgcc云平台API数据查询接口设备管理接口软件开发：DjangoDjango REST framework系统功能概述内核功能修改添加智能灯设备初始化与控制，自定义修改OLED显示内容云平台配置云平台提供相应的模版，可以配置需要的状态以及字段，通过上下行数据进行同步。并且可以通过手动去测试api，上手十分方便。web服务开发通过Django搭建基于web服务，通过REST framework存储状态。前端处理用户的控制以及状态、地图的显示。后端处理请求结果，状态同步等工作。数据同步借助controller进行硬件、平台和数据库之间状态的转移与同步。并完成发送命令到云平台，进行下发控制。用户根据web界面进行控制操作，并将状态同步到数据库中。控制界面图如下所示：Demo时间有限，所以录了一个小视频。链接地址（Youtube）：https://www.youtube.com/watch?v=ctormFkCIqU后续改进TODO由于只开发了2天，所以有多功能每加，列举了之后会加入的想法和功能：根据光照强度调节定时开关灯微信接入，远程控制试用感受本次内测由于外设没有那么多，只能够用到现成的资源，修改少部分内核，大部分实现功能在web上面。我之前使用过STM32F103，对于Keil的使用以及配置没有什么太多的问题，如果需要更深修改内核，只需要参考芯片手册即可。所以包括硬件连接，已有内核上代码修改都感觉手难度比较容易。对于腾讯云平台的体验还是不错的，但是网络环境的影响还是稍有些延迟。总体上对于腾讯云平台的调试工具基于好评，支持自动生成代码。生产环境安全性很重要，但对于调试认证过期问题，希望腾讯云平台可以改进、优化调试认证流程。最后，希望这个开发版可以开发出更多好的应用，希望自己的实践可以为之后的人提供一些思路。联系方式邮箱：gzr2008@vip.qq.com个人主页 WEB PAGE: http://www.ranxiaolang.com | 博客 BLOG: https://nature1995.club]]></content>
+    <content type="text"><![CDATA[如今，工业，农业，生活里面的很多设备已经接入物联网，这些设备通过同一的平台进行管理。但是，每家厂商都自己接入自己的物联网设备，造成了设备与平台的割裂。所以打通设备与云平台成为非常重要的一环。而腾讯云物联网开发平台正是为次孕育而生，为整个行业推出一套解决方案。本文主要依据开发文档，一步步实现基于Django web控制智能灯软硬件系统。本设计包括3部分组成，用户可以通过web界面进与IoT设备进行简单操作。包括Django web平台，腾讯云平台，IoT设备，其系统架构图如下：内容：硬件简介软件简介系统功能概述DemoTODO使用感想硬件简介用过STM32板子的同学对于开发这个肯定不陌生，但是对于只用过树莓派的同学，还是有很大区别的。这个板子长这个样子，看上去跟普通的板子没啥区别，但是盒子里面的东西，以及外设的设置都比较良心。列出以下几点：是烧录工具，贴心的4连杜邦线，直接插入即可。妈妈再也不用担心因为插错而烧坏板子！串口直接采用usb串口，无需购买额外ttl转串口工具。板载电池，更适合物联网需求。各种外设，需要的都在，最关键的是支持各种联网外设，符合各种传输需求。软件简介内核开发环境：Keil5 推荐IARgcc云平台API数据查询接口设备管理接口软件开发：DjangoDjango REST framework系统功能概述内核功能修改添加智能灯设备初始化与控制，自定义修改OLED显示内容云平台配置云平台提供相应的模版，可以配置需要的状态以及字段，通过上下行数据进行同步。并且可以通过手动去测试api，上手十分方便。web服务开发通过Django搭建基于web服务，通过REST framework存储状态。前端处理用户的控制以及状态、地图的显示。后端处理请求结果，状态同步等工作。数据同步借助controller进行硬件、平台和数据库之间状态的转移与同步。并完成发送命令到云平台，进行下发控制。用户根据web界面进行控制操作，并将状态同步到数据库中。控制界面图如下所示：Demo时间有限，所以录了一个小视频。链接地址（Youtube）：https://www.youtube.com/watch?v=ctormFkCIqU后续改进TODO由于只开发了2天，所以有多功能每加，列举了之后会加入的想法和功能：根据光照强度调节定时开关灯微信接入，远程控制试用感受本次内测由于外设没有那么多，只能够用到现成的资源，修改少部分内核，大部分实现功能在web上面。我之前使用过STM32F103，对于Keil的使用以及配置没有什么太多的问题，如果需要更深修改内核，只需要参考芯片手册即可。所以包括硬件连接，已有内核上代码修改都感觉手难度比较容易。对于腾讯云平台的体验还是不错的，但是网络环境的影响还是稍有些延迟。总体上对于腾讯云平台的调试工具基于好评，支持自动生成代码。生产环境安全性很重要，但对于调试认证过期问题，希望腾讯云平台可以改进、优化调试认证流程。最后，希望这个开发版可以开发出更多好的应用，希望自己的实践可以为之后的人提供一些思路。联系方式邮箱：gzr2008@vip.qq.com个人主页 WEB PAGE: http://www.ranxiaolang.com | 博客 BLOG: https://nature1995.club]]></content>
       <categories>
         <category>IOT</category>
       </categories>
@@ -220,17 +220,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Centos 配置mailx使用外部smtp发送邮件]]></title>
-    <url>%2F2018%2F11%2F30%2FCentos-%E9%85%8D%E7%BD%AEmailx%E4%BD%BF%E7%94%A8%E5%A4%96%E9%83%A8smtp%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6%2F</url>
-    <content type="text"><![CDATA[Centos 配置mailx使用外部smtp发送邮件安装mailx1yum install mailx配置mailx推荐163邮箱，当然，QQ邮箱也是可以的，PS：记得要进邮箱打开SMTP1vi /etc/mail.rc //如果不存在，则编辑/etc/nail.rc123456# 在文件的末尾加入下面代码，相应帐号密码填写自己的帐号密码set from="xxx@163.com"set smtp=smtp.163.comset smtp-auth-user=xxxset smtp-auth-password=邮箱密码set smtp-auth=login使用mailx发送邮件发件人名称可不添加，第二步已配置过假设邮件内容存储于mesg文件中，那么可以用如下2个方法：12mailx -s "发件人名称 邮件标题" xxx@163.com &lt; mesgcat mesg | mailx -s "发件人名称 邮件标题" xxx@163.com多个收件人之间用逗号分隔：1cat mesg | mailx -s "发件人名称 邮件标题" xxx@163.com,xxx2@163.com,xxx3@163.com也可以直接从命令行输入邮件内容：12mailx -s "发件人名称 邮件标题" xxx@163.com ##输入完后回车按Ctrl+D提交发送echo hello word | mailx -v -s " title" xxx3@163.comNOTE:记得要进邮箱打开SMTP配置好后，记住查看是否打开代理（例如翻墙VPN）,代理可能会导致Telnet不通25端口]]></content>
-      <categories>
-        <category>服务器</category>
-      </categories>
-      <tags>
-        <tag>Centos</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[VNC和远程桌面的区别]]></title>
     <url>%2F2018%2F11%2F30%2FVNC%E5%92%8C%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2%E7%9A%84%E5%8C%BA%E5%88%AB%2F</url>
     <content type="text"><![CDATA[VNC和远程桌面的区别我们可以通过VNC(Virtual Network Computing)和远程桌面来连接到远程的计算机上，但是两者是有一定的区别的。VNCVNC使用的是RFB协议来做屏幕分享和远程操作的软件，由著名的AT&amp;T欧洲研究实验室开发。使用时需要客户端软件和服务器软件配合使用。远程桌面远程桌面使用RDP(Remote Desktop Protocol)远程桌面协议，大部分Windows都默认支持此协议，可以远程接入操作桌面。RFB和RDP区别RFB是在服务器端将窗口在显存中画好之后将图像传给客户端，客户端只充当一个图像解码显示的角色； RDP则将画图的工作交给了客户端，服务器需要了解客户端显示能力的具体情况，以便作出相应调整。RFB主要传图像，RDP主要传指令。就一般应用而言，RFB数据量太大，RDP对客户端要求较高，因此RFB适用于瘦客户端，RDP适用于低速网络。]]></content>
@@ -239,6 +228,17 @@
       </categories>
       <tags>
         <tag>Virtualization</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Centos 配置mailx使用外部smtp发送邮件]]></title>
+    <url>%2F2018%2F11%2F30%2FCentos-%E9%85%8D%E7%BD%AEmailx%E4%BD%BF%E7%94%A8%E5%A4%96%E9%83%A8smtp%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6%2F</url>
+    <content type="text"><![CDATA[Centos 配置mailx使用外部smtp发送邮件安装mailx1yum install mailx配置mailx推荐163邮箱，当然，QQ邮箱也是可以的，PS：记得要进邮箱打开SMTP1vi /etc/mail.rc //如果不存在，则编辑/etc/nail.rc123456# 在文件的末尾加入下面代码，相应帐号密码填写自己的帐号密码set from="xxx@163.com"set smtp=smtp.163.comset smtp-auth-user=xxxset smtp-auth-password=邮箱密码set smtp-auth=login使用mailx发送邮件发件人名称可不添加，第二步已配置过假设邮件内容存储于mesg文件中，那么可以用如下2个方法：12mailx -s "发件人名称 邮件标题" xxx@163.com &lt; mesgcat mesg | mailx -s "发件人名称 邮件标题" xxx@163.com多个收件人之间用逗号分隔：1cat mesg | mailx -s "发件人名称 邮件标题" xxx@163.com,xxx2@163.com,xxx3@163.com也可以直接从命令行输入邮件内容：12mailx -s "发件人名称 邮件标题" xxx@163.com ##输入完后回车按Ctrl+D提交发送echo hello word | mailx -v -s " title" xxx3@163.comNOTE:记得要进邮箱打开SMTP配置好后，记住查看是否打开代理（例如翻墙VPN）,代理可能会导致Telnet不通25端口]]></content>
+      <categories>
+        <category>服务器</category>
+      </categories>
+      <tags>
+        <tag>Centos</tag>
       </tags>
   </entry>
   <entry>
