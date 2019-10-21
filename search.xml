@@ -172,17 +172,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Sublime-text3-3176版本激活]]></title>
-    <url>%2F2018%2F12%2F01%2FSublime-text3-3176%E7%89%88%E6%9C%AC%E6%BF%80%E6%B4%BB%2F</url>
-    <content type="text"><![CDATA[步骤一：更改hosts：sudo vim /private/etc/hosts12127.0.0.1 www.sublimetext.com127.0.0.1 license.sublimehq.com步骤二：在Sublime里面Help–&gt;License里面输入下面激活码：12345678910111213----- BEGIN LICENSE -----sgbteamSingle User LicenseEA7E-11532598891CBB9 F1513E4F 1A3405C1 A865D53F115F202E 7B91AB2D 0D2A40ED 352B269B76E84F0B CD69BFC7 59F2DFEF E267328F215652A3 E88F9D8F 4C38E3BA 5B2DAAE4969624E7 DC9CD4D5 717FB40C 1B9738CF20B3C4F1 E917B5B3 87C38D9C ACCE7DD85F7EF854 86B9743C FADC04AA FB0DA5C0F913BE58 42FEA319 F954EFDD AE881E0B------ END LICENSE ------]]></content>
-      <categories>
-        <category>教程</category>
-      </categories>
-      <tags>
-        <tag>Software</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[蓝桥杯嵌入式与开发组——历年比赛试题与源码]]></title>
     <url>%2F2018%2F12%2F01%2F%E8%93%9D%E6%A1%A5%E6%9D%AF%E5%B5%8C%E5%85%A5%E5%BC%8F%E4%B8%8E%E5%BC%80%E5%8F%91%E7%BB%84%E2%80%94%E2%80%94%E5%8E%86%E5%B9%B4%E6%AF%94%E8%B5%9B%E8%AF%95%E9%A2%98%E4%B8%8E%E6%BA%90%E7%A0%81%2F</url>
     <content type="text"><![CDATA[蓝桥杯历年比赛试题与源码（嵌入式与开发组）If you appreciate the content 📖, support projects visibility, give 👍| ⭐| 👏Github: https://github.com/nature1995/lanqiao-competition-code第九届决赛模拟题第九届省赛模拟题第八届决赛-频率控制器的功能设计与实现第八届省赛-模拟升降控制器控制器第七届决赛-温湿度监控设备第七届省赛-模拟液位检测告警系统 第二版第六届决赛-电压测量与互补 PWM 信号输出第六届省赛-电压测量监控设备第五届省赛-双通道方波频率检测与倍频输出第四届省赛-双路输出控制器]]></content>
@@ -193,6 +182,17 @@
       <tags>
         <tag>Hardware</tag>
         <tag>STM32</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Sublime-text3-3176版本激活]]></title>
+    <url>%2F2018%2F12%2F01%2FSublime-text3-3176%E7%89%88%E6%9C%AC%E6%BF%80%E6%B4%BB%2F</url>
+    <content type="text"><![CDATA[步骤一：更改hosts：sudo vim /private/etc/hosts12127.0.0.1 www.sublimetext.com127.0.0.1 license.sublimehq.com步骤二：在Sublime里面Help–&gt;License里面输入下面激活码：12345678910111213----- BEGIN LICENSE -----sgbteamSingle User LicenseEA7E-11532598891CBB9 F1513E4F 1A3405C1 A865D53F115F202E 7B91AB2D 0D2A40ED 352B269B76E84F0B CD69BFC7 59F2DFEF E267328F215652A3 E88F9D8F 4C38E3BA 5B2DAAE4969624E7 DC9CD4D5 717FB40C 1B9738CF20B3C4F1 E917B5B3 87C38D9C ACCE7DD85F7EF854 86B9743C FADC04AA FB0DA5C0F913BE58 42FEA319 F954EFDD AE881E0B------ END LICENSE ------]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>Software</tag>
       </tags>
   </entry>
   <entry>
@@ -231,17 +231,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Centos 配置mailx使用外部smtp发送邮件]]></title>
-    <url>%2F2018%2F11%2F29%2FCentos-%E9%85%8D%E7%BD%AEmailx%E4%BD%BF%E7%94%A8%E5%A4%96%E9%83%A8smtp%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6%2F</url>
-    <content type="text"><![CDATA[Centos 配置mailx使用外部smtp发送邮件安装mailx1yum install mailx配置mailx推荐163邮箱，当然，QQ邮箱也是可以的，PS：记得要进邮箱打开SMTP1vi /etc/mail.rc //如果不存在，则编辑/etc/nail.rc123456# 在文件的末尾加入下面代码，相应帐号密码填写自己的帐号密码set from="xxx@163.com"set smtp=smtp.163.comset smtp-auth-user=xxxset smtp-auth-password=邮箱密码set smtp-auth=login使用mailx发送邮件发件人名称可不添加，第二步已配置过假设邮件内容存储于mesg文件中，那么可以用如下2个方法：12mailx -s "发件人名称 邮件标题" xxx@163.com &lt; mesgcat mesg | mailx -s "发件人名称 邮件标题" xxx@163.com多个收件人之间用逗号分隔：1cat mesg | mailx -s "发件人名称 邮件标题" xxx@163.com,xxx2@163.com,xxx3@163.com也可以直接从命令行输入邮件内容：12mailx -s "发件人名称 邮件标题" xxx@163.com ##输入完后回车按Ctrl+D提交发送echo hello word | mailx -v -s " title" xxx3@163.comNOTE:记得要进邮箱打开SMTP配置好后，记住查看是否打开代理（例如翻墙VPN）,代理可能会导致Telnet不通25端口]]></content>
-      <categories>
-        <category>服务器</category>
-      </categories>
-      <tags>
-        <tag>Centos</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[VNC和远程桌面的区别]]></title>
     <url>%2F2018%2F11%2F29%2FVNC%E5%92%8C%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2%E7%9A%84%E5%8C%BA%E5%88%AB%2F</url>
     <content type="text"><![CDATA[VNC和远程桌面的区别我们可以通过VNC(Virtual Network Computing)和远程桌面来连接到远程的计算机上，但是两者是有一定的区别的。VNCVNC使用的是RFB协议来做屏幕分享和远程操作的软件，由著名的AT&amp;T欧洲研究实验室开发。使用时需要客户端软件和服务器软件配合使用。远程桌面远程桌面使用RDP(Remote Desktop Protocol)远程桌面协议，大部分Windows都默认支持此协议，可以远程接入操作桌面。RFB和RDP区别RFB是在服务器端将窗口在显存中画好之后将图像传给客户端，客户端只充当一个图像解码显示的角色； RDP则将画图的工作交给了客户端，服务器需要了解客户端显示能力的具体情况，以便作出相应调整。RFB主要传图像，RDP主要传指令。就一般应用而言，RFB数据量太大，RDP对客户端要求较高，因此RFB适用于瘦客户端，RDP适用于低速网络。]]></content>
@@ -250,6 +239,17 @@
       </categories>
       <tags>
         <tag>Virtualization</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Centos 配置mailx使用外部smtp发送邮件]]></title>
+    <url>%2F2018%2F11%2F29%2FCentos-%E9%85%8D%E7%BD%AEmailx%E4%BD%BF%E7%94%A8%E5%A4%96%E9%83%A8smtp%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6%2F</url>
+    <content type="text"><![CDATA[Centos 配置mailx使用外部smtp发送邮件安装mailx1yum install mailx配置mailx推荐163邮箱，当然，QQ邮箱也是可以的，PS：记得要进邮箱打开SMTP1vi /etc/mail.rc //如果不存在，则编辑/etc/nail.rc123456# 在文件的末尾加入下面代码，相应帐号密码填写自己的帐号密码set from="xxx@163.com"set smtp=smtp.163.comset smtp-auth-user=xxxset smtp-auth-password=邮箱密码set smtp-auth=login使用mailx发送邮件发件人名称可不添加，第二步已配置过假设邮件内容存储于mesg文件中，那么可以用如下2个方法：12mailx -s "发件人名称 邮件标题" xxx@163.com &lt; mesgcat mesg | mailx -s "发件人名称 邮件标题" xxx@163.com多个收件人之间用逗号分隔：1cat mesg | mailx -s "发件人名称 邮件标题" xxx@163.com,xxx2@163.com,xxx3@163.com也可以直接从命令行输入邮件内容：12mailx -s "发件人名称 邮件标题" xxx@163.com ##输入完后回车按Ctrl+D提交发送echo hello word | mailx -v -s " title" xxx3@163.comNOTE:记得要进邮箱打开SMTP配置好后，记住查看是否打开代理（例如翻墙VPN）,代理可能会导致Telnet不通25端口]]></content>
+      <categories>
+        <category>服务器</category>
+      </categories>
+      <tags>
+        <tag>Centos</tag>
       </tags>
   </entry>
   <entry>
