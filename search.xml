@@ -231,17 +231,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Centos 配置mailx使用外部smtp发送邮件]]></title>
-    <url>%2F2018%2F11%2F29%2FCentos-%E9%85%8D%E7%BD%AEmailx%E4%BD%BF%E7%94%A8%E5%A4%96%E9%83%A8smtp%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6%2F</url>
-    <content type="text"><![CDATA[Centos 配置mailx使用外部smtp发送邮件安装mailx1yum install mailx配置mailx推荐163邮箱，当然，QQ邮箱也是可以的，PS：记得要进邮箱打开SMTP1vi /etc/mail.rc //如果不存在，则编辑/etc/nail.rc123456# 在文件的末尾加入下面代码，相应帐号密码填写自己的帐号密码set from="xxx@163.com"set smtp=smtp.163.comset smtp-auth-user=xxxset smtp-auth-password=邮箱密码set smtp-auth=login使用mailx发送邮件发件人名称可不添加，第二步已配置过假设邮件内容存储于mesg文件中，那么可以用如下2个方法：12mailx -s "发件人名称 邮件标题" xxx@163.com &lt; mesgcat mesg | mailx -s "发件人名称 邮件标题" xxx@163.com多个收件人之间用逗号分隔：1cat mesg | mailx -s "发件人名称 邮件标题" xxx@163.com,xxx2@163.com,xxx3@163.com也可以直接从命令行输入邮件内容：12mailx -s "发件人名称 邮件标题" xxx@163.com ##输入完后回车按Ctrl+D提交发送echo hello word | mailx -v -s " title" xxx3@163.comNOTE:记得要进邮箱打开SMTP配置好后，记住查看是否打开代理（例如翻墙VPN）,代理可能会导致Telnet不通25端口]]></content>
-      <categories>
-        <category>服务器</category>
-      </categories>
-      <tags>
-        <tag>Centos</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[VNC和远程桌面的区别]]></title>
     <url>%2F2018%2F11%2F29%2FVNC%E5%92%8C%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2%E7%9A%84%E5%8C%BA%E5%88%AB%2F</url>
     <content type="text"><![CDATA[VNC和远程桌面的区别我们可以通过VNC(Virtual Network Computing)和远程桌面来连接到远程的计算机上，但是两者是有一定的区别的。VNCVNC使用的是RFB协议来做屏幕分享和远程操作的软件，由著名的AT&amp;T欧洲研究实验室开发。使用时需要客户端软件和服务器软件配合使用。远程桌面远程桌面使用RDP(Remote Desktop Protocol)远程桌面协议，大部分Windows都默认支持此协议，可以远程接入操作桌面。RFB和RDP区别RFB是在服务器端将窗口在显存中画好之后将图像传给客户端，客户端只充当一个图像解码显示的角色； RDP则将画图的工作交给了客户端，服务器需要了解客户端显示能力的具体情况，以便作出相应调整。RFB主要传图像，RDP主要传指令。就一般应用而言，RFB数据量太大，RDP对客户端要求较高，因此RFB适用于瘦客户端，RDP适用于低速网络。]]></content>
@@ -250,6 +239,17 @@
       </categories>
       <tags>
         <tag>Virtualization</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Centos 配置mailx使用外部smtp发送邮件]]></title>
+    <url>%2F2018%2F11%2F29%2FCentos-%E9%85%8D%E7%BD%AEmailx%E4%BD%BF%E7%94%A8%E5%A4%96%E9%83%A8smtp%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6%2F</url>
+    <content type="text"><![CDATA[Centos 配置mailx使用外部smtp发送邮件安装mailx1yum install mailx配置mailx推荐163邮箱，当然，QQ邮箱也是可以的，PS：记得要进邮箱打开SMTP1vi /etc/mail.rc //如果不存在，则编辑/etc/nail.rc123456# 在文件的末尾加入下面代码，相应帐号密码填写自己的帐号密码set from="xxx@163.com"set smtp=smtp.163.comset smtp-auth-user=xxxset smtp-auth-password=邮箱密码set smtp-auth=login使用mailx发送邮件发件人名称可不添加，第二步已配置过假设邮件内容存储于mesg文件中，那么可以用如下2个方法：12mailx -s "发件人名称 邮件标题" xxx@163.com &lt; mesgcat mesg | mailx -s "发件人名称 邮件标题" xxx@163.com多个收件人之间用逗号分隔：1cat mesg | mailx -s "发件人名称 邮件标题" xxx@163.com,xxx2@163.com,xxx3@163.com也可以直接从命令行输入邮件内容：12mailx -s "发件人名称 邮件标题" xxx@163.com ##输入完后回车按Ctrl+D提交发送echo hello word | mailx -v -s " title" xxx3@163.comNOTE:记得要进邮箱打开SMTP配置好后，记住查看是否打开代理（例如翻墙VPN）,代理可能会导致Telnet不通25端口]]></content>
+      <categories>
+        <category>服务器</category>
+      </categories>
+      <tags>
+        <tag>Centos</tag>
       </tags>
   </entry>
   <entry>

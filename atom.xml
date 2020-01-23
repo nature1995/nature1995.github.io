@@ -109,7 +109,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;本教程中，我们将使用Google API中语音转文字以及自然语言分析功能，这是一个非常强大的人工智能平台，可以用来记录语音并将其转换为文本，并对文本进行实时情感分析。（Google API可能需要科学上网，但可以在文末选择国内的腾讯AI、百度AI平台进行替换）&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2019/03/05/5c7d4d4beb7f1.jpg&quot; width=&quot;400&quot; height=&quot;400&quot;&gt;&lt;/p&gt;&lt;p&gt;首先罗列这个app的功能&lt;/p&gt;&lt;ul&gt;&lt;li style=&quot;list-style:none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt;创建Flask Web服务器&lt;/li&gt;&lt;li style=&quot;list-style:none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt;构建前端和后端&lt;/li&gt;&lt;li style=&quot;list-style:none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt;通过语音录入或者键盘输入的方式保存笔记&lt;/li&gt;&lt;li style=&quot;list-style:none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt;实时语音转文本&lt;/li&gt;&lt;li style=&quot;list-style:none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt;实时情绪识别&lt;/li&gt;&lt;li style=&quot;list-style:none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt;同时进行实时语音，文本，情感识别。&lt;/li&gt;&lt;li style=&quot;list-style:none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt;在任何云服务器上面上运行Angry-Ducks语音转文字情感分析助手&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;完整项目地址：&lt;a href=&quot;https://github.com/angryducks/angry-ducks&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/angryducks/angry-ducks&lt;/a&gt;&lt;br&gt;Youtube: &lt;a href=&quot;https://www.youtube.com/watch?v=lHrlYdO8gLY&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.youtube.com/watch?v=lHrlYdO8gLY&lt;/a&gt;&lt;br&gt;B站：&lt;a href=&quot;https://www.bilibili.com/video/av44429125&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.bilibili.com/video/av44429125&lt;/a&gt;&lt;br&gt;
+      &lt;p&gt;本教程中，我们将使用Google API中语音转文字以及自然语言分析功能，这是一个非常强大的人工智能平台，可以用来记录语音并将其转换为文本，并对文本进行实时情感分析。（Google API可能需要科学上网，但可以在文末选择国内的腾讯AI、百度AI平台进行替换）&lt;/p&gt;&lt;p&gt;&lt;img data-src=&quot;https://i.loli.net/2019/03/05/5c7d4d4beb7f1.jpg&quot; width=&quot;400&quot; height=&quot;400&quot;&gt;&lt;/p&gt;&lt;p&gt;首先罗列这个app的功能&lt;/p&gt;&lt;ul&gt;&lt;li style=&quot;list-style:none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt;创建Flask Web服务器&lt;/li&gt;&lt;li style=&quot;list-style:none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt;构建前端和后端&lt;/li&gt;&lt;li style=&quot;list-style:none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt;通过语音录入或者键盘输入的方式保存笔记&lt;/li&gt;&lt;li style=&quot;list-style:none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt;实时语音转文本&lt;/li&gt;&lt;li style=&quot;list-style:none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt;实时情绪识别&lt;/li&gt;&lt;li style=&quot;list-style:none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt;同时进行实时语音，文本，情感识别。&lt;/li&gt;&lt;li style=&quot;list-style:none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt;在任何云服务器上面上运行Angry-Ducks语音转文字情感分析助手&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;完整项目地址：&lt;a href=&quot;https://github.com/angryducks/angry-ducks&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/angryducks/angry-ducks&lt;/a&gt;&lt;br&gt;Youtube: &lt;a href=&quot;https://www.youtube.com/watch?v=lHrlYdO8gLY&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.youtube.com/watch?v=lHrlYdO8gLY&lt;/a&gt;&lt;br&gt;B站：&lt;a href=&quot;https://www.bilibili.com/video/av44429125&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.bilibili.com/video/av44429125&lt;/a&gt;&lt;br&gt;
     
     </summary>
     
@@ -153,7 +153,7 @@
     
     <summary type="html">
     
-      &lt;h2 id=&quot;先看效果图&quot;&gt;&lt;a href=&quot;#先看效果图&quot; class=&quot;headerlink&quot; title=&quot;先看效果图&quot;&gt;&lt;/a&gt;先看效果图&lt;/h2&gt;&lt;p&gt;支持账户远程访问和本地访问，断电重启自动恢复功能。&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2018/12/13/5c119b2c3f236.png&quot; alt=&quot;效果图&quot;&gt;&lt;/p&gt;&lt;h2 id=&quot;教程&quot;&gt;&lt;a href=&quot;#教程&quot; class=&quot;headerlink&quot; title=&quot;教程&quot;&gt;&lt;/a&gt;教程&lt;/h2&gt;&lt;h3 id=&quot;一、在树莓派下安装PLEX媒体服务器&quot;&gt;&lt;a href=&quot;#一、在树莓派下安装PLEX媒体服务器&quot; class=&quot;headerlink&quot; title=&quot;一、在树莓派下安装PLEX媒体服务器&quot;&gt;&lt;/a&gt;一、在树莓派下安装PLEX媒体服务器&lt;/h3&gt;&lt;p&gt;1.在终端，将你的树莓派更新至最新&lt;/p&gt;&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo apt update&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo apt upgrade&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo apt dist-upgrade&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+      &lt;h2 id=&quot;先看效果图&quot;&gt;&lt;a href=&quot;#先看效果图&quot; class=&quot;headerlink&quot; title=&quot;先看效果图&quot;&gt;&lt;/a&gt;先看效果图&lt;/h2&gt;&lt;p&gt;支持账户远程访问和本地访问，断电重启自动恢复功能。&lt;/p&gt;&lt;p&gt;&lt;img data-src=&quot;https://i.loli.net/2018/12/13/5c119b2c3f236.png&quot; alt=&quot;效果图&quot;&gt;&lt;/p&gt;&lt;h2 id=&quot;教程&quot;&gt;&lt;a href=&quot;#教程&quot; class=&quot;headerlink&quot; title=&quot;教程&quot;&gt;&lt;/a&gt;教程&lt;/h2&gt;&lt;h3 id=&quot;一、在树莓派下安装PLEX媒体服务器&quot;&gt;&lt;a href=&quot;#一、在树莓派下安装PLEX媒体服务器&quot; class=&quot;headerlink&quot; title=&quot;一、在树莓派下安装PLEX媒体服务器&quot;&gt;&lt;/a&gt;一、在树莓派下安装PLEX媒体服务器&lt;/h3&gt;&lt;p&gt;1.在终端，将你的树莓派更新至最新&lt;/p&gt;&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo apt update&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo apt upgrade&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo apt dist-upgrade&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
@@ -173,7 +173,7 @@
     
     <summary type="html">
     
-      &lt;blockquote&gt;&lt;p&gt;5G无线接入网络架构，主要包括 5G 接入网和 5G 核心网，其中 NG-RAN 代表 5G 接入网，5GC 代表 5G 核心网。&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2018/12/12/5c100a118e98c.jpg&quot; alt=&quot;1.jpg&quot;&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;5G核心网主要包括哪些呢?先说一下关键的 AMF，SMF，UPF。&lt;/strong&gt;&lt;br&gt;
+      &lt;blockquote&gt;&lt;p&gt;5G无线接入网络架构，主要包括 5G 接入网和 5G 核心网，其中 NG-RAN 代表 5G 接入网，5GC 代表 5G 核心网。&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;img data-src=&quot;https://i.loli.net/2018/12/12/5c100a118e98c.jpg&quot; alt=&quot;1.jpg&quot;&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;5G核心网主要包括哪些呢?先说一下关键的 AMF，SMF，UPF。&lt;/strong&gt;&lt;br&gt;
     
     </summary>
     
@@ -299,7 +299,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;This is a project of the face recognizer with Movidius on RaspberryPi 3B+ platform. The project also uses Django and Django REST framework which providing the web platform. The project would like to build a safety and intelligent face recognition system in AI era.&lt;/p&gt;&lt;p&gt;If you appreciate the content 📖, support projects visibility, give 👍| ⭐| 👏&lt;/p&gt;&lt;p&gt;GitHub: &lt;a href=&quot;https://github.com/nature1995/Face_Recognition_System&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/nature1995/Face_Recognition_System&lt;/a&gt;&lt;/p&gt;&lt;h1 id=&quot;Compatibility&quot;&gt;&lt;a href=&quot;#Compatibility&quot; class=&quot;headerlink&quot; title=&quot;Compatibility&quot;&gt;&lt;/a&gt;Compatibility&lt;/h1&gt;&lt;p&gt;The code is tested using Tensorflow r1.7 and Movidius NCSDK2 under Debin 2018-06-27（Kernel version:4.14） with django 2.1.1 and Python 3.5.&lt;/p&gt;&lt;h1 id=&quot;Real-Product-Images&quot;&gt;&lt;a href=&quot;#Real-Product-Images&quot; class=&quot;headerlink&quot; title=&quot;Real Product Images&quot;&gt;&lt;/a&gt;Real Product Images&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;https://github.com/nature1995/Face_Recognition_System/raw/master/image/2.jpg&quot; alt=&quot;image&quot;&gt;&lt;br&gt;
+      &lt;p&gt;This is a project of the face recognizer with Movidius on RaspberryPi 3B+ platform. The project also uses Django and Django REST framework which providing the web platform. The project would like to build a safety and intelligent face recognition system in AI era.&lt;/p&gt;&lt;p&gt;If you appreciate the content 📖, support projects visibility, give 👍| ⭐| 👏&lt;/p&gt;&lt;p&gt;GitHub: &lt;a href=&quot;https://github.com/nature1995/Face_Recognition_System&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/nature1995/Face_Recognition_System&lt;/a&gt;&lt;/p&gt;&lt;h1 id=&quot;Compatibility&quot;&gt;&lt;a href=&quot;#Compatibility&quot; class=&quot;headerlink&quot; title=&quot;Compatibility&quot;&gt;&lt;/a&gt;Compatibility&lt;/h1&gt;&lt;p&gt;The code is tested using Tensorflow r1.7 and Movidius NCSDK2 under Debin 2018-06-27（Kernel version:4.14） with django 2.1.1 and Python 3.5.&lt;/p&gt;&lt;h1 id=&quot;Real-Product-Images&quot;&gt;&lt;a href=&quot;#Real-Product-Images&quot; class=&quot;headerlink&quot; title=&quot;Real Product Images&quot;&gt;&lt;/a&gt;Real Product Images&lt;/h1&gt;&lt;p&gt;&lt;img data-src=&quot;https://github.com/nature1995/Face_Recognition_System/raw/master/image/2.jpg&quot; alt=&quot;image&quot;&gt;&lt;br&gt;
     
     </summary>
     
@@ -335,26 +335,6 @@
   </entry>
   
   <entry>
-    <title>Sublime-text3-3176版本激活</title>
-    <link href="https://nature1995.club/2018/12/01/Sublime-text3-3176%E7%89%88%E6%9C%AC%E6%BF%80%E6%B4%BB/"/>
-    <id>https://nature1995.club/2018/12/01/Sublime-text3-3176版本激活/</id>
-    <published>2018-12-01T19:18:32.000Z</published>
-    <updated>2018-12-04T01:58:24.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;https://i.loli.net/2018/12/02/5c02df25e5ec3.png&quot; alt=&quot;1201142054.png&quot;&gt;&lt;/p&gt;&lt;h3 id=&quot;步骤一：&quot;&gt;&lt;a href=&quot;#步骤一：&quot; class=&quot;headerlink&quot; title=&quot;步骤一：&quot;&gt;&lt;/a&gt;步骤一：&lt;/h3&gt;&lt;p&gt;更改hosts：sudo vim /private/etc/hosts&lt;br&gt;&lt;/p&gt;&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;127&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.1&lt;/span&gt;       &lt;span class=&quot;selector-tag&quot;&gt;www&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.sublimetext&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.com&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;127&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.1&lt;/span&gt;       &lt;span class=&quot;selector-tag&quot;&gt;license&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.sublimehq&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.com&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="教程" scheme="https://nature1995.club/categories/%E6%95%99%E7%A8%8B/"/>
-    
-    
-      <category term="Software" scheme="https://nature1995.club/tags/Software/"/>
-    
-  </entry>
-  
-  <entry>
     <title>蓝桥杯嵌入式与开发组——历年比赛试题与源码</title>
     <link href="https://nature1995.club/2018/12/01/%E8%93%9D%E6%A1%A5%E6%9D%AF%E5%B5%8C%E5%85%A5%E5%BC%8F%E4%B8%8E%E5%BC%80%E5%8F%91%E7%BB%84%E2%80%94%E2%80%94%E5%8E%86%E5%B9%B4%E6%AF%94%E8%B5%9B%E8%AF%95%E9%A2%98%E4%B8%8E%E6%BA%90%E7%A0%81/"/>
     <id>https://nature1995.club/2018/12/01/蓝桥杯嵌入式与开发组——历年比赛试题与源码/</id>
@@ -381,6 +361,26 @@
       <category term="Hardware" scheme="https://nature1995.club/tags/Hardware/"/>
     
       <category term="STM32" scheme="https://nature1995.club/tags/STM32/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Sublime-text3-3176版本激活</title>
+    <link href="https://nature1995.club/2018/12/01/Sublime-text3-3176%E7%89%88%E6%9C%AC%E6%BF%80%E6%B4%BB/"/>
+    <id>https://nature1995.club/2018/12/01/Sublime-text3-3176版本激活/</id>
+    <published>2018-12-01T19:18:32.000Z</published>
+    <updated>2018-12-04T01:58:24.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img data-src=&quot;https://i.loli.net/2018/12/02/5c02df25e5ec3.png&quot; alt=&quot;1201142054.png&quot;&gt;&lt;/p&gt;&lt;h3 id=&quot;步骤一：&quot;&gt;&lt;a href=&quot;#步骤一：&quot; class=&quot;headerlink&quot; title=&quot;步骤一：&quot;&gt;&lt;/a&gt;步骤一：&lt;/h3&gt;&lt;p&gt;更改hosts：sudo vim /private/etc/hosts&lt;br&gt;&lt;/p&gt;&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;127&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.1&lt;/span&gt;       &lt;span class=&quot;selector-tag&quot;&gt;www&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.sublimetext&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.com&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;127&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.1&lt;/span&gt;       &lt;span class=&quot;selector-tag&quot;&gt;license&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.sublimehq&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.com&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="教程" scheme="https://nature1995.club/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="Software" scheme="https://nature1995.club/tags/Software/"/>
     
   </entry>
   
