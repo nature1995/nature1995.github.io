@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://nature1995.club/"/>
-  <updated>2019-10-21T20:17:39.327Z</updated>
+  <updated>2020-01-30T21:52:18.462Z</updated>
   <id>https://nature1995.club/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何度量测试开发的价值产出</title>
+    <link href="https://nature1995.club/2020/01/30/%E5%A6%82%E4%BD%95%E5%BA%A6%E9%87%8F%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91%E7%9A%84%E4%BB%B7%E5%80%BC%E4%BA%A7%E5%87%BA/"/>
+    <id>https://nature1995.club/2020/01/30/如何度量测试开发的价值产出/</id>
+    <published>2020-01-30T15:21:00.000Z</published>
+    <updated>2020-01-30T21:52:18.462Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;每到年底的时候，不管是个人还是团队，总是避免不了要对这一年的工作成果进行总结和汇报。而对于测试开发岗位来说，通常会面临一个共性的问题：做了这么多事情，究竟产出了多大的业务价值？&lt;/p&gt;&lt;p&gt;在很长一段时间内，我对这个问题也是非常困惑。困惑的原因倒不是觉得工作内容没有价值，而是对于测试开发类的工作，通常没有明确的业务需求方，对于工作成果度量也没有统一的方式。&lt;/p&gt;&lt;p&gt;为什么测试开发岗位会面临这个问题呢？&lt;br&gt;
+    
+    </summary>
+    
+      <category term="测试开发" scheme="https://nature1995.club/categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="测试开发，测试" scheme="https://nature1995.club/tags/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91%EF%BC%8C%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
   
   <entry>
     <title>Git命令小结</title>
@@ -41,7 +61,7 @@
     <link href="https://nature1995.club/2019/08/17/%E5%9F%BA%E4%BA%8EDjango%E5%92%8CTencentOS%20tiny%E7%9A%84IoT%E6%99%BA%E8%83%BD%E7%81%AF%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/"/>
     <id>https://nature1995.club/2019/08/17/基于Django和TencentOS tiny的IoT智能灯系统设计/</id>
     <published>2019-08-17T12:32:00.000Z</published>
-    <updated>2019-10-21T20:58:10.505Z</updated>
+    <updated>2020-01-30T22:02:13.708Z</updated>
     
     <summary type="html">
     
@@ -335,6 +355,26 @@
   </entry>
   
   <entry>
+    <title>Sublime-text3-3176版本激活</title>
+    <link href="https://nature1995.club/2018/12/01/Sublime-text3-3176%E7%89%88%E6%9C%AC%E6%BF%80%E6%B4%BB/"/>
+    <id>https://nature1995.club/2018/12/01/Sublime-text3-3176版本激活/</id>
+    <published>2018-12-01T19:18:32.000Z</published>
+    <updated>2018-12-04T01:58:24.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img data-src=&quot;https://i.loli.net/2018/12/02/5c02df25e5ec3.png&quot; alt=&quot;1201142054.png&quot;&gt;&lt;/p&gt;&lt;h3 id=&quot;步骤一：&quot;&gt;&lt;a href=&quot;#步骤一：&quot; class=&quot;headerlink&quot; title=&quot;步骤一：&quot;&gt;&lt;/a&gt;步骤一：&lt;/h3&gt;&lt;p&gt;更改hosts：sudo vim /private/etc/hosts&lt;br&gt;&lt;/p&gt;&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;127&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.1&lt;/span&gt;       &lt;span class=&quot;selector-tag&quot;&gt;www&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.sublimetext&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.com&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;127&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.1&lt;/span&gt;       &lt;span class=&quot;selector-tag&quot;&gt;license&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.sublimehq&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.com&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="教程" scheme="https://nature1995.club/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="Software" scheme="https://nature1995.club/tags/Software/"/>
+    
+  </entry>
+  
+  <entry>
     <title>蓝桥杯嵌入式与开发组——历年比赛试题与源码</title>
     <link href="https://nature1995.club/2018/12/01/%E8%93%9D%E6%A1%A5%E6%9D%AF%E5%B5%8C%E5%85%A5%E5%BC%8F%E4%B8%8E%E5%BC%80%E5%8F%91%E7%BB%84%E2%80%94%E2%80%94%E5%8E%86%E5%B9%B4%E6%AF%94%E8%B5%9B%E8%AF%95%E9%A2%98%E4%B8%8E%E6%BA%90%E7%A0%81/"/>
     <id>https://nature1995.club/2018/12/01/蓝桥杯嵌入式与开发组——历年比赛试题与源码/</id>
@@ -361,26 +401,6 @@
       <category term="Hardware" scheme="https://nature1995.club/tags/Hardware/"/>
     
       <category term="STM32" scheme="https://nature1995.club/tags/STM32/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Sublime-text3-3176版本激活</title>
-    <link href="https://nature1995.club/2018/12/01/Sublime-text3-3176%E7%89%88%E6%9C%AC%E6%BF%80%E6%B4%BB/"/>
-    <id>https://nature1995.club/2018/12/01/Sublime-text3-3176版本激活/</id>
-    <published>2018-12-01T19:18:32.000Z</published>
-    <updated>2018-12-04T01:58:24.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img data-src=&quot;https://i.loli.net/2018/12/02/5c02df25e5ec3.png&quot; alt=&quot;1201142054.png&quot;&gt;&lt;/p&gt;&lt;h3 id=&quot;步骤一：&quot;&gt;&lt;a href=&quot;#步骤一：&quot; class=&quot;headerlink&quot; title=&quot;步骤一：&quot;&gt;&lt;/a&gt;步骤一：&lt;/h3&gt;&lt;p&gt;更改hosts：sudo vim /private/etc/hosts&lt;br&gt;&lt;/p&gt;&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;127&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.1&lt;/span&gt;       &lt;span class=&quot;selector-tag&quot;&gt;www&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.sublimetext&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.com&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;127&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.1&lt;/span&gt;       &lt;span class=&quot;selector-tag&quot;&gt;license&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.sublimehq&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.com&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="教程" scheme="https://nature1995.club/categories/%E6%95%99%E7%A8%8B/"/>
-    
-    
-      <category term="Software" scheme="https://nature1995.club/tags/Software/"/>
     
   </entry>
   
@@ -429,34 +449,6 @@
       <category term="Raspberry Pi" scheme="https://nature1995.club/tags/Raspberry-Pi/"/>
     
       <category term="Jupyter" scheme="https://nature1995.club/tags/Jupyter/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Keras：安装graphviz和pydot后出现RuntimeError：无法导入pydot</title>
-    <link href="https://nature1995.club/2018/11/29/Keras%E5%AE%89%E8%A3%85graphviz%E5%92%8Cpydot%E5%90%8E%E5%87%BA%E7%8E%B0RuntimeError%E6%97%A0%E6%B3%95%E5%AF%BC%E5%85%A5pydot/"/>
-    <id>https://nature1995.club/2018/11/29/Keras安装graphviz和pydot后出现RuntimeError无法导入pydot/</id>
-    <published>2018-11-30T02:32:59.000Z</published>
-    <updated>2018-11-30T04:24:10.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;首先Conda安装graphviz：&quot;&gt;&lt;a href=&quot;#首先Conda安装graphviz：&quot; class=&quot;headerlink&quot; title=&quot;首先Conda安装graphviz：&quot;&gt;&lt;/a&gt;首先Conda安装graphviz：&lt;/h3&gt;&lt;figure
-        
-      
-    
-    </summary>
-    
-      <category term="教程" scheme="https://nature1995.club/categories/%E6%95%99%E7%A8%8B/"/>
-    
-    
-      <category term="Anaconda" scheme="https://nature1995.club/tags/Anaconda/"/>
-    
-      <category term="Keras" scheme="https://nature1995.club/tags/Keras/"/>
     
   </entry>
   
