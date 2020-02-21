@@ -183,17 +183,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Sublime-text3-3176版本激活]]></title>
-    <url>%2F2018%2F12%2F01%2FSublime-text3-3176%E7%89%88%E6%9C%AC%E6%BF%80%E6%B4%BB%2F</url>
-    <content type="text"><![CDATA[步骤一：更改hosts：sudo vim /private/etc/hosts12127.0.0.1 www.sublimetext.com127.0.0.1 license.sublimehq.com步骤二：在Sublime里面Help–&gt;License里面输入下面激活码：12345678910111213----- BEGIN LICENSE -----sgbteamSingle User LicenseEA7E-11532598891CBB9 F1513E4F 1A3405C1 A865D53F115F202E 7B91AB2D 0D2A40ED 352B269B76E84F0B CD69BFC7 59F2DFEF E267328F215652A3 E88F9D8F 4C38E3BA 5B2DAAE4969624E7 DC9CD4D5 717FB40C 1B9738CF20B3C4F1 E917B5B3 87C38D9C ACCE7DD85F7EF854 86B9743C FADC04AA FB0DA5C0F913BE58 42FEA319 F954EFDD AE881E0B------ END LICENSE ------]]></content>
-      <categories>
-        <category>教程</category>
-      </categories>
-      <tags>
-        <tag>Software</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[蓝桥杯嵌入式与开发组——历年比赛试题与源码]]></title>
     <url>%2F2018%2F12%2F01%2F%E8%93%9D%E6%A1%A5%E6%9D%AF%E5%B5%8C%E5%85%A5%E5%BC%8F%E4%B8%8E%E5%BC%80%E5%8F%91%E7%BB%84%E2%80%94%E2%80%94%E5%8E%86%E5%B9%B4%E6%AF%94%E8%B5%9B%E8%AF%95%E9%A2%98%E4%B8%8E%E6%BA%90%E7%A0%81%2F</url>
     <content type="text"><![CDATA[蓝桥杯历年比赛试题与源码（嵌入式与开发组）If you appreciate the content 📖, support projects visibility, give 👍| ⭐| 👏Github: https://github.com/nature1995/lanqiao-competition-code第九届决赛模拟题第九届省赛模拟题第八届决赛-频率控制器的功能设计与实现第八届省赛-模拟升降控制器控制器第七届决赛-温湿度监控设备第七届省赛-模拟液位检测告警系统 第二版第六届决赛-电压测量与互补 PWM 信号输出第六届省赛-电压测量监控设备第五届省赛-双通道方波频率检测与倍频输出第四届省赛-双路输出控制器]]></content>
@@ -204,6 +193,17 @@
       <tags>
         <tag>Hardware</tag>
         <tag>STM32</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Sublime-text3-3176版本激活]]></title>
+    <url>%2F2018%2F12%2F01%2FSublime-text3-3176%E7%89%88%E6%9C%AC%E6%BF%80%E6%B4%BB%2F</url>
+    <content type="text"><![CDATA[步骤一：更改hosts：sudo vim /private/etc/hosts12127.0.0.1 www.sublimetext.com127.0.0.1 license.sublimehq.com步骤二：在Sublime里面Help–&gt;License里面输入下面激活码：12345678910111213----- BEGIN LICENSE -----sgbteamSingle User LicenseEA7E-11532598891CBB9 F1513E4F 1A3405C1 A865D53F115F202E 7B91AB2D 0D2A40ED 352B269B76E84F0B CD69BFC7 59F2DFEF E267328F215652A3 E88F9D8F 4C38E3BA 5B2DAAE4969624E7 DC9CD4D5 717FB40C 1B9738CF20B3C4F1 E917B5B3 87C38D9C ACCE7DD85F7EF854 86B9743C FADC04AA FB0DA5C0F913BE58 42FEA319 F954EFDD AE881E0B------ END LICENSE ------]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>Software</tag>
       </tags>
   </entry>
   <entry>
