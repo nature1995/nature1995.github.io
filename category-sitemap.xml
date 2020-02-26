@@ -8,64 +8,8 @@
     </url>
 
     <url>
-        <loc>https://nature1995.club/categories/Knowledge/</loc>
-        <lastmod>2018-11-30T04:24:10.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://nature1995.club/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
-        <lastmod>2018-12-07T23:17:20.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://nature1995.club/categories/Diary/</loc>
-        <lastmod>2018-12-25T01:32:38.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://nature1995.club/categories/AI/</loc>
-        <lastmod>2019-03-16T18:55:14.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://nature1995.club/categories/5G/</loc>
-        <lastmod>2019-08-20T03:25:59.373Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://nature1995.club/categories/Mac/</loc>
-        <lastmod>2019-08-20T03:26:12.688Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://nature1995.club/categories/%E6%95%99%E7%A8%8B/</loc>
-        <lastmod>2019-10-21T20:17:39.327Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://nature1995.club/categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/</loc>
-        <lastmod>2020-02-26T04:32:04.554Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://nature1995.club/categories/%E6%BA%90%E7%A0%81/</loc>
-        <lastmod>2020-02-26T04:36:08.340Z</lastmod>
+        <loc>https://nature1995.club/categories/Django/</loc>
+        <lastmod>2020-02-26T04:36:42.511Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -78,8 +22,64 @@
     </url>
 
     <url>
-        <loc>https://nature1995.club/categories/Django/</loc>
-        <lastmod>2020-02-26T04:36:42.511Z</lastmod>
+        <loc>https://nature1995.club/categories/%25E6%25BA%2590%25E7%25A0%2581/</loc>
+        <lastmod>2020-02-26T04:36:08.340Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://nature1995.club/categories/%25E6%25B5%258B%25E8%25AF%2595%25E5%25BC%2580%25E5%258F%2591/</loc>
+        <lastmod>2020-02-26T04:32:04.554Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://nature1995.club/categories/%25E6%2595%2599%25E7%25A8%258B/</loc>
+        <lastmod>2019-10-21T20:17:39.327Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://nature1995.club/categories/Mac/</loc>
+        <lastmod>2019-08-20T03:26:12.688Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://nature1995.club/categories/5G/</loc>
+        <lastmod>2019-08-20T03:25:59.373Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://nature1995.club/categories/AI/</loc>
+        <lastmod>2019-03-16T18:55:14.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://nature1995.club/categories/Diary/</loc>
+        <lastmod>2018-12-25T01:32:38.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://nature1995.club/categories/%25E6%259C%258D%25E5%258A%25A1%25E5%2599%25A8/</loc>
+        <lastmod>2018-12-07T23:17:20.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://nature1995.club/categories/Knowledge/</loc>
+        <lastmod>2018-11-30T04:24:10.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

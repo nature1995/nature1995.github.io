@@ -14,20 +14,21 @@
     
   </author>
   
-  <generator uri="http://hexo.io/">Hexo</generator>
+  <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
     <title>前后端分离——JWT用户认证</title>
     <link href="https://nature1995.club/2020/02/25/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E2%80%94%E2%80%94JWT%E7%94%A8%E6%88%B7%E8%AE%A4%E8%AF%81/"/>
-    <id>https://nature1995.club/2020/02/25/前后端分离——JWT用户认证/</id>
+    <id>https://nature1995.club/2020/02/25/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E2%80%94%E2%80%94JWT%E7%94%A8%E6%88%B7%E8%AE%A4%E8%AF%81/</id>
     <published>2020-02-25T15:30:00.000Z</published>
     <updated>2020-02-26T04:36:42.511Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;在前后端分离开发时为什么需要用户认证呢？原因是由于HTTP协定是不储存状态的(stateless)，这意味着当我们透过帐号密码验证一个使用者时，当下一个request请求时它就把刚刚的资料忘了。于是我们的程序就不知道谁是谁，就要再验证一次。所以为了保证系统安全，我们就需要验证用户否处于登录状态。&lt;br&gt;
+      &lt;p&gt;在前后端分离开发时为什么需要用户认证呢？原因是由于HTTP协定是不储存状态的(stateless)，这意味着当我们透过帐号密码验证一个使用者时，当下一个request请求时它就把刚刚的资料忘了。于是我们的程序就不知道谁是谁，就要再验证一次。所以为了保证系统安全，我们就需要验证用户否处于登录状态。&lt;/p&gt;
     
     </summary>
+    
     
       <category term="Django" scheme="https://nature1995.club/categories/Django/"/>
     
@@ -43,7 +44,7 @@
   <entry>
     <title>django从请求到响应全过程详解</title>
     <link href="https://nature1995.club/2020/02/24/django%E4%BB%8E%E8%AF%B7%E6%B1%82%E5%88%B0%E5%93%8D%E5%BA%94%E5%85%A8%E8%BF%87%E7%A8%8B%E8%AF%A6%E8%A7%A3/"/>
-    <id>https://nature1995.club/2020/02/24/django从请求到响应全过程详解/</id>
+    <id>https://nature1995.club/2020/02/24/django%E4%BB%8E%E8%AF%B7%E6%B1%82%E5%88%B0%E5%93%8D%E5%BA%94%E5%85%A8%E8%BF%87%E7%A8%8B%E8%AF%A6%E8%A7%A3/</id>
     <published>2020-02-25T00:21:00.000Z</published>
     <updated>2020-02-26T04:32:15.195Z</updated>
     
@@ -52,6 +53,7 @@
       &lt;h2 id=&quot;django启动&quot;&gt;&lt;a href=&quot;#django启动&quot; class=&quot;headerlink&quot; title=&quot;django启动&quot;&gt;&lt;/a&gt;django启动&lt;/h2&gt;&lt;p&gt;我们在启动一个django项目的时候，无论你是在命令行执行还是在pycharm直接点击运行，其实都是执行’runserver’的操作，而ruserver是使用django自带的的web server，主要用于开发和调试中，而在正式的环境中，一般会使用nginx+uwsgi模式。&lt;br&gt;无论是哪种方式，当启动一个项目，都会做2件事：&lt;/p&gt;&lt;ul&gt;&lt;li&gt;创建一个WSGIServer类的实例，接受用户的请求。&lt;/li&gt;&lt;li&gt;当一个用户的http请求到达的时，为用户指定一个WSGIHandler，用于处理用户请求与响应，这个Handler是处理整个request的核心。
     
     </summary>
+    
     
       <category term="Django" scheme="https://nature1995.club/categories/Django/"/>
     
@@ -63,15 +65,16 @@
   <entry>
     <title>如何度量测试开发的价值产出</title>
     <link href="https://nature1995.club/2020/01/30/%E5%A6%82%E4%BD%95%E5%BA%A6%E9%87%8F%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91%E7%9A%84%E4%BB%B7%E5%80%BC%E4%BA%A7%E5%87%BA/"/>
-    <id>https://nature1995.club/2020/01/30/如何度量测试开发的价值产出/</id>
+    <id>https://nature1995.club/2020/01/30/%E5%A6%82%E4%BD%95%E5%BA%A6%E9%87%8F%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91%E7%9A%84%E4%BB%B7%E5%80%BC%E4%BA%A7%E5%87%BA/</id>
     <published>2020-01-30T15:21:00.000Z</published>
     <updated>2020-02-26T04:32:04.554Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;每到年底的时候，不管是个人还是团队，总是避免不了要对这一年的工作成果进行总结和汇报。而对于测试开发岗位来说，通常会面临一个共性的问题：做了这么多事情，究竟产出了多大的业务价值？&lt;/p&gt;&lt;p&gt;在很长一段时间内，我对这个问题也是非常困惑。困惑的原因倒不是觉得工作内容没有价值，而是对于测试开发类的工作，通常没有明确的业务需求方，对于工作成果度量也没有统一的方式。&lt;/p&gt;&lt;p&gt;为什么测试开发岗位会面临这个问题呢？&lt;br&gt;
+      &lt;p&gt;每到年底的时候，不管是个人还是团队，总是避免不了要对这一年的工作成果进行总结和汇报。而对于测试开发岗位来说，通常会面临一个共性的问题：做了这么多事情，究竟产出了多大的业务价值？&lt;/p&gt;&lt;p&gt;在很长一段时间内，我对这个问题也是非常困惑。困惑的原因倒不是觉得工作内容没有价值，而是对于测试开发类的工作，通常没有明确的业务需求方，对于工作成果度量也没有统一的方式。&lt;/p&gt;&lt;p&gt;为什么测试开发岗位会面临这个问题呢？&lt;/p&gt;
     
     </summary>
+    
     
       <category term="测试开发" scheme="https://nature1995.club/categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/"/>
     
@@ -83,7 +86,7 @@
   <entry>
     <title>Git命令小结</title>
     <link href="https://nature1995.club/2019/10/21/Git%E5%91%BD%E4%BB%A4%E5%B0%8F%E7%BB%93/"/>
-    <id>https://nature1995.club/2019/10/21/Git命令小结/</id>
+    <id>https://nature1995.club/2019/10/21/Git%E5%91%BD%E4%BB%A4%E5%B0%8F%E7%BB%93/</id>
     <published>2019-10-21T12:32:00.000Z</published>
     <updated>2019-10-21T20:17:39.327Z</updated>
     
@@ -92,6 +95,7 @@
       &lt;h3 id=&quot;一、设置账户名和账户邮箱&quot;&gt;&lt;a href=&quot;#一、设置账户名和账户邮箱&quot; class=&quot;headerlink&quot; title=&quot;一、设置账户名和账户邮箱&quot;&gt;&lt;/a&gt;一、设置账户名和账户邮箱&lt;/h3&gt;&lt;figure class=&quot;highlight routeros&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git&lt;span class=&quot;built_in&quot;&gt; config &lt;/span&gt;--global user.name &lt;span class=&quot;string&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git&lt;span class=&quot;built_in&quot;&gt; config &lt;/span&gt;--global user.email &lt;span class=&quot;string&quot;&gt;&quot;name@gmail.com&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;git config --global http.proxy http://example.com:port&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
+    
     
       <category term="教程" scheme="https://nature1995.club/categories/%E6%95%99%E7%A8%8B/"/>
     
@@ -103,15 +107,16 @@
   <entry>
     <title>基于Django和TencentOS tiny的IoT智能灯系统设计</title>
     <link href="https://nature1995.club/2019/08/17/%E5%9F%BA%E4%BA%8EDjango%E5%92%8CTencentOS%20tiny%E7%9A%84IoT%E6%99%BA%E8%83%BD%E7%81%AF%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/"/>
-    <id>https://nature1995.club/2019/08/17/基于Django和TencentOS tiny的IoT智能灯系统设计/</id>
+    <id>https://nature1995.club/2019/08/17/%E5%9F%BA%E4%BA%8EDjango%E5%92%8CTencentOS%20tiny%E7%9A%84IoT%E6%99%BA%E8%83%BD%E7%81%AF%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/</id>
     <published>2019-08-17T12:32:00.000Z</published>
     <updated>2020-02-26T04:36:14.752Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;如今，工业，农业，生活里面的很多设备已经接入物联网，这些设备通过同一的平台进行管理。但是，每家厂商都自己接入自己的物联网设备，造成了设备与平台的割裂。所以打通设备与云平台成为非常重要的一环。而腾讯云物联网开发平台正是为次孕育而生，为整个行业推出一套解决方案。本文主要依据开发文档，一步步实现基于Django web控制智能灯软硬件系统。&lt;br&gt;本设计包括3部分组成，用户可以通过web界面进与IoT设备进行简单操作。包括Django web平台，腾讯云平台，IoT设备，其系统架构图如下：&lt;br&gt;
+      &lt;p&gt;如今，工业，农业，生活里面的很多设备已经接入物联网，这些设备通过同一的平台进行管理。但是，每家厂商都自己接入自己的物联网设备，造成了设备与平台的割裂。所以打通设备与云平台成为非常重要的一环。而腾讯云物联网开发平台正是为次孕育而生，为整个行业推出一套解决方案。本文主要依据开发文档，一步步实现基于Django web控制智能灯软硬件系统。&lt;br&gt;本设计包括3部分组成，用户可以通过web界面进与IoT设备进行简单操作。包括Django web平台，腾讯云平台，IoT设备，其系统架构图如下：&lt;/p&gt;
     
     </summary>
+    
     
       <category term="IOT" scheme="https://nature1995.club/categories/IOT/"/>
     
@@ -125,15 +130,16 @@
   <entry>
     <title>Mac iTerm 2 + oh-my-zsh + agnoster教程（好用的终端神器）</title>
     <link href="https://nature1995.club/2019/07/06/Mac%20iTerm%202%20+%20oh-my-zsh%20+%20agnoster%E6%95%99%E7%A8%8B%EF%BC%88%E5%A5%BD%E7%94%A8%E7%9A%84%E7%BB%88%E7%AB%AF%E7%A5%9E%E5%99%A8%EF%BC%89/"/>
-    <id>https://nature1995.club/2019/07/06/Mac iTerm 2 + oh-my-zsh + agnoster教程（好用的终端神器）/</id>
+    <id>https://nature1995.club/2019/07/06/Mac%20iTerm%202%20+%20oh-my-zsh%20+%20agnoster%E6%95%99%E7%A8%8B%EF%BC%88%E5%A5%BD%E7%94%A8%E7%9A%84%E7%BB%88%E7%AB%AF%E7%A5%9E%E5%99%A8%EF%BC%89/</id>
     <published>2019-07-06T22:10:00.000Z</published>
     <updated>2019-08-20T03:25:02.290Z</updated>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;Mac-Appium详细安装教程&quot;&gt;&lt;a href=&quot;#Mac-Appium详细安装教程&quot; class=&quot;headerlink&quot; title=&quot;Mac Appium详细安装教程&quot;&gt;&lt;/a&gt;Mac Appium详细安装教程&lt;/h2&gt;&lt;p&gt;一个好看的终端，先上效果图。&lt;br&gt;
+      &lt;h2 id=&quot;Mac-Appium详细安装教程&quot;&gt;&lt;a href=&quot;#Mac-Appium详细安装教程&quot; class=&quot;headerlink&quot; title=&quot;Mac Appium详细安装教程&quot;&gt;&lt;/a&gt;Mac Appium详细安装教程&lt;/h2&gt;&lt;p&gt;一个好看的终端，先上效果图。&lt;/p&gt;
     
     </summary>
+    
     
       <category term="教程" scheme="https://nature1995.club/categories/%E6%95%99%E7%A8%8B/"/>
     
@@ -147,15 +153,16 @@
   <entry>
     <title>Mac Appium详细安装教程</title>
     <link href="https://nature1995.club/2019/07/06/Mac%20Appium%E8%AF%A6%E7%BB%86%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/"/>
-    <id>https://nature1995.club/2019/07/06/Mac Appium详细安装教程/</id>
+    <id>https://nature1995.club/2019/07/06/Mac%20Appium%E8%AF%A6%E7%BB%86%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</id>
     <published>2019-07-06T19:10:00.000Z</published>
     <updated>2019-08-20T03:25:19.796Z</updated>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;Mac-Appium详细安装教程&quot;&gt;&lt;a href=&quot;#Mac-Appium详细安装教程&quot; class=&quot;headerlink&quot; title=&quot;Mac Appium详细安装教程&quot;&gt;&lt;/a&gt;Mac Appium详细安装教程&lt;/h2&gt;&lt;h3 id=&quot;1-直接安装：&quot;&gt;&lt;a href=&quot;#1-直接安装：&quot; class=&quot;headerlink&quot; title=&quot;1. 直接安装：&quot;&gt;&lt;/a&gt;1. 直接安装：&lt;/h3&gt;&lt;p&gt;Appium官网下载：&lt;a href=&quot;https://bitbucket.org/appium/appium.app/downloads/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://bitbucket.org/appium/appium.app/downloads/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;这里mac系统升级到 Sierra后，无法安装不被认可的软件，必须恢复“任何来源”，运行命令 sudo spctl –master-disable，成功后如图所示：&lt;br&gt;
+      &lt;h2 id=&quot;Mac-Appium详细安装教程&quot;&gt;&lt;a href=&quot;#Mac-Appium详细安装教程&quot; class=&quot;headerlink&quot; title=&quot;Mac Appium详细安装教程&quot;&gt;&lt;/a&gt;Mac Appium详细安装教程&lt;/h2&gt;&lt;h3 id=&quot;1-直接安装：&quot;&gt;&lt;a href=&quot;#1-直接安装：&quot; class=&quot;headerlink&quot; title=&quot;1. 直接安装：&quot;&gt;&lt;/a&gt;1. 直接安装：&lt;/h3&gt;&lt;p&gt;Appium官网下载：&lt;a href=&quot;https://bitbucket.org/appium/appium.app/downloads/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://bitbucket.org/appium/appium.app/downloads/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;这里mac系统升级到 Sierra后，无法安装不被认可的软件，必须恢复“任何来源”，运行命令 sudo spctl –master-disable，成功后如图所示：&lt;/p&gt;
     
     </summary>
+    
     
       <category term="教程" scheme="https://nature1995.club/categories/%E6%95%99%E7%A8%8B/"/>
     
@@ -169,15 +176,16 @@
   <entry>
     <title>Google-API构建Web实时语音转文字情感分析</title>
     <link href="https://nature1995.club/2019/02/24/Google-API%E6%9E%84%E5%BB%BAWeb%E5%AE%9E%E6%97%B6%E8%AF%AD%E9%9F%B3%E8%BD%AC%E6%96%87%E5%AD%97%E6%83%85%E6%84%9F%E5%88%86%E6%9E%90/"/>
-    <id>https://nature1995.club/2019/02/24/Google-API构建Web实时语音转文字情感分析/</id>
+    <id>https://nature1995.club/2019/02/24/Google-API%E6%9E%84%E5%BB%BAWeb%E5%AE%9E%E6%97%B6%E8%AF%AD%E9%9F%B3%E8%BD%AC%E6%96%87%E5%AD%97%E6%83%85%E6%84%9F%E5%88%86%E6%9E%90/</id>
     <published>2019-02-24T20:10:00.000Z</published>
     <updated>2019-03-16T18:55:14.000Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;本教程中，我们将使用Google API中语音转文字以及自然语言分析功能，这是一个非常强大的人工智能平台，可以用来记录语音并将其转换为文本，并对文本进行实时情感分析。（Google API可能需要科学上网，但可以在文末选择国内的腾讯AI、百度AI平台进行替换）&lt;/p&gt;&lt;p&gt;&lt;img data-src=&quot;https://i.loli.net/2019/03/05/5c7d4d4beb7f1.jpg&quot; width=&quot;400&quot; height=&quot;400&quot;&gt;&lt;/p&gt;&lt;p&gt;首先罗列这个app的功能&lt;/p&gt;&lt;ul&gt;&lt;li style=&quot;list-style:none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt;创建Flask Web服务器&lt;/li&gt;&lt;li style=&quot;list-style:none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt;构建前端和后端&lt;/li&gt;&lt;li style=&quot;list-style:none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt;通过语音录入或者键盘输入的方式保存笔记&lt;/li&gt;&lt;li style=&quot;list-style:none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt;实时语音转文本&lt;/li&gt;&lt;li style=&quot;list-style:none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt;实时情绪识别&lt;/li&gt;&lt;li style=&quot;list-style:none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt;同时进行实时语音，文本，情感识别。&lt;/li&gt;&lt;li style=&quot;list-style:none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt;在任何云服务器上面上运行Angry-Ducks语音转文字情感分析助手&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;完整项目地址：&lt;a href=&quot;https://github.com/angryducks/angry-ducks&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/angryducks/angry-ducks&lt;/a&gt;&lt;br&gt;Youtube: &lt;a href=&quot;https://www.youtube.com/watch?v=lHrlYdO8gLY&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.youtube.com/watch?v=lHrlYdO8gLY&lt;/a&gt;&lt;br&gt;B站：&lt;a href=&quot;https://www.bilibili.com/video/av44429125&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.bilibili.com/video/av44429125&lt;/a&gt;&lt;br&gt;
+      &lt;p&gt;本教程中，我们将使用Google API中语音转文字以及自然语言分析功能，这是一个非常强大的人工智能平台，可以用来记录语音并将其转换为文本，并对文本进行实时情感分析。（Google API可能需要科学上网，但可以在文末选择国内的腾讯AI、百度AI平台进行替换）&lt;/p&gt;&lt;img data-src=&quot;https://i.loli.net/2019/03/05/5c7d4d4beb7f1.jpg&quot; width=&quot;400&quot; height=&quot;400&quot;&gt;&lt;p&gt;首先罗列这个app的功能&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;input checked disabled type=&quot;checkbox&quot;&gt; 创建Flask Web服务器&lt;/li&gt;&lt;li&gt;&lt;input checked disabled type=&quot;checkbox&quot;&gt; 构建前端和后端&lt;/li&gt;&lt;li&gt;&lt;input checked disabled type=&quot;checkbox&quot;&gt; 通过语音录入或者键盘输入的方式保存笔记&lt;/li&gt;&lt;li&gt;&lt;input checked disabled type=&quot;checkbox&quot;&gt; 实时语音转文本&lt;/li&gt;&lt;li&gt;&lt;input checked disabled type=&quot;checkbox&quot;&gt; 实时情绪识别&lt;/li&gt;&lt;li&gt;&lt;input checked disabled type=&quot;checkbox&quot;&gt; 同时进行实时语音，文本，情感识别。&lt;/li&gt;&lt;li&gt;&lt;input checked disabled type=&quot;checkbox&quot;&gt; 在任何云服务器上面上运行Angry-Ducks语音转文字情感分析助手&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;完整项目地址：&lt;a href=&quot;https://github.com/angryducks/angry-ducks&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/angryducks/angry-ducks&lt;/a&gt;&lt;br&gt;Youtube: &lt;a href=&quot;https://www.youtube.com/watch?v=lHrlYdO8gLY&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.youtube.com/watch?v=lHrlYdO8gLY&lt;/a&gt;&lt;br&gt;B站：&lt;a href=&quot;https://www.bilibili.com/video/av44429125&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.bilibili.com/video/av44429125&lt;/a&gt;&lt;/p&gt;
     
     </summary>
+    
     
       <category term="AI" scheme="https://nature1995.club/categories/AI/"/>
     
@@ -193,7 +201,7 @@
   <entry>
     <title>5G安全性规范与协议漏洞的全面分析</title>
     <link href="https://nature1995.club/2019/01/16/5G%E5%AE%89%E5%85%A8%E6%80%A7%E8%A7%84%E8%8C%83%E4%B8%8E%E5%8D%8F%E8%AE%AE%E6%BC%8F%E6%B4%9E%E7%9A%84%E5%85%A8%E9%9D%A2%E5%88%86%E6%9E%90/"/>
-    <id>https://nature1995.club/2019/01/16/5G安全性规范与协议漏洞的全面分析/</id>
+    <id>https://nature1995.club/2019/01/16/5G%E5%AE%89%E5%85%A8%E6%80%A7%E8%A7%84%E8%8C%83%E4%B8%8E%E5%8D%8F%E8%AE%AE%E6%BC%8F%E6%B4%9E%E7%9A%84%E5%85%A8%E9%9D%A2%E5%88%86%E6%9E%90/</id>
     <published>2019-01-16T20:25:00.000Z</published>
     <updated>2019-01-17T04:47:02.000Z</updated>
     
@@ -202,6 +210,7 @@
       &lt;p&gt;本文对当前的5G协议安全规范进行了全面分析。作为本次研究的一部分，我们列举了协议存在的漏洞，并将其带入实际场景，分析潜在的安全威胁。&lt;/p&gt;&lt;h2 id=&quot;一、概述&quot;&gt;&lt;a href=&quot;#一、概述&quot; class=&quot;headerlink&quot; title=&quot;一、概述&quot;&gt;&lt;/a&gt;一、概述&lt;/h2&gt;&lt;p&gt;第三代合作计划(3GPP)在2018年3月，发布了第15版移动通信系统规范，为第五代移动通信(5G)奠定了基础。5G网络的目标是提供无处不在的高速、低延迟网络连接，以更好的应用于高清视频和物联网的场景，同时服务于大规模通信以及实时控制的需求。因此，最新一代移动通信的设计原则是支持更高承载量、支持更高数据速率、减少延迟、支持大规模设备连接，从而实现触觉互联网(Tactile Internet)、增强现实(AR)、虚拟现实(VR)以及智慧车辆互联。&lt;/p&gt;&lt;p&gt;与此前的2G、3G和4G(LTE)一样，安全性对于5G通信网络和服务至关重要，因为目前，移动系统正在为全世界数十亿人提供连接。此外，蜂窝通信网络是当前新型关键基础设施的连接基石，包括智能电网、第一响应单元(First Responder Units)和先进的军事自组织网络。5G的出现将诞生新的网络和应用，包括用于辅助驾驶或自动驾驶的下一代车载网络，以及智慧城市和智慧社区。&lt;/p&gt;&lt;p&gt;传统的2G网络存在着一些安全弱点，最严重的一个问题就是网络和用户设备(UE)之间缺乏相互认证。正因如此，从3G开始，安全性便始终成为了移动通信的关键设计考虑要素之一。LTE实现了强大的加密和完整性保护算法，支持基于对称密钥的相互认证系统，该系统安全的存储在通用用户识别模块(USIM)或SIM中，以及运营商的归属用户服务器(HSS)上。然而，近年来的安全研究又发现了LTE协议固有的一系列漏洞。例如，大量的预身份验证消息以明文形式发送，并且该消息可以被利用发起拒绝服务(DoS)攻击，并从用户设备(UE)处获得移动用户的位置信息。&lt;/p&gt;
     
     </summary>
+    
     
       <category term="5G" scheme="https://nature1995.club/categories/5G/"/>
     
@@ -213,7 +222,7 @@
   <entry>
     <title>树莓派Raspberry Pi 3搭建PLEX多媒体服务器</title>
     <link href="https://nature1995.club/2018/12/12/%E6%A0%91%E8%8E%93%E6%B4%BERaspberry%20Pi%203%E6%90%AD%E5%BB%BAPLEX%E5%A4%9A%E5%AA%92%E4%BD%93%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    <id>https://nature1995.club/2018/12/12/树莓派Raspberry Pi 3搭建PLEX多媒体服务器/</id>
+    <id>https://nature1995.club/2018/12/12/%E6%A0%91%E8%8E%93%E6%B4%BERaspberry%20Pi%203%E6%90%AD%E5%BB%BAPLEX%E5%A4%9A%E5%AA%92%E4%BD%93%E6%9C%8D%E5%8A%A1%E5%99%A8/</id>
     <published>2018-12-12T21:32:00.000Z</published>
     <updated>2018-12-25T17:26:14.000Z</updated>
     
@@ -222,6 +231,7 @@
       &lt;h2 id=&quot;先看效果图&quot;&gt;&lt;a href=&quot;#先看效果图&quot; class=&quot;headerlink&quot; title=&quot;先看效果图&quot;&gt;&lt;/a&gt;先看效果图&lt;/h2&gt;&lt;p&gt;支持账户远程访问和本地访问，断电重启自动恢复功能。&lt;/p&gt;&lt;p&gt;&lt;img data-src=&quot;https://i.loli.net/2018/12/13/5c119b2c3f236.png&quot; alt=&quot;效果图&quot;&gt;&lt;/p&gt;&lt;h2 id=&quot;教程&quot;&gt;&lt;a href=&quot;#教程&quot; class=&quot;headerlink&quot; title=&quot;教程&quot;&gt;&lt;/a&gt;教程&lt;/h2&gt;&lt;h3 id=&quot;一、在树莓派下安装PLEX媒体服务器&quot;&gt;&lt;a href=&quot;#一、在树莓派下安装PLEX媒体服务器&quot; class=&quot;headerlink&quot; title=&quot;一、在树莓派下安装PLEX媒体服务器&quot;&gt;&lt;/a&gt;一、在树莓派下安装PLEX媒体服务器&lt;/h3&gt;&lt;p&gt;1.在终端，将你的树莓派更新至最新&lt;/p&gt;&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo apt update&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo apt upgrade&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo apt dist-upgrade&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
+    
     
       <category term="教程" scheme="https://nature1995.club/categories/%E6%95%99%E7%A8%8B/"/>
     
@@ -233,15 +243,16 @@
   <entry>
     <title>5G核心网架构基础概念</title>
     <link href="https://nature1995.club/2018/12/11/5G%E6%A0%B8%E5%BF%83%E7%BD%91%E6%9E%B6%E6%9E%84%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/"/>
-    <id>https://nature1995.club/2018/12/11/5G核心网架构基础概念/</id>
+    <id>https://nature1995.club/2018/12/11/5G%E6%A0%B8%E5%BF%83%E7%BD%91%E6%9E%B6%E6%9E%84%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/</id>
     <published>2018-12-11T20:25:00.000Z</published>
     <updated>2019-08-20T03:25:59.373Z</updated>
     
     <summary type="html">
     
-      &lt;blockquote&gt;&lt;p&gt;5G无线接入网络架构，主要包括 5G 接入网和 5G 核心网，其中 NG-RAN 代表 5G 接入网，5GC 代表 5G 核心网。&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;img data-src=&quot;https://i.loli.net/2018/12/12/5c100a118e98c.jpg&quot; alt=&quot;1.jpg&quot;&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;5G核心网主要包括哪些呢?先说一下关键的 AMF，SMF，UPF。&lt;/strong&gt;&lt;br&gt;
+      &lt;blockquote&gt;&lt;p&gt;5G无线接入网络架构，主要包括 5G 接入网和 5G 核心网，其中 NG-RAN 代表 5G 接入网，5GC 代表 5G 核心网。&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;img data-src=&quot;https://i.loli.net/2018/12/12/5c100a118e98c.jpg&quot; alt=&quot;1.jpg&quot;&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;5G核心网主要包括哪些呢?先说一下关键的 AMF，SMF，UPF。&lt;/strong&gt;&lt;/p&gt;
     
     </summary>
+    
     
       <category term="5G" scheme="https://nature1995.club/categories/5G/"/>
     
@@ -253,15 +264,16 @@
   <entry>
     <title>5G核心网将采用SBA架构</title>
     <link href="https://nature1995.club/2018/12/11/5G%E6%A0%B8%E5%BF%83%E7%BD%91%E5%B0%86%E9%87%87%E7%94%A8SBA%E6%9E%B6%E6%9E%84/"/>
-    <id>https://nature1995.club/2018/12/11/5G核心网将采用SBA架构/</id>
+    <id>https://nature1995.club/2018/12/11/5G%E6%A0%B8%E5%BF%83%E7%BD%91%E5%B0%86%E9%87%87%E7%94%A8SBA%E6%9E%B6%E6%9E%84/</id>
     <published>2018-12-11T19:32:00.000Z</published>
     <updated>2018-12-14T18:13:48.000Z</updated>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;SBA架构-Service-based-architecture-基于服务的网络架构-作为统一基础架构&quot;&gt;&lt;a href=&quot;#SBA架构-Service-based-architecture-基于服务的网络架构-作为统一基础架构&quot; class=&quot;headerlink&quot; title=&quot;SBA架构(Service-based architecture 基于服务的网络架构)作为统一基础架构&quot;&gt;&lt;/a&gt;SBA架构(Service-based architecture 基于服务的网络架构)作为统一基础架构&lt;/h3&gt;&lt;p&gt;终于迎来了一个确定的消息，在杭州结束的国际移动通信标准组织3GPP专业会议上，3GPP正式确认5G核心网采用中国移动牵头并联合26家公司提出的SBA架构(Service-based architecture 基于服务的网络架构)作为统一基础架构。&lt;/p&gt;&lt;p&gt;据了解，该架构由中国移动牵头联合全球14家运营商及华为等12家网络设备商联合提出。&lt;/p&gt;&lt;p&gt;近半年来，5G标准化项目一直在讨论5G网络是不是该采用SBA新型架构。此次，3GPP将SBA确定为5G网络唯一基础架构，是5G系统架构标准化立项以来的重要进展。&lt;br&gt;
+      &lt;h3 id=&quot;SBA架构-Service-based-architecture-基于服务的网络架构-作为统一基础架构&quot;&gt;&lt;a href=&quot;#SBA架构-Service-based-architecture-基于服务的网络架构-作为统一基础架构&quot; class=&quot;headerlink&quot; title=&quot;SBA架构(Service-based architecture 基于服务的网络架构)作为统一基础架构&quot;&gt;&lt;/a&gt;SBA架构(Service-based architecture 基于服务的网络架构)作为统一基础架构&lt;/h3&gt;&lt;p&gt;终于迎来了一个确定的消息，在杭州结束的国际移动通信标准组织3GPP专业会议上，3GPP正式确认5G核心网采用中国移动牵头并联合26家公司提出的SBA架构(Service-based architecture 基于服务的网络架构)作为统一基础架构。&lt;/p&gt;&lt;p&gt;据了解，该架构由中国移动牵头联合全球14家运营商及华为等12家网络设备商联合提出。&lt;/p&gt;&lt;p&gt;近半年来，5G标准化项目一直在讨论5G网络是不是该采用SBA新型架构。此次，3GPP将SBA确定为5G网络唯一基础架构，是5G系统架构标准化立项以来的重要进展。&lt;/p&gt;
     
     </summary>
+    
     
       <category term="5G" scheme="https://nature1995.club/categories/5G/"/>
     
@@ -273,7 +285,7 @@
   <entry>
     <title>Mac最好的系统监控工具-iStat Menus 6最新下载地址及注册码</title>
     <link href="https://nature1995.club/2018/12/11/Mac%E6%9C%80%E5%A5%BD%E7%9A%84%E7%B3%BB%E7%BB%9F%E7%9B%91%E6%8E%A7%E5%B7%A5%E5%85%B7-iStat%20Menus%206%E6%9C%80%E6%96%B0%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80%E5%8F%8A%E6%B3%A8%E5%86%8C%E7%A0%81/"/>
-    <id>https://nature1995.club/2018/12/11/Mac最好的系统监控工具-iStat Menus 6最新下载地址及注册码/</id>
+    <id>https://nature1995.club/2018/12/11/Mac%E6%9C%80%E5%A5%BD%E7%9A%84%E7%B3%BB%E7%BB%9F%E7%9B%91%E6%8E%A7%E5%B7%A5%E5%85%B7-iStat%20Menus%206%E6%9C%80%E6%96%B0%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80%E5%8F%8A%E6%B3%A8%E5%86%8C%E7%A0%81/</id>
     <published>2018-12-11T18:32:00.000Z</published>
     <updated>2019-08-20T03:26:12.688Z</updated>
     
@@ -282,6 +294,7 @@
       &lt;h2 id=&quot;一、Mac最好的系统状态监控工具-iStat-Menus-6-简介&quot;&gt;&lt;a href=&quot;#一、Mac最好的系统状态监控工具-iStat-Menus-6-简介&quot; class=&quot;headerlink&quot; title=&quot;一、Mac最好的系统状态监控工具 : iStat Menus 6 简介&quot;&gt;&lt;/a&gt;一、Mac最好的系统状态监控工具 : iStat Menus 6 简介&lt;/h2&gt;&lt;p&gt;这是Mac平台最好的系统状态监控工具，主要是监控系统运行状态的，功能很强大，装机必备。这款软件让您可以从菜单栏中监控您的系统，包括8个额外的菜单，让您监视您的系统的每个方面。&lt;/p&gt;&lt;h2 id=&quot;二、Mac最好的系统状态监控工具-iStat-Menus-6-截图&quot;&gt;&lt;a href=&quot;#二、Mac最好的系统状态监控工具-iStat-Menus-6-截图&quot; class=&quot;headerlink&quot; title=&quot;二、Mac最好的系统状态监控工具 : iStat Menus 6 截图&quot;&gt;&lt;/a&gt;二、Mac最好的系统状态监控工具 : iStat Menus 6 截图&lt;/h2&gt;
     
     </summary>
+    
     
       <category term="Mac" scheme="https://nature1995.club/categories/Mac/"/>
     
@@ -293,15 +306,16 @@
   <entry>
     <title>Centos7服务器安装Anaconda</title>
     <link href="https://nature1995.club/2018/12/07/Centos7%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E8%A3%85Anaconda/"/>
-    <id>https://nature1995.club/2018/12/07/Centos7服务器安装Anaconda/</id>
+    <id>https://nature1995.club/2018/12/07/Centos7%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E8%A3%85Anaconda/</id>
     <published>2018-12-07T18:32:00.000Z</published>
     <updated>2018-12-07T23:17:20.000Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;Anaconda3下载&quot;&gt;&lt;a href=&quot;#Anaconda3下载&quot; class=&quot;headerlink&quot; title=&quot;Anaconda3下载&quot;&gt;&lt;/a&gt;Anaconda3下载&lt;/h1&gt;&lt;p&gt;从Anaconda官网下载linux版本：&lt;a href=&quot;https://www.anaconda.com/download/#linux&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.anaconda.com/download/#linux&lt;/a&gt;&lt;/p&gt;&lt;h1 id=&quot;Anaconda3安装&quot;&gt;&lt;a href=&quot;#Anaconda3安装&quot; class=&quot;headerlink&quot; title=&quot;Anaconda3安装&quot;&gt;&lt;/a&gt;Anaconda3安装&lt;/h1&gt;&lt;p&gt;将下载好的文件Anaconda3-5.0.1-Linux-x86_64.sh执行如下命令：&lt;br&gt;&lt;/p&gt;&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;# &lt;span class=&quot;selector-tag&quot;&gt;bash&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;Anaconda3-5&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.1-Linux-x86_64&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.sh&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;/p&gt;
+      &lt;h1 id=&quot;Anaconda3下载&quot;&gt;&lt;a href=&quot;#Anaconda3下载&quot; class=&quot;headerlink&quot; title=&quot;Anaconda3下载&quot;&gt;&lt;/a&gt;Anaconda3下载&lt;/h1&gt;&lt;p&gt;从Anaconda官网下载linux版本：&lt;a href=&quot;https://www.anaconda.com/download/#linux&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.anaconda.com/download/#linux&lt;/a&gt;&lt;/p&gt;&lt;h1 id=&quot;Anaconda3安装&quot;&gt;&lt;a href=&quot;#Anaconda3安装&quot; class=&quot;headerlink&quot; title=&quot;Anaconda3安装&quot;&gt;&lt;/a&gt;Anaconda3安装&lt;/h1&gt;&lt;p&gt;将下载好的文件Anaconda3-5.0.1-Linux-x86_64.sh执行如下命令：&lt;/p&gt;&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;# &lt;span class=&quot;selector-tag&quot;&gt;bash&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;Anaconda3-5&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.1-Linux-x86_64&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.sh&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
+    
     
       <category term="服务器" scheme="https://nature1995.club/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
@@ -313,15 +327,16 @@
   <entry>
     <title>Centos更新源yum问题解决方法</title>
     <link href="https://nature1995.club/2018/12/05/Centos%E9%87%8D%E6%96%B0%E5%AE%89%E8%A3%85yum%E7%9A%84base-repo%E6%BA%90/"/>
-    <id>https://nature1995.club/2018/12/05/Centos重新安装yum的base-repo源/</id>
+    <id>https://nature1995.club/2018/12/05/Centos%E9%87%8D%E6%96%B0%E5%AE%89%E8%A3%85yum%E7%9A%84base-repo%E6%BA%90/</id>
     <published>2018-12-05T18:32:00.000Z</published>
     <updated>2018-12-07T23:10:58.000Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;好久不更新自己的服务器或者误删除了更新源，偶然返现自己的Centos的系统yum源出现问题了，如何才能修复？&lt;/p&gt;&lt;h3 id=&quot;方式一：使用国内的阿里云镜像&quot;&gt;&lt;a href=&quot;#方式一：使用国内的阿里云镜像&quot; class=&quot;headerlink&quot; title=&quot;方式一：使用国内的阿里云镜像&quot;&gt;&lt;/a&gt;方式一：使用国内的阿里云镜像&lt;/h3&gt;&lt;p&gt;（1）把/etc/yum.repos.d/下面所有的源给删除掉了&lt;/p&gt;&lt;p&gt;（2）选择自己系统合适的镜像下载&lt;br&gt;&lt;/p&gt;&lt;figure class=&quot;highlight dts&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;# CentOS 5&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;wget -O &lt;span class=&quot;meta-keyword&quot;&gt;/etc/&lt;/span&gt;yum.repos.d/CentOS-Base.repo http:&lt;span class=&quot;comment&quot;&gt;//mirrors.aliyun.com/repo/Centos-5.repo&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;# CentOS 6&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;wget -O &lt;span class=&quot;meta-keyword&quot;&gt;/etc/&lt;/span&gt;yum.repos.d/CentOS-Base.repo http:&lt;span class=&quot;comment&quot;&gt;//mirrors.aliyun.com/repo/Centos-6.repo&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;# CentOS 7&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;wget -O &lt;span class=&quot;meta-keyword&quot;&gt;/etc/&lt;/span&gt;yum.repos.d/CentOS-Base.repo http:&lt;span class=&quot;comment&quot;&gt;//mirrors.aliyun.com/repo/Centos-7.repo&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;注意如果没有安装wget，可以从下面的网址中先手动下载，然后上传到linux上安装：&lt;a href=&quot;http://www.rpmfind.net/linux/rpm2html/search.php?query=wget&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://www.rpmfind.net/linux/rpm2html/search.php?query=wget&lt;/a&gt;&lt;/p&gt;&lt;p&gt;（3）执行命令，重新生成cache&lt;br&gt;&lt;/p&gt;&lt;figure class=&quot;highlight ada&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;yum clean &lt;span class=&quot;keyword&quot;&gt;all&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;yum makecache&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;/p&gt;
+      &lt;p&gt;好久不更新自己的服务器或者误删除了更新源，偶然返现自己的Centos的系统yum源出现问题了，如何才能修复？&lt;/p&gt;&lt;h3 id=&quot;方式一：使用国内的阿里云镜像&quot;&gt;&lt;a href=&quot;#方式一：使用国内的阿里云镜像&quot; class=&quot;headerlink&quot; title=&quot;方式一：使用国内的阿里云镜像&quot;&gt;&lt;/a&gt;方式一：使用国内的阿里云镜像&lt;/h3&gt;&lt;p&gt;（1）把/etc/yum.repos.d/下面所有的源给删除掉了&lt;/p&gt;&lt;p&gt;（2）选择自己系统合适的镜像下载&lt;/p&gt;&lt;figure class=&quot;highlight dts&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;# CentOS 5&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;wget -O &lt;span class=&quot;meta-keyword&quot;&gt;/etc/&lt;/span&gt;yum.repos.d/CentOS-Base.repo http:&lt;span class=&quot;comment&quot;&gt;//mirrors.aliyun.com/repo/Centos-5.repo&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;# CentOS 6&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;wget -O &lt;span class=&quot;meta-keyword&quot;&gt;/etc/&lt;/span&gt;yum.repos.d/CentOS-Base.repo http:&lt;span class=&quot;comment&quot;&gt;//mirrors.aliyun.com/repo/Centos-6.repo&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;# CentOS 7&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;wget -O &lt;span class=&quot;meta-keyword&quot;&gt;/etc/&lt;/span&gt;yum.repos.d/CentOS-Base.repo http:&lt;span class=&quot;comment&quot;&gt;//mirrors.aliyun.com/repo/Centos-7.repo&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;注意如果没有安装wget，可以从下面的网址中先手动下载，然后上传到linux上安装：&lt;a href=&quot;http://www.rpmfind.net/linux/rpm2html/search.php?query=wget&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://www.rpmfind.net/linux/rpm2html/search.php?query=wget&lt;/a&gt;&lt;/p&gt;&lt;p&gt;（3）执行命令，重新生成cache&lt;/p&gt;&lt;figure class=&quot;highlight properties&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;yum&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;clean all&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;yum&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;makecache&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
+    
     
       <category term="服务器" scheme="https://nature1995.club/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
@@ -333,7 +348,7 @@
   <entry>
     <title>MAC在同一程序切换窗口</title>
     <link href="https://nature1995.club/2018/12/04/MAC%E5%9C%A8%E5%90%8C%E4%B8%80%E7%A8%8B%E5%BA%8F%E5%88%87%E6%8D%A2%E7%AA%97%E5%8F%A3/"/>
-    <id>https://nature1995.club/2018/12/04/MAC在同一程序切换窗口/</id>
+    <id>https://nature1995.club/2018/12/04/MAC%E5%9C%A8%E5%90%8C%E4%B8%80%E7%A8%8B%E5%BA%8F%E5%88%87%E6%8D%A2%E7%AA%97%E5%8F%A3/</id>
     <published>2018-12-04T19:32:00.000Z</published>
     <updated>2018-12-06T04:08:10.000Z</updated>
     
@@ -349,6 +364,7 @@
     
     </summary>
     
+    
       <category term="教程" scheme="https://nature1995.club/categories/%E6%95%99%E7%A8%8B/"/>
     
     
@@ -359,7 +375,7 @@
   <entry>
     <title>基于人工智能的树莓派人脸识别系统(Intelligent Facial Recognition System)</title>
     <link href="https://nature1995.club/2018/12/01/%E5%9F%BA%E4%BA%8E%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E6%A0%91%E8%8E%93%E6%B4%BE%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB%E7%B3%BB%E7%BB%9F(Intelligent%20Facial%20Recognition%20System)/"/>
-    <id>https://nature1995.club/2018/12/01/基于人工智能的树莓派人脸识别系统(Intelligent Facial Recognition System)/</id>
+    <id>https://nature1995.club/2018/12/01/%E5%9F%BA%E4%BA%8E%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E6%A0%91%E8%8E%93%E6%B4%BE%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB%E7%B3%BB%E7%BB%9F(Intelligent%20Facial%20Recognition%20System)/</id>
     <published>2018-12-01T19:35:30.000Z</published>
     <updated>2020-02-26T04:31:11.163Z</updated>
     
@@ -368,6 +384,7 @@
       &lt;p&gt;This is a project of the face recognizer with Movidius on RaspberryPi 3B+ platform. The project also uses Django and Django REST framework which providing the web platform. The project would like to build a safety and intelligent face recognition system in AI era.&lt;/p&gt;&lt;p&gt;If you appreciate the content 📖, support projects visibility, give 👍| ⭐| 👏&lt;/p&gt;&lt;p&gt;GitHub: &lt;a href=&quot;https://github.com/nature1995/Face_Recognition_System&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/nature1995/Face_Recognition_System&lt;/a&gt;&lt;/p&gt;&lt;h1 id=&quot;Compatibility&quot;&gt;&lt;a href=&quot;#Compatibility&quot; class=&quot;headerlink&quot; title=&quot;Compatibility&quot;&gt;&lt;/a&gt;Compatibility&lt;/h1&gt;&lt;p&gt;The code is tested using Tensorflow r1.7 and Movidius NCSDK2 under Debin 2018-06-27（Kernel version:4.14） with django 2.1.1 and Python 3.5.&lt;/p&gt;&lt;h1 id=&quot;Real-Product-Images&quot;&gt;&lt;a href=&quot;#Real-Product-Images&quot; class=&quot;headerlink&quot; title=&quot;Real Product Images&quot;&gt;&lt;/a&gt;Real Product Images&lt;/h1&gt;&lt;p&gt;&lt;img data-src=&quot;https://github.com/nature1995/Face_Recognition_System/raw/master/image/2.jpg&quot; alt=&quot;image&quot;&gt;&lt;br&gt;
     
     </summary>
+    
     
       <category term="源码" scheme="https://nature1995.club/categories/%E6%BA%90%E7%A0%81/"/>
     
@@ -381,7 +398,7 @@
   <entry>
     <title>Django博客开发：通过django-allauth实现第三方账号登录教程</title>
     <link href="https://nature1995.club/2018/12/01/Django%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91%EF%BC%9A%E9%80%9A%E8%BF%87django-allauth%E5%AE%9E%E7%8E%B0%E7%AC%AC%E4%B8%89%E6%96%B9%E8%B4%A6%E5%8F%B7%E7%99%BB%E5%BD%95%E6%95%99%E7%A8%8B/"/>
-    <id>https://nature1995.club/2018/12/01/Django博客开发：通过django-allauth实现第三方账号登录教程/</id>
+    <id>https://nature1995.club/2018/12/01/Django%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91%EF%BC%9A%E9%80%9A%E8%BF%87django-allauth%E5%AE%9E%E7%8E%B0%E7%AC%AC%E4%B8%89%E6%96%B9%E8%B4%A6%E5%8F%B7%E7%99%BB%E5%BD%95%E6%95%99%E7%A8%8B/</id>
     <published>2018-12-01T19:20:32.000Z</published>
     <updated>2018-12-04T01:58:32.000Z</updated>
     
@@ -390,6 +407,7 @@
       &lt;p&gt;因为需要加入博客的用户登录、注册系统，为了让网站支持第三方登录，所以只用使用&lt;strong&gt;django-allauth&lt;/strong&gt;，根据其官方文档这里：&lt;strong&gt;&lt;a href=&quot;https://link.jianshu.com?t=https://django-allauth.readthedocs.io/en/latest/index.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://django-allauth.readthedocs.io/en/latest/index.html&lt;/a&gt;&lt;/strong&gt;），同时支持本地和第三方账号（Github，百度、微博、微信等等。。），集成了邮箱验证、密码修改、本地账号关联（多个）第三方账号等各种功能，真是厉害了。&lt;/p&gt;&lt;h2 id=&quot;开发环境：python-3-6、django-2-1-3&quot;&gt;&lt;a href=&quot;#开发环境：python-3-6、django-2-1-3&quot; class=&quot;headerlink&quot; title=&quot;开发环境：python 3.6、django 2.1.3&quot;&gt;&lt;/a&gt;开发环境：python 3.6、django 2.1.3&lt;/h2&gt;&lt;h2 id=&quot;准备工作：&quot;&gt;&lt;a href=&quot;#准备工作：&quot; class=&quot;headerlink&quot; title=&quot;准备工作：&quot;&gt;&lt;/a&gt;准备工作：&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;安装&lt;/strong&gt;&lt;/p&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;pip install django-allauth&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
+    
     
       <category term="教程" scheme="https://nature1995.club/categories/%E6%95%99%E7%A8%8B/"/>
     
@@ -401,15 +419,16 @@
   <entry>
     <title>Sublime-text3-3176版本激活</title>
     <link href="https://nature1995.club/2018/12/01/Sublime-text3-3176%E7%89%88%E6%9C%AC%E6%BF%80%E6%B4%BB/"/>
-    <id>https://nature1995.club/2018/12/01/Sublime-text3-3176版本激活/</id>
+    <id>https://nature1995.club/2018/12/01/Sublime-text3-3176%E7%89%88%E6%9C%AC%E6%BF%80%E6%B4%BB/</id>
     <published>2018-12-01T19:18:32.000Z</published>
     <updated>2018-12-04T01:58:24.000Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img data-src=&quot;https://i.loli.net/2018/12/02/5c02df25e5ec3.png&quot; alt=&quot;1201142054.png&quot;&gt;&lt;/p&gt;&lt;h3 id=&quot;步骤一：&quot;&gt;&lt;a href=&quot;#步骤一：&quot; class=&quot;headerlink&quot; title=&quot;步骤一：&quot;&gt;&lt;/a&gt;步骤一：&lt;/h3&gt;&lt;p&gt;更改hosts：sudo vim /private/etc/hosts&lt;br&gt;&lt;/p&gt;&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;127&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.1&lt;/span&gt;       &lt;span class=&quot;selector-tag&quot;&gt;www&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.sublimetext&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.com&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;127&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.1&lt;/span&gt;       &lt;span class=&quot;selector-tag&quot;&gt;license&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.sublimehq&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.com&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;img data-src=&quot;https://i.loli.net/2018/12/02/5c02df25e5ec3.png&quot; alt=&quot;1201142054.png&quot;&gt;&lt;/p&gt;&lt;h3 id=&quot;步骤一：&quot;&gt;&lt;a href=&quot;#步骤一：&quot; class=&quot;headerlink&quot; title=&quot;步骤一：&quot;&gt;&lt;/a&gt;步骤一：&lt;/h3&gt;&lt;p&gt;更改hosts：sudo vim /private/etc/hosts&lt;/p&gt;&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;127&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.1&lt;/span&gt;       &lt;span class=&quot;selector-tag&quot;&gt;www&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.sublimetext&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.com&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;127&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.1&lt;/span&gt;       &lt;span class=&quot;selector-tag&quot;&gt;license&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.sublimehq&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.com&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
+    
     
       <category term="教程" scheme="https://nature1995.club/categories/%E6%95%99%E7%A8%8B/"/>
     
@@ -421,7 +440,7 @@
   <entry>
     <title>蓝桥杯嵌入式与开发组——历年比赛试题与源码</title>
     <link href="https://nature1995.club/2018/12/01/%E8%93%9D%E6%A1%A5%E6%9D%AF%E5%B5%8C%E5%85%A5%E5%BC%8F%E4%B8%8E%E5%BC%80%E5%8F%91%E7%BB%84%E2%80%94%E2%80%94%E5%8E%86%E5%B9%B4%E6%AF%94%E8%B5%9B%E8%AF%95%E9%A2%98%E4%B8%8E%E6%BA%90%E7%A0%81/"/>
-    <id>https://nature1995.club/2018/12/01/蓝桥杯嵌入式与开发组——历年比赛试题与源码/</id>
+    <id>https://nature1995.club/2018/12/01/%E8%93%9D%E6%A1%A5%E6%9D%AF%E5%B5%8C%E5%85%A5%E5%BC%8F%E4%B8%8E%E5%BC%80%E5%8F%91%E7%BB%84%E2%80%94%E2%80%94%E5%8E%86%E5%B9%B4%E6%AF%94%E8%B5%9B%E8%AF%95%E9%A2%98%E4%B8%8E%E6%BA%90%E7%A0%81/</id>
     <published>2018-12-01T19:18:32.000Z</published>
     <updated>2020-02-26T04:36:08.340Z</updated>
     
@@ -436,6 +455,7 @@
       
     
     </summary>
+    
     
       <category term="源码" scheme="https://nature1995.club/categories/%E6%BA%90%E7%A0%81/"/>
     
