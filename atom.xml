@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://nature1995.club/"/>
-  <updated>2020-01-30T21:52:18.462Z</updated>
+  <updated>2020-02-26T04:36:42.511Z</updated>
   <id>https://nature1995.club/</id>
   
   <author>
@@ -17,11 +17,55 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>前后端分离——JWT用户认证</title>
+    <link href="https://nature1995.club/2020/02/25/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E2%80%94%E2%80%94JWT%E7%94%A8%E6%88%B7%E8%AE%A4%E8%AF%81/"/>
+    <id>https://nature1995.club/2020/02/25/前后端分离——JWT用户认证/</id>
+    <published>2020-02-25T15:30:00.000Z</published>
+    <updated>2020-02-26T04:36:42.511Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在前后端分离开发时为什么需要用户认证呢？原因是由于HTTP协定是不储存状态的(stateless)，这意味着当我们透过帐号密码验证一个使用者时，当下一个request请求时它就把刚刚的资料忘了。于是我们的程序就不知道谁是谁，就要再验证一次。所以为了保证系统安全，我们就需要验证用户否处于登录状态。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Django" scheme="https://nature1995.club/categories/Django/"/>
+    
+    
+      <category term="Django" scheme="https://nature1995.club/tags/Django/"/>
+    
+      <category term="JWT" scheme="https://nature1995.club/tags/JWT/"/>
+    
+      <category term="HTTP" scheme="https://nature1995.club/tags/HTTP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>django从请求到响应全过程详解</title>
+    <link href="https://nature1995.club/2020/02/24/django%E4%BB%8E%E8%AF%B7%E6%B1%82%E5%88%B0%E5%93%8D%E5%BA%94%E5%85%A8%E8%BF%87%E7%A8%8B%E8%AF%A6%E8%A7%A3/"/>
+    <id>https://nature1995.club/2020/02/24/django从请求到响应全过程详解/</id>
+    <published>2020-02-25T00:21:00.000Z</published>
+    <updated>2020-02-26T04:32:15.195Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;django启动&quot;&gt;&lt;a href=&quot;#django启动&quot; class=&quot;headerlink&quot; title=&quot;django启动&quot;&gt;&lt;/a&gt;django启动&lt;/h2&gt;&lt;p&gt;我们在启动一个django项目的时候，无论你是在命令行执行还是在pycharm直接点击运行，其实都是执行’runserver’的操作，而ruserver是使用django自带的的web server，主要用于开发和调试中，而在正式的环境中，一般会使用nginx+uwsgi模式。&lt;br&gt;无论是哪种方式，当启动一个项目，都会做2件事：&lt;/p&gt;&lt;ul&gt;&lt;li&gt;创建一个WSGIServer类的实例，接受用户的请求。&lt;/li&gt;&lt;li&gt;当一个用户的http请求到达的时，为用户指定一个WSGIHandler，用于处理用户请求与响应，这个Handler是处理整个request的核心。
+    
+    </summary>
+    
+      <category term="Django" scheme="https://nature1995.club/categories/Django/"/>
+    
+    
+      <category term="Django" scheme="https://nature1995.club/tags/Django/"/>
+    
+  </entry>
+  
+  <entry>
     <title>如何度量测试开发的价值产出</title>
     <link href="https://nature1995.club/2020/01/30/%E5%A6%82%E4%BD%95%E5%BA%A6%E9%87%8F%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91%E7%9A%84%E4%BB%B7%E5%80%BC%E4%BA%A7%E5%87%BA/"/>
     <id>https://nature1995.club/2020/01/30/如何度量测试开发的价值产出/</id>
     <published>2020-01-30T15:21:00.000Z</published>
-    <updated>2020-01-30T21:52:18.462Z</updated>
+    <updated>2020-02-26T04:32:04.554Z</updated>
     
     <summary type="html">
     
@@ -32,7 +76,7 @@
       <category term="测试开发" scheme="https://nature1995.club/categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="测试开发，测试" scheme="https://nature1995.club/tags/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91%EF%BC%8C%E6%B5%8B%E8%AF%95/"/>
+      <category term="测试开发" scheme="https://nature1995.club/tags/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/"/>
     
   </entry>
   
@@ -61,7 +105,7 @@
     <link href="https://nature1995.club/2019/08/17/%E5%9F%BA%E4%BA%8EDjango%E5%92%8CTencentOS%20tiny%E7%9A%84IoT%E6%99%BA%E8%83%BD%E7%81%AF%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/"/>
     <id>https://nature1995.club/2019/08/17/基于Django和TencentOS tiny的IoT智能灯系统设计/</id>
     <published>2019-08-17T12:32:00.000Z</published>
-    <updated>2020-01-30T22:02:13.708Z</updated>
+    <updated>2020-02-26T04:36:14.752Z</updated>
     
     <summary type="html">
     
@@ -72,7 +116,9 @@
       <category term="IOT" scheme="https://nature1995.club/categories/IOT/"/>
     
     
-      <category term="物联网，云API" scheme="https://nature1995.club/tags/%E7%89%A9%E8%81%94%E7%BD%91%EF%BC%8C%E4%BA%91API/"/>
+      <category term="物联网" scheme="https://nature1995.club/tags/%E7%89%A9%E8%81%94%E7%BD%91/"/>
+    
+      <category term="云API" scheme="https://nature1995.club/tags/%E4%BA%91API/"/>
     
   </entry>
   
@@ -315,7 +361,7 @@
     <link href="https://nature1995.club/2018/12/01/%E5%9F%BA%E4%BA%8E%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E6%A0%91%E8%8E%93%E6%B4%BE%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB%E7%B3%BB%E7%BB%9F(Intelligent%20Facial%20Recognition%20System)/"/>
     <id>https://nature1995.club/2018/12/01/基于人工智能的树莓派人脸识别系统(Intelligent Facial Recognition System)/</id>
     <published>2018-12-01T19:35:30.000Z</published>
-    <updated>2018-12-07T23:19:34.000Z</updated>
+    <updated>2020-02-26T04:31:11.163Z</updated>
     
     <summary type="html">
     
@@ -324,8 +370,6 @@
     </summary>
     
       <category term="源码" scheme="https://nature1995.club/categories/%E6%BA%90%E7%A0%81/"/>
-    
-      <category term="GitHub" scheme="https://nature1995.club/categories/%E6%BA%90%E7%A0%81/GitHub/"/>
     
     
       <category term="Raspberry Pi" scheme="https://nature1995.club/tags/Raspberry-Pi/"/>
@@ -355,36 +399,6 @@
   </entry>
   
   <entry>
-    <title>蓝桥杯嵌入式与开发组——历年比赛试题与源码</title>
-    <link href="https://nature1995.club/2018/12/01/%E8%93%9D%E6%A1%A5%E6%9D%AF%E5%B5%8C%E5%85%A5%E5%BC%8F%E4%B8%8E%E5%BC%80%E5%8F%91%E7%BB%84%E2%80%94%E2%80%94%E5%8E%86%E5%B9%B4%E6%AF%94%E8%B5%9B%E8%AF%95%E9%A2%98%E4%B8%8E%E6%BA%90%E7%A0%81/"/>
-    <id>https://nature1995.club/2018/12/01/蓝桥杯嵌入式与开发组——历年比赛试题与源码/</id>
-    <published>2018-12-01T19:18:32.000Z</published>
-    <updated>2018-12-04T01:59:00.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;蓝桥杯历年比赛试题与源码（嵌入式与开发组）&quot;&gt;&lt;a href=&quot;#蓝桥杯历年比赛试题与源码（嵌入式与开发组）&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="源码" scheme="https://nature1995.club/categories/%E6%BA%90%E7%A0%81/"/>
-    
-      <category term="GitHub" scheme="https://nature1995.club/categories/%E6%BA%90%E7%A0%81/GitHub/"/>
-    
-    
-      <category term="Hardware" scheme="https://nature1995.club/tags/Hardware/"/>
-    
-      <category term="STM32" scheme="https://nature1995.club/tags/STM32/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Sublime-text3-3176版本激活</title>
     <link href="https://nature1995.club/2018/12/01/Sublime-text3-3176%E7%89%88%E6%9C%AC%E6%BF%80%E6%B4%BB/"/>
     <id>https://nature1995.club/2018/12/01/Sublime-text3-3176版本激活/</id>
@@ -405,31 +419,11 @@
   </entry>
   
   <entry>
-    <title>Gitment评论功能接入Jekyll &amp; Hexo教程</title>
-    <link href="https://nature1995.club/2018/11/29/Gitment%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD%E6%8E%A5%E5%85%A5Jekyll_Hexo%E6%95%99%E7%A8%8B/"/>
-    <id>https://nature1995.club/2018/11/29/Gitment评论功能接入Jekyll_Hexo教程/</id>
-    <published>2018-11-30T04:32:59.000Z</published>
-    <updated>2018-12-14T18:15:18.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;之前接入的评论功能，都因为各种原因被放弃了，今天从新计划接入评论功能，所以就在了今天这篇文章。&lt;/p&gt;&lt;h3 id=&quot;评论模块&quot;&gt;&lt;a href=&quot;#评论模块&quot; class=&quot;headerlink&quot; title=&quot;评论模块&quot;&gt;&lt;/a&gt;评论模块&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;多说&lt;/strong&gt; - 最多用户使用的评论，但遗憾2017年6月将暂定服务；不建议新用户使用，但为旧用户保留，也感谢多说一路的陪伴；&lt;/li&gt;&lt;li&gt;&lt;strong&gt;网易云跟帖&lt;/strong&gt; - 网易提供的评论组件，功能比较简单，性能优秀；管理后台在查询上还不算特别智能，但足够普通用户使用；&lt;/li&gt;&lt;li&gt;&lt;strong&gt;畅言&lt;/strong&gt; - 搜狐提供的评论组件，功能丰富，体验优异；但必须进行域名备案。只要域名备过案就可以通过审核。&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Disqus&lt;/strong&gt; - 国外使用较多的评论组件。万里长城永不倒，一枝红杏出墙来，你懂的。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;以上评论模块应该大家都知道，多说和网易云跟帖没有了，畅言要备案，对于对于挂靠在GitHub的博客非常的不友好，放弃！Disqus，不希望自己的博客，可以不分国界！也放弃！&lt;/p&gt;&lt;p&gt;所以，将是我们要介绍的Gitment!&lt;br&gt;
-    
-    </summary>
-    
-      <category term="教程" scheme="https://nature1995.club/categories/%E6%95%99%E7%A8%8B/"/>
-    
-    
-      <category term="Gitment" scheme="https://nature1995.club/tags/Gitment/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Jupyter Lab Config on Raspberry Pi</title>
-    <link href="https://nature1995.club/2018/11/29/jupyter-lab-config-raspi/"/>
-    <id>https://nature1995.club/2018/11/29/jupyter-lab-config-raspi/</id>
-    <published>2018-11-30T03:32:59.000Z</published>
-    <updated>2018-11-30T04:25:10.000Z</updated>
+    <title>蓝桥杯嵌入式与开发组——历年比赛试题与源码</title>
+    <link href="https://nature1995.club/2018/12/01/%E8%93%9D%E6%A1%A5%E6%9D%AF%E5%B5%8C%E5%85%A5%E5%BC%8F%E4%B8%8E%E5%BC%80%E5%8F%91%E7%BB%84%E2%80%94%E2%80%94%E5%8E%86%E5%B9%B4%E6%AF%94%E8%B5%9B%E8%AF%95%E9%A2%98%E4%B8%8E%E6%BA%90%E7%A0%81/"/>
+    <id>https://nature1995.club/2018/12/01/蓝桥杯嵌入式与开发组——历年比赛试题与源码/</id>
+    <published>2018-12-01T19:18:32.000Z</published>
+    <updated>2020-02-26T04:36:08.340Z</updated>
     
     <summary type="html">
     
@@ -437,18 +431,18 @@
       
         
         
-          &lt;h2 id=&quot;To-activate-this-environment-use&quot;&gt;&lt;a href=&quot;#To-activate-this-environment-use&quot; class=&quot;headerlink&quot; title=&quot;To activate this
+          &lt;h1 id=&quot;蓝桥杯历年比赛试题与源码（嵌入式与开发组）&quot;&gt;&lt;a href=&quot;#蓝桥杯历年比赛试题与源码（嵌入式与开发组）&quot; class=&quot;headerlink&quot;
         
       
     
     </summary>
     
-      <category term="教程" scheme="https://nature1995.club/categories/%E6%95%99%E7%A8%8B/"/>
+      <category term="源码" scheme="https://nature1995.club/categories/%E6%BA%90%E7%A0%81/"/>
     
     
-      <category term="Raspberry Pi" scheme="https://nature1995.club/tags/Raspberry-Pi/"/>
+      <category term="Hardware" scheme="https://nature1995.club/tags/Hardware/"/>
     
-      <category term="Jupyter" scheme="https://nature1995.club/tags/Jupyter/"/>
+      <category term="STM32" scheme="https://nature1995.club/tags/STM32/"/>
     
   </entry>
   
